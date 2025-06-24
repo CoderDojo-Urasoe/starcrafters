@@ -1,144 +1,1666 @@
-<html>
-  <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
-    />
+.loading.loaded {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#" class="logo">
+                <div class="logo-icon">⭐</div>
+                <div class="logo-content">
+                    <span class="logo-text">StarCrafters</span>
+                    <span class="logo-npo">NPO法人</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">私たちについて</a></li>
+                <li><a href="#programs">事業内容</a></li>
+                <li><a href="#activities">活動実績</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+            <a href="#contact" class="cta-button">NPO活動に参加</a>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-    <title>Stitch Design</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  </head>
-  <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
-      <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f5] px-10 py-3">
-          <div class="flex items-center gap-4 text-[#111418]">
-            <div class="size-4">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </div>
-            <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">StarCrafters</h2>
-          </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              <a class="text-[#111418] text-sm font-medium leading-normal" href="aboutus.html">About</a>
-              <a class="text-[#111418] text-sm font-medium leading-normal" href="services.html">Services</a>
-              <a class="text-[#111418] text-sm font-medium leading-normal" href="news.html">News</a>
-              <a class="text-[#111418] text-sm font-medium leading-normal" href="contact.html">Contact</a>
-            </div>
-            <button
-              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#0c7ff2] text-white text-sm font-bold leading-normal tracking-[0.015em]"
-            >
-              <span class="truncate">Donate</span>
-            </button>
-          </div>
-        </header>
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="@container">
-              <div class="@[480px]:p-4">
-                <div
-                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-start justify-end px-4 pb-10 @[480px]:px-10"
-                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuA5k3eJh5C9FaGx_OEoUSDatfxhzwlt_GkIlJQyd26yeOfI0AAGHd4iDFOMFmPD4HZDmiMqBEaIaDXnKjLDz6y4-zTsiaypw0oHGDgkOmzuJsVNSG0-23ZmXlFfrgo0Vs6TwFl76A6SIZ2ltWoIeUyDk5778FjJI1dNQjf5DxJ5NUabRz1YVNINfHXk7VZ_KVA7OuZHBz3YCLySII2S0Yn4Sb1ERtm-Mnm8VqWz4OrE5AQai6F5fcDiWCUHeqFlS7baa3igS0H7tO8");'
-                >
-                  <div class="flex flex-col gap-2 text-left">
-                    <h1
-                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
-                    >
-                      Crafting a Better Tomorrow
-                    </h1>
-                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                      StarCrafters is dedicated to making a positive impact through community projects and volunteer work. Join us in building a brighter future.
-                    </h2>
-                  </div>
-                  <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0c7ff2] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
-                  >
-                    <span class="truncate">Learn More</span>
-                  </button>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="npo-badge loading">🏛️ NPO法人として社会貢献活動を展開</div>
+                <h1 class="loading">子どもたちの自立を支援するNPO法人</h1>
+                <p class="hero-subtitle loading">"Education is not the filling of a pail, but the lighting of a fire."</p>
+                <p class="hero-description loading">
+                    <strong>特定非営利活動法人StarCrafters</strong>は、不登校や教育格差に悩む子どもたちとその家族を支援し、
+                    地域全体で学び合い、支え合うコミュニティの構築を目指すNPO法人です。
+                </p>
+                <div class="hero-buttons loading">
+                    <a href="#about" class="btn-primary">NPOの活動を見る</a>
+                    <a href="#contact" class="btn-secondary">支援・参加方法</a>
                 </div>
-              </div>
             </div>
-            <h2 class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our Mission</h2>
-            <p class="text-[#111418] text-base font-normal leading-normal pb-3 pt-1 px-4">
-              At StarCrafters, our mission is to empower communities through collaborative projects and volunteer initiatives. We focus on sustainable solutions that address local
-              needs and promote long-term growth.
-            </p>
-            <h2 class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Featured Projects</h2>
-            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
-              <div class="flex items-stretch p-4 gap-3">
-                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBnXAX3p7efIZ-OUbAgwNI1vJakZ4DTZa5qG0WvBfGhmNaaiAlnl_u6iOziNSgy2g2a9Ej8BYjkmN_zt0Oz2qgO6COYsMRpyPPhC8RdjOxXXuEXrBuCTmJkMht-v-ZbbJE1MMMkbkh7rfzi-dylregda708voyB_REW66F3uwhnm98Om4x6zdvKvrshstZapq5ROl-WRn-Rx4zsMM16rxG3K4Y-kmk5ML4RzRbPiYj6JJKjYqd5RaC3ejG36TlWQRHaQFv6P13mVS4");'
-                  ></div>
-                  <div>
-                    <p class="text-[#111418] text-base font-medium leading-normal">Community Garden Initiative</p>
-                    <p class="text-[#60758a] text-sm font-normal leading-normal">Creating green spaces for sustainable living.</p>
-                  </div>
+            <div class="hero-visual loading">
+                <div class="hero-card">
+                    <div class="npo-label">NPO法人</div>
+                    <div class="star-icon">⭐</div>
+                    <h3>StarCrafters</h3>
+                    <p>星を自ら創り出し、<br>仲間とともに育んでいく人々</p>
                 </div>
-                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB7g82BM9uZc5AcSVjLLXGZOFg1kF_8-0bwacSK56D4Ic8JjdcH89OAFZH3dMKd8SpiZwalrl398GvUW2OGbShaifSmvKrDe6uCCi0iBcRSQ39ZILijxeEZLVwErPJUiwE6n220AfPOAMWfT8wQa9QAvu8N1cBSHl-qzHTaF_VQ35TCOrCa851gDN2hilRMfGG7JxGEA-nrpYtXmJZsKAXuztln-x2xb-isqHc8dWBzAvRnFBM1uxd57AtBnsJ6p9F-Eq68WvGHqOM");'
-                  ></div>
-                  <div>
-                    <p class="text-[#111418] text-base font-medium leading-normal">Home Renovation Project</p>
-                    <p class="text-[#60758a] text-sm font-normal leading-normal">Revitalizing homes for families in need.</p>
-                  </div>
-                </div>
-                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCKJ5I2H27UZsLlyJeVPeTOPe43olpd7wDkRfFQubeh9VqE44GnUSK-Wv-yVno9mXp2-FiVat7pjG29lQmPIuRyE47c1pxNA_-T-ToMyJ6SCaAyrRck1SXBW2V4GRojWjB3M-jd0l_XZK8aGcqs-sucSrSjsreJYcOQ38O5Mv7rt99XC5CLuZC28hF2hCKnOctAdzOi87HARaonZSuaaUK5ZiJhd82VOTdxQqhUtnkjyRTYVu8AA9nCRAsqb4f5qH4PXPRhzTeSu84");'
-                  ></div>
-                  <div>
-                    <p class="text-[#111418] text-base font-medium leading-normal">Park Cleanup Drive</p>
-                    <p class="text-[#60758a] text-sm font-normal leading-normal">Preserving our natural environment.</p>
-                  </div>
-                </div>
-              </div>
             </div>
-            <h2 class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Get Involved</h2>
-            <div class="flex justify-center">
-              <div class="flex flex-1 gap-3 flex-wrap px-4 py-3 max-w-[480px] justify-center">
-                <button
-                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#0c7ff2] text-white text-sm font-bold leading-normal tracking-[0.015em] grow"
-                >
-                  <span class="truncate">Volunteer</span>
-                </button>
-                <button
-                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#f0f2f5] text-[#111418] text-sm font-bold leading-normal tracking-[0.015em] grow"
-                >
-                  <span class="truncate">Donate</span>
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
-        <footer class="flex justify-center">
-          <div class="flex max-w-[960px] flex-1 flex-col">
-            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
-              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
-                <a class="text-[#60758a] text-base font-normal leading-normal min-w-40" href="#">About</a>
-                <a class="text-[#60758a] text-base font-normal leading-normal min-w-40" href="#">Projects</a>
-                <a class="text-[#60758a] text-base font-normal leading-normal min-w-40" href="#">News</a>
-                <a class="text-[#60758a] text-base font-normal leading-normal min-w-40" href="#">Contact</a>
-              </div>
-              <p class="text-[#60758a] text-base font-normal leading-normal">@2024 StarCrafters. All rights reserved.</p>
-            </footer>
-          </div>
-        </footer>
-      </div>
-    </div>
-  </body>
-</html>
+    </section>
+
+    <!-- Mission Section (NPOの想い) -->
+    <section class="mission">
+        <div class="mission-container">
+            <div class="mission-header loading">
+                <h2 class="mission-title">🎯 NPOが取り組む社会課題への想い</h2>
+                <p>私たちが目指すのは、子どもたちが未来を決める力 を身につけること</p>
+            </div>
+            <div class="mission-content">
+                <div class="mission-visual loading">
+                    <img src="img/社会自立の道.png" alt="社会自立の道" class="mission-image">
+                </div>
+                <div class="mission-text loading">
+                    <h3>未来を決める力を</h3>
+                    <span class="stat-highlight">約42万人。</span>
+                    <p>文部科学省の最新調査（令和5年度）による「不登校」と定義される子どもたちの数です。私たちの活動拠点である<strong>沖縄県では小学生の不登校率が全国ワースト1位</strong>という深刻な状況にあります。</p>
+                    <p><strong>2017年から8年間</strong>デジタル技術を使ったモノづくりコミュニティを運営する中で、私たちの参加者の<strong>6-7割が居場所づくりや自立を模索する子どもたち</strong>となりました。</p>
+                    <p>教育、子育てのあり方が大きく問い直される今、私たちは地域と一体となり、多様な学びの機会を提供し、子どもたちが自らの生き方を意思決定できる力を身につけられる場を提供していきます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why NPO Section -->
+    <section class="section">
+        <div class="section-container">
+            <div class="section-header loading">
+                <h2 class="section-title">🤝 なぜNPO法人として設立するのか</h2>
+                <p class="section-subtitle">
+                    8年間の活動で明らかになった現実と、私たちが選択した道
+                </p>
+            </div>
+            
+            <div class="story-intro loading">
+                <div class="story-text">
+                    <p>2017年、私たちは「デジタル技術を使ったモノづくりを楽しむコミュニティ」として活動を始めました。</p>
+                    <p>しかし活動を続ける中で、<strong>参加者の6〜7割が「居場所づくり」「仲間との交流」「自立を模索するための試行的な参加」</strong>を目的とするようになりました。沖縄県の小学生不登校率が全国ワースト1位という現実と向き合うことになったのです。</p>
+                </div>
+            </div>
+            
+            <div class="why-npo-content">
+                <div class="npo-reason-card loading">
+                    <div class="reason-icon">📊</div>
+                    <h3>活動の性質が根本的に変化したから</h3>
+                    <p>当初のプログラミング教育から、居場所づくりや自立支援が中心的な活動となりました。この変化に対応するため、継続的で安定した支援体制が必要になりました。</p>
+                </div>
+                
+                <div class="npo-reason-card loading">
+                    <div class="reason-icon">🔄</div>
+                    <h3>相互扶助の循環が実際に生まれ始めたから</h3>
+                    <p>支援を受けていた子どもたちが他の子どもたちの学びを支援し、自らの自立を深めていく取り組みが始まっています。この循環を制度として定着させる必要があります。</p>
+                </div>
+                
+                <div class="npo-reason-card loading">
+                    <div class="reason-icon">🌐</div>
+                    <h3>協働する専門家・機関の範囲を拡大する必要があるから</h3>
+                    <p>教育格差や自立支援といった社会課題の解決には、より多くの専門家や機関との連携が不可欠です。NPO法人として信頼性と継続性を確保することが必要です。</p>
+                </div>
+                
+                <div class="npo-reason-card loading">
+                    <div class="reason-icon">🏛️</div>
+                    <h3>将来的に子どもたちが活動を引き継ぐ組織にするため</h3>
+                    <p>子どもたちが本会の活動を引き継ぎ、自らの経験をもとに社会課題を解決していく組織となるよう、オープンな合議制による運営体制を構築します。</p>
+                </div>
+            </div>
+            
+            <div class="npo-vision loading">
+                <div class="vision-quote">
+                    <blockquote>
+                        「自らの経験をもとに仲間と協力しながら、社会課題を解決していく<br>
+                        ——そんな『相互扶助の循環』が育まれるコミュニティを目指して」
+                    </blockquote>
+                    <cite>設立趣旨書より</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-container">
+            <div class="section-header loading">
+                <h2 class="section-title">🏛️ NPO法人について</h2>
+               <p class="section-subtitle">
+                   特定非営利活動法人StarCraftersの理念と活動方針
+               </p>
+           </div>
+           
+           <div class="about-content">
+               <div class="about-text loading">
+                   <h3>NPOとしての使命</h3>
+                   <p><strong>特定非営利活動法人StarCrafters</strong>は、教育格差や不登校問題に取り組む非営利組織として活動しています。</p>
+                   <p>私たちNPOは、行政や企業では対応しきれない教育・子育ての課題に対し、地域密着型のきめ細かな支援を提供します。営利を目的とせず、すべての活動を社会貢献に向けています。</p>
+                   <p>「StarCrafters」という名称は、古代ギリシャの哲学者プルタルコスの教育思想「心とは、水を注がれる器ではなく、火を灯される薪である」に由来し、NPOとして子どもたち一人ひとりの可能性を引き出すことを使命としています。</p>
+               </div>
+               <div class="hero-visual loading">
+                   <div class="hero-card">
+                       <div class="npo-label">NPO法人の理念</div>
+                       <div class="star-icon">🔥</div>
+                       <h3>教育の本質</h3>
+                       <p>"The mind is not a vessel to be filled, but a fire to be kindled."<br><small>- Plutarch</small></p>
+                   </div>
+               </div>
+           </div>
+
+           <div class="vision-grid">
+               <div class="vision-card loading">
+                   <div class="vision-icon">🎓</div>
+                   <h3>先進的学習の場</h3>
+                   <p>NPOとして学習・体験機会を通した出会いと社会との繋がり、自立の選択肢を提供します</p>
+               </div>
+               <div class="vision-card loading">
+                   <div class="vision-icon">🤝</div>
+                   <h3>自立への伴走</h3>
+                   <p>それぞれの居場所・活躍の場で、心理的安全性あるひとの繋がりを支援します</p>
+               </div>
+               <div class="vision-card loading">
+                   <div class="vision-icon">🌟</div>
+                   <h3>相互扶助コミュニティ</h3>
+                   <p>世代を超えた学び合いと支え合いのコミュニティを構築します</p>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Programs Section -->
+   <section id="programs" class="section programs">
+       <div class="section-container">
+           <div class="section-header loading">
+               <h2 class="section-title">🌟 NPOの事業内容</h2>
+               <p class="section-subtitle">
+                   特定非営利活動法人として展開する4つの主要事業
+               </p>
+           </div>
+           
+           <div class="programs-grid">
+               <div class="program-card loading">
+                   <div class="program-header">
+                       子育て・教育イベント事業
+                   </div>
+                   <div class="program-content">
+                       <ul>
+                           <li>デジタル人財育成プログラム</li>
+                           <li>探究学習教室の運営</li>
+                           <li>デジタルワークショップ</li>
+                           <li>保護者向け支援イベント</li>
+                       </ul>
+                   </div>
+               </div>
+
+               <div class="program-card loading">
+                   <div class="program-header">
+                       コンテンツ発信事業
+                   </div>
+                   <div class="program-content">
+                       <ul>
+                           <li>子育て支援情報の発信</li>
+                           <li>サードプレイス情報提供</li>
+                           <li>教育・子育てコンテンツ制作</li>
+                           <li>NPO活動・イベント情報</li>
+                       </ul>
+                   </div>
+               </div>
+
+               <div class="program-card loading">
+                   <div class="program-header">
+                       児童養護施設向け事業
+                   </div>
+                   <div class="program-content">
+                       <ul>
+                           <li>デジタル創作講座の提供</li>
+                           <li>学習体験ワークショップ</li>
+                           <li>進路・キャリア支援</li>
+                           <li>自立支援プログラム</li>
+                       </ul>
+                   </div>
+               </div>
+
+               <div class="program-card loading">
+                   <div class="program-header">
+                       自立支援事業
+                   </div>
+                   <div class="program-content">
+                       <ul>
+                           <li>職場体験企業情報の提供</li>
+                           <li>職場体験会の実施</li>
+                           <li>就労支援・相談</li>
+                           <li>社会復帰サポート</li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+
+           <!-- Content Examples Section -->
+           <div class="content-examples">
+               <div class="section-header loading">
+                   <h3 style="font-size: 2rem; margin-bottom: 2rem;">📝 コンテンツ例</h3>
+               </div>
+               
+               <div class="examples-grid">
+                   <div class="example-card loading">
+                       <div class="example-image" style="background-image: url('img/生成AIデジタル作品創り.png'); background-size: cover; background-position: center;"></div>
+                       <div class="example-content">
+                           <h3>生成AIデジタル作品創り</h3>
+                           <p>AI技術を活用したクリエイティブな作品制作</p>
+                       </div>
+                   </div>
+                   <div class="example-card loading">
+                       <div class="example-image" style="background-image: url('img/初心者向けプログラミング講座.png'); background-size: cover; background-position: center;"></div>
+                       <div class="example-content">
+                           <h3>初心者向けプログラミング講座</h3>
+                           <p>基礎から学べるプログラミング教育</p>
+                       </div>
+                   </div>
+                   <div class="example-card loading">
+                       <div class="example-image" style="background-image: url('img/ロボコンチャレンジ.png'); background-size: cover; background-position: center;"></div>
+                       <div class="example-content">
+                           <h3>ロボコンチャレンジ</h3>
+                           <p>ロボット競技を通じた技術習得</p>
+                       </div>
+                   </div>
+                   <div class="example-card loading">
+                       <div class="example-image" style="background-image: url('img/コンテストチャレンジ.png'); background-size: cover; background-position: center;"></div>
+                       <div class="example-content">
+                           <h3>コンテストチャレンジ</h3>
+                           <p>様々なコンテストへの参加支援</p>
+                       </div>
+                   </div>
+                   <div class="example-card loading">
+                       <div class="example-image" style="background-image: url('img/アプリ開発講座.png'); background-size: cover; background-position: center;"></div>
+                       <div class="example-content">
+                           <h3>アプリ開発講座</h3>
+                           <p>実践的なアプリケーション開発</p>
+                       </div>
+                   </div>
+                   <div class="example-card loading">
+                       <div class="example-image" style="background-image: url('img/探究学習.png'); background-size: cover; background-position: center;"></div>
+                       <div class="example-content">
+                           <h3>探究学習講座/イベント</h3>
+                           <p>自ら学ぶ力を育む探究型学習</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Activities Section -->
+   <section id="activities" class="section activities">
+       <div class="section-container">
+           <div class="section-header loading">
+               <h2 class="section-title">📊 これまでの活動実績</h2>
+               <p class="section-subtitle">
+                   2019年から継続している地域密着型NPO活動の実績
+               </p>
+           </div>
+           
+           <div class="activities-content loading">
+               <div class="activities-table-container">
+                   <table class="activities-table">
+                       <thead>
+                           <tr>
+                               <th>活動</th>
+                               <th>時期</th>
+                               <th>連携先</th>
+                           </tr>
+                       </thead>
+                       <tbody>
+                           <tr>
+                               <td>沖縄県内自治体デジタル人財育成事業</td>
+                               <td>2019年〜現在</td>
+                               <td>沖縄県内自治体</td>
+                           </tr>
+                           <tr>
+                               <td>南城市 児童養護施設向けワークショップ</td>
+                               <td>2024年2ヶ月に1回</td>
+                               <td>県外NPO法人</td>
+                           </tr>
+                           <tr>
+                               <td>プログラミングコンテスト沖縄大会主催</td>
+                               <td>2024年11〜1月</td>
+                               <td>県外企業・県内大学</td>
+                           </tr>
+                           <tr>
+                               <td>沖縄県内小学校プログラミング講座</td>
+                               <td>2025年1月</td>
+                               <td>沖縄県内教育委員会</td>
+                           </tr>
+                           <tr>
+                               <td>探究学習イベント開催</td>
+                               <td>2022年〜随時開催</td>
+                               <td>県外教育企業</td>
+                           </tr>
+                           <tr>
+                               <td>eSportsゲーム体験＆子育て情報交換会!!</td>
+                               <td>2024年</td>
+                               <td>県内支援コミュニティ</td>
+                           </tr>
+                           <tr>
+                               <td>不登校関連イベント共催</td>
+                               <td>2024年</td>
+                               <td>全国の支援コミュニティ</td>
+                           </tr>
+                           <tr>
+                               <td>沖縄県内大学アプリ開発講座</td>
+                               <td>2023〜2024年</td>
+                               <td>沖縄県内の大学</td>
+                           </tr>
+                           <tr>
+                               <td>県外大学とコンピュータサイエンス講座</td>
+                               <td>2022〜2023年</td>
+                               <td>県外の大学</td>
+                           </tr>
+                           <tr>
+                               <td>沖縄県内教員向け生成AI講座</td>
+                               <td>2023年</td>
+                               <td>沖縄県内の大学</td>
+                           </tr>
+                           <tr>
+                               <td>沖縄県内プログラミングコンテスト開催</td>
+                               <td>2023年</td>
+                               <td>県外企業・自治体</td>
+                           </tr>
+                           <tr>
+                               <td>ロボコン沖縄大会開催</td>
+                               <td>2019〜2023年</td>
+                               <td>沖縄ロボコン事務局</td>
+                           </tr>
+                       </tbody>
+                   </table>
+               </div>
+               
+               <div class="activities-images">
+                   <img src="img/これまでの活動実績.png" alt="これまでの活動実績" class="activity-photo">
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Team Section -->
+   <section class="section">
+       <div class="section-container">
+           <div class="section-header loading">
+               <h2 class="section-title">👥 NPOメンバー</h2>
+               <p class="section-subtitle">
+                   多様な専門性と経験を持つ13名のメンバーが、それぞれの強みを活かして社会貢献活動に取り組んでいます
+               </p>
+           </div>
+           
+           <div class="team-grid">
+               <div class="team-member loading">
+                   <div class="member-avatar">M</div>
+                   <div class="member-name">Mitsushi</div>
+                   <div class="member-role">ITエンジニア・NPO発起人</div>
+               </div>
+               <div class="team-member loading">
+                   <div class="member-avatar">S</div>
+                   <div class="member-name">Satsuki</div>
+                   <div class="member-role">企業経営者</div>
+               </div>
+               <div class="team-member loading">
+                   <div class="member-avatar" style="
+                       background-image: url('icon/jun.png'); 
+                       background-size: cover; 
+                       background-position: center; 
+                       background-repeat: no-repeat;
+                       background-color: #14b8a6;
+                       color: transparent;
+                   ">J</div>
+                   <div class="member-name">Jun</div>
+                   <div class="member-role">Drone Meister</div>
+               </div>
+               <div class="team-member loading">
+                   <div class="member-avatar">S</div>
+                   <div class="member-name">Shinobu</div>
+                   <div class="member-role">企業経営者</div>
+               </div>
+               <div class="team-member loading">
+                   <div class="member-avatar">Y</div>
+                   <div class="member-name">Yumiko</div>
+                   <div class="member-role">保育士</div>
+               </div>
+               <div class="team-member loading">
+                   <div class="member-avatar">M</div>
+                   <div class="member-name">Makoto</div>
+                   <div class="member-role">Office Professional</div>
+               </div>
+               <div class="team-member loading">
+                   <div class="member-avatar">R</div>
+                   <div class="member-name">Rie</div>
+                   <div class="member-role">看護師</div>
+               </div>
+               <div class="team-member loading">
+                   <div class="member-avatar">N</div>
+                   <div class="member-name">Nariko</div>
+                   <div class="member-role">教員・スクールカウンセラー</div>
+               </div>
+               <div class="team-member loading">
+                   <div class="member-avatar">R</div>
+                   <div class="member-name">Rui</div>
+                   <div class="member-role">監査法人従事者</div>
+               </div>
+               <div class="team-member loading">
+                   <div class="member-avatar">K</div>
+                   <div class="member-name">Kiyoko</div>
+                   <div class="member-role">不登校保護者会主催者</div>
+               </div>
+               <div class="team-member loading">
+                   <div class="member-avatar">M</div>
+                   <div class="member-name">Mika</div>
+                   <div class="member-role">企業経営者</div>
+               </div>
+               <div class="team-member loading">
+                   <div class="member-avatar">A</div>
+                   <div class="member-name">Akira</div>
+                   <div class="member-role">社会福祉法人経営者</div>
+               </div>
+               <div class="team-member loading">
+                   <div class="member-avatar">M</div>
+                   <div class="member-name">Monica</div>
+                   <div class="member-role">保育士</div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Partners Section -->
+   <section class="section programs">
+       <div class="section-container">
+           <div class="section-header loading">
+               <h2 class="section-title">🤝 NPOパートナーシップ</h2>
+               <p class="section-subtitle">
+                   様々な組織と連携し、NPOとしてより広範囲で効果的な社会貢献活動を展開しています
+               </p>
+           </div>
+           
+           <div class="programs-grid">
+               <div class="program-card loading">
+                   <div class="program-header" style="background: linear-gradient(135deg, var(--primary-teal), var(--primary-blue));">
+                       🌟 Lights On Children
+                   </div>
+                   <div class="program-content">
+                       <p>児童養護施設での活動を通じて子どもたちのデジタル創作支援を行っています。定期的なパソコン活動を実施中。</p>
+                   </div>
+               </div>
+               <div class="program-card loading">
+                   <div class="program-header" style="background: linear-gradient(135deg, #3b82f6, #1e40af);">
+                       🎓 ハイブリッド型・探究学習
+                   </div>
+                   <div class="program-content">
+                       <p>オンラインとオフラインを組み合わせた革新的な学習プログラム。自分たちで地域の学びの仕組みをつくる活動です。</p>
+                   </div>
+               </div>
+               <div class="program-card loading">
+                   <div class="program-header" style="background: linear-gradient(135deg, var(--accent-purple), #7c3aed);">
+                       📚 LEARN for CHILDREN
+                   </div>
+                   <div class="program-content">
+                       <p>教科書を離れて学びの楽しさに気づくプログラム。東京大学先端科学技術研究センターとの連携事業。</p>
+                   </div>
+               </div>
+               <div class="program-card loading">
+                   <div class="program-header" style="background: linear-gradient(135deg, var(--primary-orange), #ea580c);">
+                       📻 子育てのラジオ「Teacher Teacher」
+                   </div>
+                   <div class="program-content">
+                       <p>世界を回る元小学校教員とラジオプロデューサーが、子育ての悩みを専門的知見で解決するラジオ番組。</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Contact Section -->
+   <section id="contact" class="section contact">
+       <div class="section-container">
+           <div class="contact-content">
+               <div class="section-header loading">
+                   <h2 class="section-title" style="color: white;">🏛️ NPO法人への参加・支援</h2>
+                   <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.9);">
+                       特定非営利活動法人StarCraftersの活動にご参加・ご支援いただける方を募集しています
+                   </p>
+               </div>
+               
+               <div class="contact-info loading">
+                   <div class="contact-item">
+                       <strong>📧 NPOお問い合わせ:</strong> info@starcrafters.org（準備中）
+                   </div>
+                   <div class="contact-item">
+                       <strong>📍 NPO所在地:</strong> 沖縄県宜野湾市
+                   </div>
+                   <div class="contact-item">
+                       <strong>🌐 NPO公式サイト:</strong> 本格版準備中
+                   </div>
+                   <div class="contact-item">
+                       <strong>📱 NPO公式SNS:</strong> Twitter, Facebook（準備中）
+                   </div>
+                   <div class="contact-item">
+                       <strong>🎯 活動エリア:</strong> 沖縄県内 + 全国オンライン支援
+                   </div>
+               </div>
+               
+               <div class="contact-buttons loading">
+                   <a href="mailto:info@starcrafters.org" class="btn-primary">
+                       💌 NPOにお問い合わせ
+                   </a>
+                   <a href="#programs" class="btn-secondary" style="background: rgba(255, 255, 255, 0.2); border: 2px solid rgba(255, 255, 255, 0.3); color: white;">
+                       🤝 NPO活動に参加
+                   </a>
+               </div>
+               
+               <p style="margin-top: 3rem; opacity: 0.9; font-size: 1.1rem;" class="loading">
+                   現在<strong>特定非営利活動法人（NPO法人）</strong>として活動準備中です。<br>
+                   子どもたちの未来のために、ぜひ一緒に活動しませんか？
+               </p>
+           </div>
+       </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="footer">
+       <div class="section-container">
+           <p>&copy; 2025 <strong>特定非営利活動法人StarCrafters</strong></p>
+           <p style="font-size: 0.9rem; margin-top: 0.5rem;">
+               NPO法人として社会貢献活動を展開 | "Lights On Children" | Think out of the box. | 沖縄県宜野湾市
+           </p>
+       </div>
+   </footer>
+
+   <script>
+       // Header scroll effect
+       window.addEventListener('scroll', function() {
+           const header = document.getElementById('header');
+           if (window.scrollY > 100) {
+               header.classList.add('scrolled');
+           } else {
+               header.classList.remove('scrolled');
+           }
+       });
+
+       // Smooth scrolling for navigation links
+       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+           anchor.addEventListener('click', function (e) {
+               e.preventDefault();
+               const target = document.querySelector(this.getAttribute('href'));
+               if (target) {
+                   const offsetTop = target.offsetTop - 80;
+                   window.scrollTo({
+                       top: offsetTop,
+                       behavior: 'smooth'
+                   });
+               }
+           });
+       });
+
+       // Intersection Observer for animations
+       const observerOptions = {
+           threshold: 0.1,
+           rootMargin: '0px 0px -50px 0px'
+       };
+
+       const observer = new IntersectionObserver(function(entries) {
+           entries.forEach(entry => {
+               if (entry.isIntersecting) {
+                   entry.target.classList.add('loaded');
+                   const index = Array.from(entry.target.parentNode.children).indexOf(entry.target);
+                   entry.target.style.animationDelay = `${index * 0.1}s`;
+               }
+           });
+       }, observerOptions);
+
+       // Observe all loading elements
+       document.querySelectorAll('.loading').forEach(el => {
+           observer.observe(el);
+       });
+
+       // Mobile menu toggle
+       document.querySelector('.mobile-menu').addEventListener('click', function() {
+           this.classList.toggle('active');
+       });
+
+       // Add interactive effects
+       document.querySelectorAll('.vision-card, .program-card, .team-member, .example-card, .npo-reason-card').forEach(card => {
+           card.addEventListener('mouseenter', function() {
+               this.style.transform = 'translateY(-8px) scale(1.02)';
+           });
+           
+           card.addEventListener('mouseleave', function() {
+               this.style.transform = 'translateY(0) scale(1)';
+           });
+       });
+
+       // Add loading screen effect
+       window.addEventListener('load', function() {
+           setTimeout(() => {
+               document.querySelectorAll('.loading').forEach((el, index) => {
+                   setTimeout(() => {
+                       el.classList.add('loaded');
+                   }, index * 50);
+               });
+           }, 300);
+       });
+
+       // Add scroll progress indicator
+       const scrollProgress = document.createElement('div');
+       scrollProgress.style.position = 'fixed';
+       scrollProgress.style.top = '0';
+       scrollProgress.style.left = '0';
+       scrollProgress.style.width = '0%';
+       scrollProgress.style.height = '3px';
+       scrollProgress.style.background = 'linear-gradient(90deg, #14b8a6, #0ea5e9)';
+       scrollProgress.style.zIndex = '9999';
+       scrollProgress.style.transition = 'width 0.3s ease';
+       document.body.appendChild(scrollProgress);
+
+       window.addEventListener('scroll', function() {
+           const scrollTop = window.pageYOffset;
+           const docHeight = document.body.scrollHeight - window.innerHeight;
+           const scrollPercent = (scrollTop / docHeight) * 100;
+           scrollProgress.style.width = scrollPercent + '%';
+       });
+   </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPO法人StarCrafters | 子どもたちの自立を支援するNPO</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-blue: #0ea5e9;
+            --primary-teal: #14b8a6;
+            --primary-orange: #f97316;
+            --accent-purple: #8b5cf6;
+            --accent-pink: #ec4899;
+            --npo-green: #059669;
+            --neutral-50: #f8fafc;
+            --neutral-100: #f1f5f9;
+            --neutral-200: #e2e8f0;
+            --neutral-600: #475569;
+            --neutral-700: #334155;
+            --neutral-800: #1e293b;
+            --neutral-900: #0f172a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans JP', 'Inter', sans-serif;
+            line-height: 1.7;
+            color: var(--neutral-700);
+            background: #ffffff;
+            overflow-x: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--neutral-200);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .header.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: var(--neutral-800);
+        }
+
+        .logo-content {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary-teal), var(--primary-blue));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.3rem;
+            box-shadow: 0 4px 15px rgba(20, 184, 166, 0.3);
+        }
+
+        .logo-text {
+            font-size: 1.4rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary-teal), var(--primary-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .logo-npo {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--npo-green);
+            background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+            padding: 0.2rem 0.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--npo-green);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--neutral-600);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-teal);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(135deg, var(--primary-teal), var(--primary-blue));
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, var(--primary-orange), #ea580c);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(249, 115, 22, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(249, 115, 22, 0.4);
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .mobile-menu span {
+            width: 25px;
+            height: 3px;
+            background: var(--neutral-700);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, 
+                rgba(20, 184, 166, 0.08) 0%, 
+                rgba(14, 165, 233, 0.08) 50%, 
+                rgba(139, 92, 246, 0.08) 100%);
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000'%3E%3Cg fill='%2314b8a6' fill-opacity='0.04'%3E%3Ccircle cx='200' cy='200' r='100'/%3E%3Ccircle cx='800' cy='300' r='80'/%3E%3Ccircle cx='300' cy='700' r='120'/%3E%3Ccircle cx='900' cy='800' r='90'/%3E%3C/g%3E%3C/svg%3E");
+            z-index: 0;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .npo-badge {
+            background: linear-gradient(135deg, var(--npo-green), #047857);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 15px rgba(5, 150, 105, 0.3);
+        }
+
+        .hero-text h1 {
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--neutral-800);
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--primary-teal);
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            color: var(--neutral-600);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-teal), var(--primary-blue));
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(20, 184, 166, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(20, 184, 166, 0.4);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--primary-teal);
+            padding: 1rem 2rem;
+            border: 2px solid var(--primary-teal);
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-teal);
+            color: white;
+        }
+
+        .hero-visual {
+            position: relative;
+        }
+
+        .hero-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 3px solid var(--primary-teal);
+        }
+
+        .hero-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(135deg, var(--primary-teal), var(--primary-blue), var(--accent-purple));
+        }
+
+        .star-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .npo-label {
+            background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+            color: var(--npo-green);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-bottom: 1rem;
+            border: 1px solid var(--npo-green);
+        }
+
+        /* Mission Section */
+        .mission {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+        }
+
+        .mission-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .mission-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .mission-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--npo-green);
+            margin-bottom: 1rem;
+        }
+
+        .mission-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .mission-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mission-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            border: 3px solid var(--primary-teal);
+        }
+
+        .mission-text {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .mission-text h3 {
+            font-size: 1.8rem;
+            color: var(--primary-teal);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .mission-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .stat-highlight {
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--primary-orange);
+            display: block;
+            margin: 1rem 0;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: var(--neutral-800);
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--neutral-600);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Why NPO Section */
+        .why-npo-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .npo-reason-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 2px solid var(--npo-green);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .npo-reason-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, var(--npo-green), #047857);
+        }
+
+        .npo-reason-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(5, 150, 105, 0.15);
+        }
+
+        .reason-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .npo-reason-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--npo-green);
+        }
+
+        .npo-reason-card p {
+            line-height: 1.6;
+            color: var(--neutral-600);
+        }
+
+        .story-intro {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            margin-bottom: 3rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            border-left: 6px solid var(--primary-orange);
+        }
+
+        .story-text p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: var(--neutral-700);
+        }
+
+        .story-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        .npo-vision {
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .vision-quote {
+            background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+            padding: 3rem;
+            border-radius: 20px;
+            border-left: 6px solid var(--npo-green);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .vision-quote blockquote {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: var(--npo-green);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        .vision-quote cite {
+            font-size: 0.9rem;
+            color: var(--neutral-600);
+            opacity: 0.8;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .about-text h3 {
+            font-size: 1.5rem;
+            color: var(--primary-teal);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .vision-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .vision-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-teal);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .vision-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, var(--primary-teal), var(--primary-blue));
+        }
+
+        .vision-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(20, 184, 166, 0.15);
+        }
+
+        .vision-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .vision-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary-teal);
+        }
+
+        /* Programs Section */
+        .programs {
+            background: var(--neutral-50);
+        }
+
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .program-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 2px solid var(--neutral-200);
+        }
+
+        .program-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+            border-color: var(--primary-teal);
+        }
+
+        .program-header {
+            padding: 2rem;
+            color: white;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .program-card:nth-child(1) .program-header {
+            background: linear-gradient(135deg, var(--primary-teal), var(--primary-blue));
+        }
+
+        .program-card:nth-child(2) .program-header {
+            background: linear-gradient(135deg, #3b82f6, #1e40af);
+        }
+
+        .program-card:nth-child(3) .program-header {
+            background: linear-gradient(135deg, var(--accent-purple), #7c3aed);
+        }
+
+        .program-card:nth-child(4) .program-header {
+            background: linear-gradient(135deg, var(--primary-orange), #ea580c);
+        }
+
+        .program-content {
+            padding: 2rem;
+        }
+
+        .program-content ul {
+            list-style: none;
+        }
+
+        .program-content li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--neutral-100);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .program-content li:before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: var(--primary-teal);
+            font-weight: bold;
+        }
+
+        /* Content Examples Section */
+        .content-examples {
+            background: white;
+            padding: 4rem 0;
+        }
+
+        .examples-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .example-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 2px solid var(--neutral-200);
+        }
+
+        .example-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .example-image {
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary-teal), var(--primary-blue));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .example-content {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .example-content h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--neutral-800);
+        }
+
+        .example-content p {
+            font-size: 0.9rem;
+            color: var(--neutral-600);
+        }
+
+        /* Activities Section */
+        .activities {
+            background: var(--neutral-50);
+        }
+
+        .activities-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .activities-table-container {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            border: 2px solid var(--primary-teal);
+        }
+
+        .activities-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .activities-table thead {
+            background: linear-gradient(135deg, var(--primary-teal), var(--primary-blue));
+        }
+
+        .activities-table th {
+            color: white;
+            padding: 1.2rem;
+            text-align: left;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .activities-table td {
+            padding: 1rem 1.2rem;
+            border-bottom: 1px solid var(--neutral-200);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .activities-table tbody tr:hover {
+            background: var(--neutral-50);
+        }
+
+        .activities-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .activities-images {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .activity-photo {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            border: 3px solid var(--primary-teal);
+        }
+
+        /* Team Section */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .team-member {
+            background: white;
+            padding: 2rem 1rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 2px solid var(--neutral-200);
+        }
+
+        .team-member:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(20, 184, 166, 0.15);
+            border-color: var(--primary-teal);
+        }
+
+        .member-avatar {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-teal), var(--primary-blue));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 1rem;
+            box-shadow: 0 4px 15px rgba(20, 184, 166, 0.3);
+        }
+
+        .member-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--neutral-800);
+            margin-bottom: 0.5rem;
+        }
+
+        .member-role {
+            font-size: 0.9rem;
+            color: var(--neutral-600);
+            line-height: 1.4;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, var(--neutral-800), var(--neutral-900));
+            color: white;
+        }
+
+        .contact-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 3rem 0;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .contact-item {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--neutral-900);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer p {
+            margin-bottom: 0.5rem;
+            opacity: 0.8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: flex;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                text-align: center;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .mission-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav {
+                padding: 1rem;
+            }
+
+            .section {
+                padding: 3rem 0;
+            }
+
+            .logo-content {
+                display: none;
+            }
+
+            .activities-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .activities-table-container {
+                overflow-x: auto;
+            }
+            
+            .activities-table {
+                min-width: 600px;
+            }
+            
+            .activities-table th,
+            .activities-table td {
+                padding: 0.8rem;
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Animations */
+        .loading {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .loading.loaded {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
