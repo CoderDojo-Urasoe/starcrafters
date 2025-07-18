@@ -1191,6 +1191,24 @@ html {
     margin-top: 2rem;
 }
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-icon {
+    color: white;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
 /* Footer */
 .footer {
     background: var(--neutral-900);
