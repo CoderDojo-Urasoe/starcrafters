@@ -1,430 +1,130 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NPO法人StarCrafters | 相互扶助が循環する地域へ</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NPO法人StarCrafters | 相互扶助が循環するコミュニティを</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <!-- Header -->
-  <header class="header" id="header">
-      <nav class="nav">
-          <a href="#" class="logo">
-              <img src="img/starcrafters-logo.png" alt="StarCrafters logo" class="logo-image">
-          </a>
-          <ul class="nav-links">
-              <li><a href="#about">課題と想い</a></li>
-              <li><a href="#solution">解決策</a></li>
-              <li><a href="#results">実績・成果</a></li>
-              <li><a href="#programs">支援内容</a></li>
-              <li><a href="#apply">参加申し込み</a></li>
-              <li><a href="#contact">お問い合わせ</a></li>
-          </ul>
-          <div class="mobile-menu" id="mobileMenu">
-              <span></span>
-              <span></span>
-              <span></span>
-          </div>
-      </nav>
-      <!-- Mobile Navigation -->
-      <div class="mobile-nav" id="mobileNav">
-          <ul>
-              <li><a href="#about">課題と想い</a></li>
-              <li><a href="#solution">解決策</a></li>
-              <li><a href="#results">実績・成果</a></li>
-              <li><a href="#programs">支援内容</a></li>
-              <li><a href="#apply">参加申し込み</a></li>
-              <li><a href="#contact">お問い合わせ</a></li>
-          </ul>
-      </div>
-  </header>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#" class="logo">
+                <img src="img/starcrafters-logo.png" alt="StarCrafters logo" class="logo-image" />
+            </a>
+            <ul class="nav-links">
+                <li><a href="#results">取り組んでいること</a></li>
+                <li><a href="#about">私たちについて</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="#results">取り組んでいること</a></li>
+                <li><a href="#about">私たちについて</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </header>
 
-  <!-- 1. Hero Section - 何をするNPOかを明確に -->
-  <!-- 1. Hero Section - 何をするNPOかを明確に -->
-<section class="hero">
-    <div class="hero-content">
-        <div class="hero-text">
-            <p class="hero-subtitle loading">自立への道に課題を抱える子どもたちをデジタルで支援</p>
-            <p class="hero-description-sub loading" style="font-size: 1.1rem; color: var(--neutral-600); margin-bottom: 1.5rem; font-style: italic;">
-                沖縄から全国へ、子どもたちの未来を創るコミュニティ
-            </p>
-            
-            <!-- 3つのポイントで分かりやすく -->
-            <div class="hero-points loading" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2rem 0;">
-                <!-- 既存の3つのポイント部分はそのまま -->
-                  <div style="text-align: center; padding: 1.5rem; background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: 2px solid var(--primary-teal);">
-                      <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🎓</div>
-                      <div style="font-weight: bold; color: var(--primary-teal); font-size: 1.1rem;">学びの場</div>
-                      <div style="font-size: 0.9rem; color: var(--neutral-600);">デジタル技術で創造力を育む</div>
-                  </div>
-                  <div style="text-align: center; padding: 1.5rem; background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: 2px solid var(--npo-green);">
-                      <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🤝</div>
-                      <div style="font-weight: bold; color: var(--npo-green); font-size: 1.1rem;">居場所づくり</div>
-                      <div style="font-size: 0.9rem; color: var(--neutral-600);">心理的安全性のあるコミュニティ</div>
-                  </div>
-                  <div style="text-align: center; padding: 1.5rem; background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: 2px solid var(--primary-orange);">
-                      <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🌟</div>
-                      <div style="font-weight: bold; color: var(--primary-orange); font-size: 1.1rem;">自立支援</div>
-                      <div style="font-size: 0.9rem; color: var(--neutral-600);">将来への具体的な道筋</div>
-                  </div>
-              </div>
-              
-              <div class="hero-buttons loading">
-                  <a href="#solution" class="btn-primary">解決策を見る</a>
-                  <a href="#apply" class="btn-secondary">参加・支援申し込み</a>
-              </div>
-          </div>
-          <div class="hero-visual loading">
-              <img src="img/TOP画面.png" alt="StarCraftersの活動風景 - 大人と子どもたちが一緒にプログラミングを学ぶ様子" 
-                   style="width: 100%; max-width: 500px; height: auto; border-radius: 20px; 
-                          box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); border: 3px solid var(--primary-teal);">
-          </div>
-      </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="slideshow-container">
+            <!-- JavaScriptで画像が動的に挿入される -->
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-vision-text">
+            <h1 class="loading">
+                デジタルと探究<br />誰もが輝く学びのコミュニティ
+            </h1>
+        </div>
+        <a href="#about" class="scroll-down-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+        </a>
+    </section>
 
-  <!-- 2. 社会課題セクション（問題提起） -->
-  <section id="about" class="mission">
-      <div class="mission-container">
-          <div class="mission-header loading">
-              <h2 class="mission-title">🎯 StarCraftersが取り組む社会課題への想い</h2>
-              <p>私たちが目指すのは、子どもたちが未来を決める力を身につけること</p>
-          </div>
-          
-          <!-- 統計を目立たせる -->
-<div class="key-stats loading" style="display: flex; justify-content: space-around; margin: 3rem 0; background: linear-gradient(135deg, var(--primary-teal), var(--primary-blue)); color: white; padding: 3rem; border-radius: 20px; box-shadow: 0 8px 30px rgba(20, 184, 166, 0.3);">
-    <div style="text-align: center;">
-        <div style="font-size: 3rem; font-weight: 900; margin-bottom: 0.5rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -1px -1px 2px rgba(0, 0, 0, 0.2);">約42万人</div>
-        <div style="font-size: 1.1rem; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">「不登校」と定義される子どもたち</div>
-        <div style="font-size: 0.9rem; opacity: 0.8;">（令和5年度 文科省調査）</div>
-    </div>
-    <div style="text-align: center;">
-        <div style="font-size: 3rem; font-weight: 900; margin-bottom: 0.5rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -1px -1px 2px rgba(0, 0, 0, 0.2);">ワースト1位</div>
-        <div style="font-size: 1.1rem; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">沖縄県小学生不登校率</div>
-        <div style="font-size: 0.9rem; opacity: 0.8;">深刻な教育課題</div>
-    </div>
-    <div style="text-align: center;">
-        <div style="font-size: 3rem; font-weight: 900; margin-bottom: 0.5rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -1px -1px 2px rgba(0, 0, 0, 0.2);">6-7割</div>
-        <div style="font-size: 1.1rem; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">居場所を求める参加者</div>
-        <div style="font-size: 0.9rem; opacity: 0.8;">当団体の実態調査</div>
-    </div>
-</div>
+    <!-- News Section -->
+    <section id="news" class="section news">
+        <div class="section-container">
+            <div class="section-header loading">
+                <h2 class="section-title">📰 お知らせ</h2>
+            </div>
+            <div class="news-list loading">
+                <a href="#" class="news-item">
+                    <div class="news-item-content">
+                        <span class="news-date">2024.07.18</span>
+                        <span class="news-category category-event">イベント</span>
+                        <p class="news-title">8月3日に夏休みプログラミング体験イベントを開催します。詳細は後ほどお知らせ致します。</p>
+                    </div>
+                </a>
+                <a href="#" class="news-item">
+                    <div class="news-item-content">
+                        <span class="news-date">2024.07.01</span>
+                        <span class="news-category category-notice">お知らせ</span>
+                        <p class="news-title">NPO法人StarCrafters設立！合わせてウェブサイトを開設しました。コンテンツはこれから充実させていきます。</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 
-          <div class="mission-content">
-              <div class="mission-visual loading">
-                  <img src="img/社会自立の道.png" alt="社会自立の道" class="mission-image">
-              </div>
-              <div class="mission-text loading">
-                  <h3>未来を決める力を</h3>
-                  <span class="stat-highlight">約42万人。</span>
-                  <p>文部科学省の最新調査（令和5年度）による「不登校」と定義される子どもたちの数です。私たちの活動拠点である<strong>沖縄県では小学生の不登校率が全国ワースト1位</strong>という深刻な状況にあります。</p>
-                  <p><strong>2017年から8年間</strong>デジタル技術を使ったモノづくりコミュニティを運営する中で、私たちの参加者の<strong>6-7割が居場所づくりや自立を模索する子どもたち</strong>となりました。</p>
-                  <p>教育、子育てのあり方が大きく問い直される今、私たちは地域と一体となり、多様な学びの機会を提供し、子どもたちが自らの生き方を意思決定できる力を身につけられる場を提供していきます。</p>
-              </div>
-          </div>
-      </div>
-  </section>
-
-  <!-- 3. 解決策セクション（新設） -->
-  <section id="solution" class="section" style="background: linear-gradient(135deg, #f0fdf4, #ecfdf5);">
-      <div class="section-container">
-          <div class="section-header loading">
-              <h2 class="section-title" style="color: var(--npo-green);">💡 StarCraftersの解決策</h2>
-              <p class="section-subtitle">
-                  8年間の実践で確立した、効果的な支援モデル
-              </p>
-          </div>
-          
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
-              <div class="solution-card loading" style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08); border-left: 6px solid var(--primary-teal);">
-                  <div style="font-size: 3rem; margin-bottom: 1rem;">🔧</div>
-                  <h3 style="color: var(--primary-teal); margin-bottom: 1rem; font-size: 1.3rem;">デジタル技術による参加のきっかけ</h3>
-                  <p>プログラミング、ロボティクス、AI活用など、興味を引くデジタル技術を入口として、自然な形でコミュニティに参加できる環境を提供。</p>
-              </div>
-              
-              <div class="solution-card loading" style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08); border-left: 6px solid var(--npo-green);">
-                  <div style="font-size: 3rem; margin-bottom: 1rem;">🏠</div>
-                  <h3 style="color: var(--npo-green); margin-bottom: 1rem; font-size: 1.3rem;">心理的安全性のある居場所</h3>
-                  <p>判断されない、比較されない環境で、子どもたちが本来の自分を表現できる場所。大人も共に学ぶ対等なコミュニティを実現。</p>
-              </div>
-              
-              <div class="solution-card loading" style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08); border-left: 6px solid var(--primary-orange);">
-                  <div style="font-size: 3rem; margin-bottom: 1rem;">🎯</div>
-                  <h3 style="color: var(--primary-orange); margin-bottom: 1rem; font-size: 1.3rem;">相互扶助による成長循環</h3>
-                  <p>支援を受けた子どもたちが、次世代の子どもたちを支援する側に回る。持続可能な支援コミュニティの構築。</p>
-              </div>
-          </div>
-          
-      </div>
-  </section>
-
-  <!-- Why NPO Section -->
-  <section class="section">
-      <div class="section-container">
-          <div class="section-header loading">
-              <h2 class="section-title">🤝 なぜNPO法人として設立するのか</h2>
-              <p class="section-subtitle">
-                  8年間の活動で明らかになった現実と、私たちが選択した道
-              </p>
-          </div>
-          
-          <div class="story-intro loading">
-              <div class="story-text">
-                  <p>2017年、私たちは「デジタル技術を使ったモノづくりを楽しむコミュニティ」として活動を始めました。</p>
-                  <p>しかし活動を続ける中で、<strong>参加者の6〜7割が「居場所づくり」「仲間との交流」「自立を模索するための試行的な参加」</strong>を目的とするようになりました。沖縄県の小学生不登校率が全国ワースト1位という現実と向き合うことになったのです。</p>
-              </div>
-          </div>
-          
-          <div class="why-npo-content">
-              <div class="npo-reason-card loading">
-                  <div class="reason-icon">📊</div>
-                  <h3>活動の性質が根本的に変化したから</h3>
-                  <p>当初のプログラミング教育から、居場所づくりや自立支援が中心的な活動となりました。この変化に対応するため、継続的で安定した支援体制が必要になりました。</p>
-              </div>
-              
-              <div class="npo-reason-card loading">
-                  <div class="reason-icon">🔄</div>
-                  <h3>相互扶助の循環が実際に生まれ始めたから</h3>
-                  <p>支援を受けていた子どもたちが他の子どもたちの学びを支援し、自らの自立を深めていく取り組みが始まっています。この循環を制度として定着させる必要があります。</p>
-              </div>
-              
-              <div class="npo-reason-card loading">
-                  <div class="reason-icon">🌐</div>
-                  <h3>協働する専門家・機関の範囲を拡大する必要があるから</h3>
-                  <p>教育格差や自立支援といった社会課題の解決には、より多くの専門家や機関との連携が不可欠です。NPO法人として信頼性と継続性を確保することが必要です。</p>
-              </div>
-              
-              <div class="npo-reason-card loading">
-                  <div class="reason-icon">🏛️</div>
-                  <h3>将来的に子どもたちが活動を引き継ぐ組織にするため</h3>
-                  <p>子どもたちが本会の活動を引き継ぎ、自らの経験をもとに社会課題を解決していく組織となるよう、オープンな合議制による運営体制を構築します。</p>
-              </div>
-          </div>
-          
-          <div class="npo-vision loading">
-              <div class="vision-quote">
-                  <blockquote>
-                      「自らの経験をもとに仲間と協力しながら、社会課題を解決していく<br>
-                      ——そんな『相互扶助の循環』が育まれるコミュニティを目指して」
-                  </blockquote>
-                  <cite>設立趣旨書より</cite>
-              </div>
-          </div>
-      </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="starcrafters" class="section">
-      <div class="section-container">
-          <div class="section-header loading">
-              <h2 class="section-title">🏛️ StarCraftersについて</h2>
-             <p class="section-subtitle">
-                 理念と活動方針
-             </p>
-         </div>
-         
-         <div class="about-content">
-             <div class="about-text loading">
-                 <h3>私たちの使命</h3>
-                 <p><strong>StarCrafters</strong>は、自立への道や居場所に課題を抱える子供たちとその家族を支援する非営利組織として活動しています。</p>
-                 <p>私たちは、行政や企業では対応しきれない教育・子育ての課題に対し、地域密着型のきめ細かな支援を提供します。営利を目的とせず、すべての活動を社会貢献に向けています。</p>
-                 <p>「StarCrafters」という名称は、古代ギリシャの哲学者プルタルコスの教育思想「心とは、水を注がれる器ではなく、火を灯される薪である」に由来し、NPOとして子どもたち一人ひとりの可能性を引き出すことを使命としています。</p>
-             </div>
-             <div class="hero-visual loading">
-                 <div class="hero-card">
-                     <div class="npo-label">NPO法人の理念</div>
-                     <div class="star-icon">🔥</div>
-                     <h3>教育の本質</h3>
-                     <p>"The mind is not a vessel to be filled, but a fire to be kindled."<br><small>- Plutarch</small></p>
-                 </div>
-             </div>
-         </div>
-
-         <div class="vision-grid">
-             <div class="vision-card loading">
-                 <div class="vision-icon">🎓</div>
-                 <h3>先進的学習の場</h3>
-                 <p>学習・体験機会を通した出会いと社会との繋がり、自立の選択肢を提供します</p>
-             </div>
-             <div class="vision-card loading">
-                 <div class="vision-icon">🤝</div>
-                 <h3>自立への伴走</h3>
-                 <p>それぞれの居場所・活躍の場で、心理的安全性あるひとの繋がりを支援します</p>
-             </div>
-             <div class="vision-card loading">
-                 <div class="vision-icon">🌟</div>
-                 <h3>相互扶助コミュニティ</h3>
-                 <p>子どもたちを支援するだけでなく、関わる大人たち自身も共に学び合い、支え合いながら、それぞれが自らの「輝き」を見出していくコミュニティを構築します</p>
-             </div>
-         </div>
-     </div>
- </section>
-
-  <!-- 4. 実績・成果セクション -->
-  <section id="results" class="section activities">
-      <div class="section-container">
-          <div class="section-header loading">
-              <h2 class="section-title">📊 実績・成果</h2>
-              <p class="section-subtitle">
-                  8年間の継続活動で築いた信頼と実績
-              </p>
-          </div>
-          
-
-          
-          <!-- 活動実績テーブル -->
-          <div class="activities-content loading">
-              <div class="activities-table-container">
-                  <table class="activities-table">
-                      <thead>
-                          <tr>
-                              <th>活動</th>
-                              <th>時期</th>
-                              <th>連携先</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                              <td>沖縄県内自治体デジタル人財育成事業</td>
-                              <td>2019年〜現在</td>
-                              <td>沖縄県内自治体</td>
-                          </tr>
-                          <tr>
-                              <td>沖縄県内児童養護施設向けワークショップ</td>
-                              <td>2024年2ヶ月に1回</td>
-                              <td>県外NPO法人</td>
-                          </tr>
-                          <tr>
-                              <td>プログラミングコンテスト沖縄大会主催</td>
-                              <td>2024年11〜1月</td>
-                              <td>県外企業・県内大学</td>
-                          </tr>
-                          <tr>
-                              <td>沖縄県内小学校プログラミング講座</td>
-                              <td>2025年1月</td>
-                              <td>沖縄県内教育委員会</td>
-                          </tr>
-                          <tr>
-                              <td>探究学習イベント開催</td>
-                              <td>2022年〜随時開催</td>
-                              <td>県外教育企業</td>
-                          </tr>
-                          <tr>
-                              <td>eSportsゲーム体験＆子育て情報交換会!!</td>
-                              <td>2024年</td>
-                              <td>県内支援コミュニティ</td>
-                          </tr>
-                          <tr>
-                              <td>不登校関連イベント共催</td>
-                              <td>2024年</td>
-                              <td>全国の支援コミュニティ</td>
-                          </tr>
-                          <tr>
-                              <td>沖縄県内大学アプリ開発講座</td>
-                              <td>2023〜2024年</td>
-                              <td>沖縄県内の大学</td>
-                          </tr>
-                          <tr>
-                              <td>県外大学とコンピュータサイエンス講座</td>
-                              <td>2022〜2023年</td>
-                              <td>県外の大学</td>
-                          </tr>
-                          <tr>
-                              <td>沖縄県内教員向け生成AI講座</td>
-                              <td>2023年</td>
-                              <td>沖縄県内の大学</td>
-                          </tr>
-                          <tr>
-                              <td>沖縄県内プログラミングコンテスト開催</td>
-                              <td>2023年</td>
-                              <td>県外企業・自治体</td>
-                          </tr>
-                          <tr>
-                              <td>ロボコン沖縄大会開催</td>
-                              <td>2019〜2023年</td>
-                              <td>沖縄ロボコン事務局</td>
-                          </tr>
-                      </tbody>
-                  </table>
-              </div>
-              
-              <div class="activities-images">
-                  <img src="img/これまでの活動実績.png" alt="これまでの活動実績" class="activity-photo">
-              </div>
-          </div>
-      </div>
-  </section>
-
- <!-- Programs Section -->
- <section id="programs" class="section programs">
-     <div class="section-container">
-         <div class="section-header loading">
-             <h2 class="section-title">🌟 StarCraftersの事業内容</h2>
-             <p class="section-subtitle">
-                 NPO法人として展開する4つの主要事業
-             </p>
-         </div>
-         
-         <div class="programs-grid">
-             <div class="program-card loading">
-                 <div class="program-header">
-                     子育て・教育イベント事業
-                 </div>
-                 <div class="program-content">
-                     <ul>
-                         <li>デジタル人財育成プログラム</li>
-                         <li>探究学習教室の運営</li>
-                         <li>デジタルワークショップ</li>
-                         <li>保護者向け支援イベント
-                            </ul>
-                </div>
+    <!-- Programs Section -->
+    <section id="programs" class="section programs">
+        <div class="section-container">
+            <div class="section-header loading">
+                <h2 class="section-title">🌟 取り組んでいること</h2>
             </div>
 
-            <div class="program-card loading">
-                <div class="program-header">
-                    コンテンツ発信事業
+            <div class="programs-grid">
+                <div class="program-card loading">
+                    <div class="program-header">子育て・教育イベント事業</div>
+                    <div class="program-content">
+                        <ul>
+                            <li>デジタル人財育成プログラム</li>
+                            <li>探究学習・デジタル技術講座</li>
+                            <li>保護者向け支援イベント</li>
+                            <li>プログラミングコミュニティCoderDojoの運営</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="program-content">
-                    <ul>
-                        <li>子育て支援情報の発信</li>
-                        <li>サードプレイス情報提供</li>
-                        <li>教育・子育てコンテンツ制作</li>
-                        <li>活動・イベント情報</li>
-                    </ul>
+                <div class="program-card loading">
+                    <div class="program-header">自立支援事業</div>
+                    <div class="program-content">
+                        <ul>
+                            <li>児童養護施設向け学習機会の提供</li>
+                            <li>職場体験会の実施</li>
+                            <li>外部機関と連携した就労支援・相談</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-
-            <div class="program-card loading">
-                <div class="program-header">
-                    児童養護施設向け事業
-                </div>
-                <div class="program-content">
-                    <ul>
-                        <li>デジタル創作講座の提供</li>
-                        <li>学習体験ワークショップ</li>
-                        <li>進路・キャリア支援</li>
-                        <li>自立支援プログラム</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="program-card loading">
-                <div class="program-header">
-                    自立支援事業
-                </div>
-                <div class="program-content">
-                    <ul>
-                        <li>職場体験企業情報の提供</li>
-                        <li>職場体験会の実施</li>
-                        <li>就労支援・相談</li>
-                        <li>社会復帰サポート</li>
-                    </ul>
+                <div class="program-card loading">
+                    <div class="program-header">コンテンツ発信事業</div>
+                    <div class="program-content">
+                        <ul>
+                            <li>子育て支援情報の発信</li>
+                            <li>教育・子育てコンテンツ制作</li>
+                            <li>活動・イベント情報</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -432,47 +132,71 @@
         <!-- Content Examples Section -->
         <div class="content-examples">
             <div class="section-header loading">
-                <h3 style="font-size: 2rem; margin-bottom: 2rem;">📝 コンテンツ例</h3>
+                <h3 style="font-size: 2rem; margin-bottom: 2rem">📝 コンテンツ例</h3>
             </div>
-            
+
             <div class="examples-grid">
                 <div class="example-card loading">
-                    <div class="example-image" style="background-image: url('img/生成AIデジタル作品創り.png'); background-size: cover; background-position: center;"></div>
+                    <div class="example-image" style="
+                        background-image: url('img/生成AIデジタル作品創り.png');
+                        background-size: cover;
+                        background-position: center;
+                    "></div>
                     <div class="example-content">
                         <h3>生成AIデジタル作品創り</h3>
                         <p>AI技術を活用したクリエイティブな作品制作</p>
                     </div>
                 </div>
                 <div class="example-card loading">
-                    <div class="example-image" style="background-image: url('img/初心者向けプログラミング講座.png'); background-size: cover; background-position: center;"></div>
+                    <div class="example-image" style="
+                        background-image: url('img/初心者向けプログラミング講座.png');
+                        background-size: cover;
+                        background-position: center;
+                    "></div>
                     <div class="example-content">
                         <h3>初心者向けプログラミング講座</h3>
                         <p>基礎から学べるプログラミング教育</p>
                     </div>
                 </div>
                 <div class="example-card loading">
-                    <div class="example-image" style="background-image: url('img/ロボコンチャレンジ.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="example-image" style="
+                        background-image: url('img/ロボコンチャレンジ.jpg');
+                        background-size: cover;
+                        background-position: center;
+                    "></div>
                     <div class="example-content">
                         <h3>ロボコンチャレンジ</h3>
                         <p>ロボット競技を通じた技術習得</p>
                     </div>
                 </div>
                 <div class="example-card loading">
-                    <div class="example-image" style="background-image: url('img/コンテストチャレンジ.png'); background-size: cover; background-position: center;"></div>
+                    <div class="example-image" style="
+                        background-image: url('img/コンテストチャレンジ.png');
+                        background-size: cover;
+                        background-position: center;
+                    "></div>
                     <div class="example-content">
                         <h3>コンテストチャレンジ</h3>
                         <p>様々なコンテストへの参加支援</p>
                     </div>
                 </div>
                 <div class="example-card loading">
-                    <div class="example-image" style="background-image: url('img/アプリ開発講座.png'); background-size: cover; background-position: center;"></div>
+                    <div class="example-image" style="
+                        background-image: url('img/アプリ開発講座.png');
+                        background-size: cover;
+                        background-position: center;
+                    "></div>
                     <div class="example-content">
                         <h3>アプリ開発講座</h3>
                         <p>実践的なアプリケーション開発</p>
                     </div>
                 </div>
                 <div class="example-card loading">
-                    <div class="example-image" style="background-image: url('img/探究学習.png'); background-size: cover; background-position: center;"></div>
+                    <div class="example-image" style="
+                        background-image: url('img/探究学習.png');
+                        background-size: cover;
+                        background-position: center;
+                    "></div>
                     <div class="example-content">
                         <h3>探究学習講座/イベント</h3>
                         <p>自ら学ぶ力を育む探究型学習</p>
@@ -480,217 +204,367 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Team Section -->
-<section id="team" class="section">
-    <div class="section-container">
-        <div class="section-header loading">
-            <h2 class="section-title">👥 メンバー</h2>
-            <p class="section-subtitle">
-                多様な専門性と経験を持つ13名のメンバーが、それぞれの強みを活かして社会貢献活動に取り組んでいます
-            </p>
-        </div>
-        
-        <div class="team-grid">
-            <div class="team-member loading">
-                <div class="member-avatar" style="
-                background-image: url('img/icon/yamaguchi.png'); 
-                background-size: cover; 
-                background-position: center; 
-                background-repeat: no-repeat;
-                background-color: #14b8a6;
-                color: transparent;
-                font-size: 0;
-            ">M</div>
-                <div class="member-name">Mitsushi</div>
-                <div class="member-role">ITエンジニア・NPO発起人</div>
+    <!-- Results Section -->
+    <section id="results" class="section activities">
+        <div class="section-container">
+            <div class="section-header loading">
+                <h2 class="section-title">📊 これまでの活動例</h2>
             </div>
-            <div class="team-member loading">
-                <div class="member-avatar">S</div>
-                <div class="member-name">Satsuki</div>
-                <div class="member-role">企業経営者</div>
-            </div>
-            <div class="team-member loading">
-                <div class="member-avatar" style="
-                    background-image: url('img/icon/jun.png'); 
-                    background-size: cover; 
-                    background-position: center; 
-                    background-repeat: no-repeat;
-                    background-color: #14b8a6;
-                    color: transparent;
-                    font-size: 0;
-                ">J</div>
-                <div class="member-name">Jun</div>
-                <div class="member-role">Drone Meister</div>
-            </div>
-            <div class="team-member loading">
-                <div class="member-avatar">S</div>
-                <div class="member-name">Shinobu</div>
-                <div class="member-role">企業経営者</div>
-            </div>
-            <div class="team-member loading">
-                <div class="member-avatar">Y</div>
-                <div class="member-name">Yumiko</div>
-                <div class="member-role">保育士</div>
-            </div>
-            <div class="team-member loading">
-                <div class="member-avatar">M</div>
-                <div class="member-name">Makoto</div>
-                <div class="member-role">Office Professional</div>
-            </div>
-            <div class="team-member loading">
-                <div class="member-avatar">R</div>
-                <div class="member-name">Rie</div>
-                <div class="member-role">看護師</div>
-            </div>
-            <div class="team-member loading">
-                <div class="member-avatar">N</div>
-                <div class="member-name">Nariko</div>
-                <div class="member-role">教員・スクールカウンセラー</div>
-            </div>
-            <div class="team-member loading">
-                <div class="member-avatar">R</div>
-                <div class="member-name">Rui</div>
-                <div class="member-role">監査法人従事者</div>
-            </div>
-            <div class="team-member loading">
-                <div class="member-avatar">K</div>
-                <div class="member-name">Kiyoko</div>
-                <div class="member-role">不登校保護者会主催者</div>
-            </div>
-            <div class="team-member loading">
-                <div class="member-avatar">M</div>
-                <div class="member-name">Mika</div>
-                <div class="member-role">企業経営者</div>
-            </div>
-            <div class="team-member loading">
-               <div class="member-avatar">A</div>
-                <div class="member-name">Akira</div>
-                <div class="member-role">社会福祉法人経営者</div>
-            </div>
-            <div class="team-member loading">
-                <div class="member-avatar">M</div>
-                <div class="member-name">Monica</div>
-                <div class="member-role">保育士</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Partners Section -->
-<section id="partners" class="section programs">
-    <div class="section-container">
-        <div class="section-header loading">
-            <h2 class="section-title">🤝 パートナーシップ</h2>
-            <p class="section-subtitle">
-                様々な組織と連携し、NPOとしてより広範囲で効果的な社会貢献活動を展開しています
-            </p>
-        </div>
-        
-        <div class="programs-grid">
-            <div class="program-card loading">
-                <div class="program-header" style="background: linear-gradient(135deg, #3b82f6, #1e40af);">
-                    🎓 ハイブリッド型・探究学習
+            <div class="activities-content loading">
+                <div class="activities-table-container">
+                    <table class="activities-table">
+                        <thead>
+                            <tr>
+                                <th>活動</th>
+                                <th>時期</th>
+                                <th>連携先</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>沖縄県内自治体デジタル人財育成事業</td>
+                                <td>2019年〜現在</td>
+                                <td>沖縄県内自治体</td>
+                            </tr>
+                            <tr>
+                                <td>沖縄県内児童養護施設向けワークショップ</td>
+                                <td>2024年2ヶ月に1回</td>
+                                <td>県外NPO法人</td>
+                            </tr>
+                            <tr>
+                                <td>プログラミングコンテスト沖縄大会主催</td>
+                                <td>2024年11〜1月</td>
+                                <td>県外企業・県内大学</td>
+                            </tr>
+                            <tr>
+                                <td>沖縄県内小学校プログラミング講座</td>
+                                <td>2025年1月</td>
+                                <td>沖縄県内教育委員会</td>
+                            </tr>
+                            <tr>
+                                <td>探究学習イベント開催</td>
+                                <td>2022年〜随時開催</td>
+                                <td>県外教育企業</td>
+                            </tr>
+                            <tr>
+                                <td>eSportsゲーム体験＆子育て情報交換会!!</td>
+                                <td>2024年</td>
+                                <td>県内支援コミュニティ</td>
+                            </tr>
+                            <tr>
+                                <td>不登校関連イベント共催</td>
+                                <td>2024年</td>
+                                <td>全国の支援コミュニティ</td>
+                            </tr>
+                            <tr>
+                                <td>沖縄県内大学アプリ開発講座</td>
+                                <td>2023〜2024年</td>
+                                <td>沖縄県内の大学</td>
+                            </tr>
+                            <tr>
+                                <td>県外大学とコンピュータサイエンス講座</td>
+                                <td>2022〜2023年</td>
+                                <td>県外の大学</td>
+                            </tr>
+                            <tr>
+                                <td>沖縄県内教員向け生成AI講座</td>
+                                <td>2023年</td>
+                                <td>沖縄県内の大学</td>
+                            </tr>
+                            <tr>
+                                <td>沖縄県内プログラミングコンテスト開催</td>
+                                <td>2023年</td>
+                                <td>県外企業・自治体</td>
+                            </tr>
+                            <tr>
+                                <td>ロボコン沖縄大会開催</td>
+                                <td>2019〜2023年</td>
+                                <td>沖縄ロボコン事務局</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="program-content">
-                    <p>オンラインとオフラインを組み合わせた革新的な学習プログラム。自分たちで地域の学びの仕組みをつくる活動です。</p>
-                </div>
-            </div>
-            <div class="program-card loading">
-                <div class="program-header" style="background: linear-gradient(135deg, var(--accent-purple), #7c3aed);">
-                    📚 LEARN for CHILDREN
-                </div>
-                <div class="program-content">
-                    <p>教科書を離れて学びの楽しさに気づくプログラム。東京大学先端科学技術研究センターとの連携事業。</p>
-                </div>
-            </div>
-            <div class="program-card loading">
-                <div class="program-header" style="background: linear-gradient(135deg, var(--primary-orange), #ea580c);">
-                    📻 子育てのラジオ「Teacher Teacher」
-                </div>
-                <div class="program-content">
-                    <p>世界を回る元小学校教員とラジオプロデューサーが、子育ての悩みを専門的知見で解決するラジオ番組。</p>
+                <div class="activities-images">
+                    <img src="img/これまでの活動実績.png" alt="これまでの活動実績" class="activity-photo" />
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- 5. Apply Section（参加方法） -->
-<section id="apply" class="section" style="background: linear-gradient(135deg, #f0fdf4, #ecfdf5);">
-   <div class="section-container">
-       <div class="section-header loading">
-           <h2 class="section-title" style="color: var(--npo-green);">📋 参加・支援申し込み</h2>
-           <p class="section-subtitle">
-               StarCraftersの活動への参加や支援をご希望の方は、こちらからお問い合わせください
-           </p>
-       </div>
-       
-       <div class="loading" style="text-align: center; max-width: 800px; margin: 0 auto;">
-           <div style="background: white; padding: 3rem; border-radius: 20px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08); border: 2px solid var(--npo-green);">
-               <div style="font-size: 3rem; margin-bottom: 1.5rem;">🌟</div>
-               <h3 style="color: var(--npo-green); margin-bottom: 1.5rem; font-size: 1.5rem;">一緒に子どもたちの未来を創りませんか？</h3>
-               <p style="margin-bottom: 2rem; line-height: 1.8;">
-                   ボランティア参加、寄付、パートナーシップ、イベント参加など、<br>
-                   様々な形でご支援いただけます。
-               </p>
-               <a href="https://forms.gle/xhUdjETehs2s5TNK7" target="_blank" class="btn-primary" style="font-size: 1.1rem; padding: 1.2rem 2.5rem;">
-                   📝 お問い合わせフォームへ
-               </a>
-               <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--neutral-600);">
-                   ※外部サイト（Google Forms）が開きます
-               </p>
-           </div>
-       </div>
-   </div>
-</section>
+    <!-- About / Mission Section -->
+    <section id="about" class="mission">
+        <div class="mission-container">
+            <div class="section-header loading">
+                <h2 class="section-title" style="color: var(--npo-green)">私たちについて</h2>
+            </div>
+            <div class="mission-text loading" style="text-align: center;">
+                <h3>目指すもの</h3>
+                <div class="story-text">
+                    <p>
+                        私たちは、世代を超えてともに学び合い、支え合いながら、それぞれが自らの「輝き」を見出していく――そんなコミュニティを目指しています。「StarCrafters（スタークラフターズ）」という名称は「心とは、水を注がれる器ではなく、火を灯される薪である」という古代哲学者の教育思想に着想を得たものです。学びの場を通して互いに支え合いながら、世代を超えて引き継がれていく、そんな相互扶助が循環が私たちの願いです。
+                    </p>
+                </div>
+                <div class="section-container" style="margin-top: 20px;">
+                    <h3>私たちの学びの場</h3>
+                    <div style="
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                        gap: 2rem;
+                        margin-bottom: 4rem;
+                    ">
+                        <div class="solution-card loading" style="
+                            background: white;
+                            padding: 1.5rem;
+                            border-radius: 15px;
+                            text-align: center;
+                            border: 1px solid var(--primary-teal);
+                        ">
+                            <div style="font-size: 3rem; margin-bottom: 1rem">🔧</div>
+                            <h3 style="
+                                color: var(--primary-teal);
+                                margin-bottom: 1rem;
+                                font-size: 1.3rem;
+                            ">
+                                楽しみながら学ぶ
+                            </h3>
+                            <p>
+                                AIやプログラミングといった、これからの時代に必要な技術に触れながら、時には他の参加者と共創・協働しながら、探究的に学びあいます。
+                            </p>
+                        </div>
+                        <div class="solution-card loading" style="
+                            background: white;
+                            padding: 1.5rem;
+                            border-radius: 15px;
+                            text-align: center;
+                            border: 1px solid var(--npo-green);
+                        ">
+                            <div style="font-size: 3rem; margin-bottom: 1rem">🏠</div>
+                            <h3 style="
+                                color: var(--npo-green);
+                                margin-bottom: 1rem;
+                                font-size: 1.3rem;
+                            ">
+                                世代を超えて学ぶ
+                            </h3>
+                            <p>
+                                年代問わず、共に学び合う学習コンテンツを設計しています。時には子どもがメンターとなり大人に教える、異年齢の参加者が共に教え合う学びの場です。
+                            </p>
+                        </div>
+                        <div class="solution-card loading" style="
+                            background: white;
+                            padding: 1.5rem;
+                            border-radius: 15px;
+                            text-align: center;
+                            border: 1px solid var(--primary-orange);
+                        ">
+                            <div style="font-size: 3rem; margin-bottom: 1rem">🎯</div>
+                            <h3 style="
+                                color: var(--primary-orange);
+                                margin-bottom: 1rem;
+                                font-size: 1.3rem;
+                            ">
+                                自身を学ぶ
+                            </h3>
+                            <p>
+                                学びを通して世界の仕組みを知り、仲間との活動を通じて社会とつながり、自身の関心に向き合っていくことで、自身で未来の選択肢を広げていきます。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Contact Section -->
-<section id="contact" class="section contact">
-   <div class="section-container">
-       <div class="contact-content">
-           <div class="section-header loading">
-               <h2 class="section-title" style="color: white;">📞 お問い合わせ</h2>
-               <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.9);">
-                   ご質問やご相談がございましたら、お気軽にお問い合わせください
-               </p>
-           </div>
-           
-           <div class="contact-item">
-                   <strong>📧 お問い合わせ:</strong> 
-                   <a href="https://forms.gle/xhUdjETehs2s5TNK7" target="_blank" style="color: white; text-decoration: underline;">📝 申し込みフォームへ</a>
-               </div>
-               <div class="contact-item">
-                   <strong>📍 所在地:</strong> 沖縄県宜野湾市
-               </div>
-               <div class="contact-item">
-                   <strong>📱 公式SNS:</strong> 
-                   <a href="https://www.instagram.com/star__crafters/?locale=ja_JP" target="_blank" style="color: white; text-decoration: underline; margin-left: 0.5rem;">Instagram</a> | 
-                   <a href="https://x.com/Star__Crafters" target="_blank" style="color: white; text-decoration: underline; margin-left: 0.5rem;">X</a>
-               </div>
-           
-           <div class="contact-buttons loading">
-    <a href="https://forms.gle/xhUdjETehs2s5TNK7" target="_blank" class="btn-primary">
-        📝 お問い合わせ
-    </a>
-   
-</div>
-           
-           <p style="margin-top: 3rem; opacity: 0.9; font-size: 1.1rem;" class="loading">
-               ご不明な点がございましたら、遠慮なくお声かけください
-           </p>
-       </div>
-   </div>
-</section>
+    <!-- Team Section -->
+    <section id="team" class="section">
+        <div class="section-container">
+            <div class="section-header loading">
+                <h2 class="section-title">👥 メンバー</h2>
+                <p class="section-subtitle">
+                    多様な専門性と経験を持つメンバーが、それぞれの強みを活かしながら子どもたちや保護者と共に学びあいながら取り組んでいます。
+                </p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member loading">
+                    <div class="member-avatar" style="
+                        background-image: url('img/icon/yamaguchi.png');
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-color: #14b8a6;
+                        color: transparent;
+                        font-size: 0;
+                    ">
+                        M
+                    </div>
+                    <div class="member-name">Mitsushi</div>
+                    <div class="member-role">ITエンジニア・NPO発起人</div>
+                </div>
+                <div class="team-member loading">
+                    <div class="member-avatar">S</div>
+                    <div class="member-name">Satsuki</div>
+                    <div class="member-role">企業経営者</div>
+                </div>
+                <div class="team-member loading">
+                    <div class="member-avatar" style="
+                        background-image: url('img/icon/jun.png');
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-color: #14b8a6;
+                        color: transparent;
+                        font-size: 0;
+                    ">
+                        J
+                    </div>
+                    <div class="member-name">Jun</div>
+                    <div class="member-role">Drone Meister</div>
+                </div>
+                <div class="team-member loading">
+                    <div class="member-avatar">S</div>
+                    <div class="member-name">Shinobu</div>
+                    <div class="member-role">企業経営者</div>
+                </div>
+                <div class="team-member loading">
+                    <div class="member-avatar">Y</div>
+                    <div class="member-name">Yumiko</div>
+                    <div class="member-role">保育士</div>
+                </div>
+                <div class="team-member loading">
+                    <div class="member-avatar">M</div>
+                    <div class="member-name">Makoto</div>
+                    <div class="member-role">Office Professional</div>
+                </div>
+                <div class="team-member loading">
+                    <div class="member-avatar">R</div>
+                    <div class="member-name">Rie</div>
+                    <div class="member-role">看護師</div>
+                </div>
+                <div class="team-member loading">
+                    <div class="member-avatar">N</div>
+                    <div class="member-name">Nariko</div>
+                    <div class="member-role">教員・スクールカウンセラー</div>
+                </div>
+                <div class="team-member loading">
+                    <div class="member-avatar">R</div>
+                    <div class="member-name">Rui</div>
+                    <div class="member-role">監査法人従事者</div>
+                </div>
+                <div class="team-member loading">
+                    <div class="member-avatar">K</div>
+                    <div class="member-name">Kiyoko</div>
+                    <div class="member-role">不登校保護者会主催者</div>
+                </div>
+                <div class="team-member loading">
+                    <div class="member-avatar">M</div>
+                    <div class="member-name">Mika</div>
+                    <div class="member-role">企業経営者</div>
+                </div>
+                <div class="team-member loading">
+                    <div class="member-avatar">A</div>
+                    <div class="member-name">Akira</div>
+                    <div class="member-role">社会福祉法人経営者</div>
+                </div>
+                <div class="team-member loading">
+                    <div class="member-avatar">M</div>
+                    <div class="member-name">Monica</div>
+                    <div class="member-role">保育士</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Footer -->
-<footer class="footer">
-    <div class="section-container">
-        <p>&copy; 2025 <strong>特定非営利活動法人StarCrafters</strong></p>
-    </div>
-</footer>
-<script src="js/script.js"></script>
+    <!-- Partners Section -->
+    <section id="partners" class="section programs">
+        <div class="section-container">
+            <div class="section-header loading">
+                <h2 class="section-title">🤝 パートナーシップ</h2>
+                <p class="section-subtitle">
+                    未来を担う子どもたちと、ともに学びあう機会を作ってくれる仲間を随時募集しています。
+                </p>
+            </div>
+
+            <div class="programs-grid">
+                <div class="program-card loading">
+                    <div class="program-header" style="background: linear-gradient(135deg, #3b82f6, #1e40af)">
+                        🎓 ハイブリッド型・探究学習
+                    </div>
+                    <div class="program-content">
+                        <p>
+                            オンラインとオフラインを組み合わせた革新的な学習プログラム。自分たちで地域の学びの仕組みをつくる活動です。
+                        </p>
+                    </div>
+                </div>
+                <div class="program-card loading">
+                    <div class="program-header" style="
+                        background: linear-gradient(135deg, var(--accent-purple), #7c3aed);
+                    ">
+                        📚 LEARN for CHILDREN
+                    </div>
+                    <div class="program-content">
+                        <p>
+                            教科書を離れて学びの楽しさに気づくプログラム。東京大学先端科学技術研究センターとの連携事業。
+                        </p>
+                    </div>
+                </div>
+                <div class="program-card loading">
+                    <div class="program-header" style="
+                        background: linear-gradient(135deg, var(--primary-orange), #ea580c);
+                    ">
+                        📻 子育てのラジオ「Teacher Teacher」
+                    </div>
+                    <div class="program-content">
+                        <p>
+                            世界を回る元小学校教員とラジオプロデューサーが、子育ての悩みを専門的知見で解決するラジオ番組。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="section-container">
+            <div class="contact-content">
+                <div class="section-header loading">
+                    <h2 class="section-title" style="color: white">📞 お問い合わせ</h2>
+                    <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.9)">
+                        パートナーシップ、参加の問合せ、支援の申し込みなどお気軽にお問い合わせ下さい。イベント情報の発信は公式SNSで行っています。
+                    </p>
+                </div>
+                <div class="contact-buttons loading">
+                    <a href="https://forms.gle/xhUdjETehs2s5TNK7" target="_blank" class="btn-primary">
+                        📝 お問い合わせ
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <strong>📱 公式SNS:</strong>
+                    <a href="https://www.instagram.com/star__crafters/?locale=ja_JP" target="_blank" style="
+                        color: white;
+                        text-decoration: underline;
+                        margin-left: 0.5rem;
+                    ">Instagram</a>
+                    |
+                    <a href="https://x.com/Star__Crafters" target="_blank" style="
+                        color: white;
+                        text-decoration: underline;
+                        margin-left: 0.5rem;
+                    ">X</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container">
+            <p>&copy; 2025 <strong>特定非営利活動法人StarCrafters</strong></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

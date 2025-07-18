@@ -58,6 +58,44 @@ document.addEventListener('DOMContentLoaded', function() {
           });
       });
   }
+
+  // Hero Slideshow
+  const slideshowContainer = document.querySelector('.slideshow-container');
+  if (slideshowContainer) {
+      const imageCount = 12; // スライドショーで表示する画像の総数を指定
+      const keyvisualPath = 'img/keyvisual/';
+
+      for (let i = 1; i <= imageCount; i++) {
+          // 命名規則 '001.jpg', '002.jpg'... に従ってファイル名を生成
+          const imageName = i.toString().padStart(3, '0') + '.jpg';
+
+          const slide = document.createElement('div');
+          slide.className = 'mySlides fade';
+          
+          const img = document.createElement('img');
+          img.src = keyvisualPath + imageName;
+          img.alt = `キービジュアル${i} - StarCraftersの活動風景`;
+          
+          slide.appendChild(img);
+          slideshowContainer.appendChild(slide);
+      }
+
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          if (slides.length === 0) return;
+
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          slideIndex = (slideIndex % slides.length) + 1;
+          slides[slideIndex - 1].style.display = "block";
+          setTimeout(showSlides, 4000); // 4秒ごとに画像を切り替え
+      }
+  }
 });
 
 // Header scroll effect
