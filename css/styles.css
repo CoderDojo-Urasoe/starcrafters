@@ -1495,3 +1495,40 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+/* Logo Design Section */
+#logo-design {
+    background: var(--neutral-800);
+}
+
+#logo-design .section-title {
+    color: white;
+}
+
+.logo-design-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--neutral-200);
+}
+
+.logo-design-content .designer-credit {
+    font-size: 1rem;
+    color: var(--neutral-600);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.logo-design-content h3 {
+    font-size: 1.2rem;
+    color: var(--neutral-700);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.logo-design-content p {
+    line-height: 1.8;
+    color: var(--neutral-600);
+}
