@@ -1495,7 +1495,7 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
-/* Logo Design Section */
+/* Logo Design Sectionに関するCSS */
 #logo-design {
     background: var(--neutral-800);
 }
