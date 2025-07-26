@@ -96,6 +96,35 @@ document.addEventListener('DOMContentLoaded', function() {
           setTimeout(showSlides, 4000); // 4秒ごとに画像を切り替え
       }
   }
+
+  // SNS Share Button setup
+  const shareButtonsContainer = document.querySelector('.share-buttons');
+  if (shareButtonsContainer) {
+      const shareUrl = window.location.href;
+      // ページのタイトルを取得。h2.section-title がなければ document.title を使う
+      const pageTitleElement = document.querySelector('.section-title');
+      const pageTitle = pageTitleElement ? pageTitleElement.innerText : document.title;
+      const shareText = `${pageTitle} に参加しよう！ #StarCrafters`;
+
+      const encodedUrl = encodeURIComponent(shareUrl);
+      const encodedText = encodeURIComponent(shareText);
+
+      const shareX = shareButtonsContainer.querySelector('.share-x');
+      if (shareX) {
+          shareX.href = `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedText}`;
+      }
+
+      const shareFacebook = shareButtonsContainer.querySelector('.share-facebook');
+      if (shareFacebook) {
+          shareFacebook.href = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
+      }
+
+      const shareInstagram = shareButtonsContainer.querySelector('.share-instagram');
+      if (shareInstagram) {
+          // Instagramには直接シェアするURLがないため、プロフィールページへのリンクを設定
+          shareInstagram.href = 'https://www.instagram.com/star__crafters/?locale=ja_JP';
+      }
+  }
 });
 
 // Header scroll effect
@@ -110,17 +139,19 @@ window.addEventListener('scroll', function() {
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-          const offsetTop = target.offsetTop - 80;
-          window.scrollTo({
-              top: offsetTop,
-              behavior: 'smooth'
-          });
-      }
-  });
+    anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        // hrefが '#' で始まるページ内リンクの場合のみ処理
+        if (href.startsWith('#') && href.length > 1) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                const offsetTop = target.offsetTop - 80;
+                window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+            }
+        }
+        // それ以外のリンク（href="#"だけのリンクや外部リンク）はデフォルトの動作に任せる
+    });
 });
 
 // Intersection Observer for animations

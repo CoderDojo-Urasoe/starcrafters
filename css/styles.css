@@ -1,3 +1,4 @@
+
 :root {
     --primary-blue: #0ea5e9;
     --primary-teal: #14b8a6;
@@ -1531,4 +1532,150 @@ html {
 .logo-design-content p {
     line-height: 1.8;
     color: var(--neutral-600);
+}
+
+/* SNS Share Buttons Component */
+.share-buttons {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid var(--neutral-200);
+}
+.share-buttons p {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: var(--neutral-700);
+    font-size: 1rem;
+}
+.share-buttons a {
+    display: inline-block;
+    margin: 0 0.75rem;
+    font-size: 2.2rem;
+    color: var(--neutral-500);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.share-buttons a:hover {
+    transform: translateY(-4px);
+}
+.share-buttons .share-x:hover { color: #000000; /* X brand color */ }
+.share-buttons .share-facebook:hover { color: #1877F2; /* Facebook brand color */ }
+.share-buttons .share-instagram:hover { color: #E4405F; /* Instagram brand color */ }
+
+/* Added for inline style removal */
+
+.content-examples .section-header h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.example-image {
+    background-size: cover;
+    background-position: center;
+}
+
+.example-image-activity-01 { background-image: url('../img/activity-01.jpg'); }
+.example-image-activity-02 { background-image: url('../img/activity-02.jpg'); }
+.example-image-activity-03 { background-image: url('../img/activity-03.jpg'); }
+.example-image-activity-04 { background-image: url('../img/activity-04.jpg'); }
+.example-image-activity-05 { background-image: url('../img/activity-05.jpg'); }
+.example-image-activity-06 { background-image: url('../img/activity-06.jpg'); }
+.example-image-generative-ai { background-image: url('../img/example-generative-ai.png'); }
+.example-image-programming-beginner { background-image: url('../img/example-programming-beginner.png'); }
+.example-image-robocon-challenge { background-image: url('../img/example-robocon-challenge.jpg'); }
+.example-image-contest-challenge { background-image: url('../img/example-contest-challenge.png'); }
+.example-image-app-dev { background-image: url('../img/example-app-dev.png'); }
+.example-image-inquiry-learning { background-image: url('../img/example-inquiry-learning.png'); }
+
+#about .section-title {
+    color: var(--npo-green);
+}
+
+.mission-text {
+    text-align: center;
+}
+
+.mission-container .section-container {
+    margin-top: 20px;
+}
+
+.solution-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.solution-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.solution-card.solution-card--teal {
+    border: 1px solid var(--primary-teal);
+}
+
+.solution-card.solution-card--green {
+    border: 1px solid var(--npo-green);
+}
+
+.solution-card.solution-card--orange {
+    border: 1px solid var(--primary-orange);
+}
+
+.solution-card .icon-wrapper {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.solution-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.solution-card.solution-card--teal h3 {
+    color: var(--primary-teal);
+}
+
+.solution-card.solution-card--green h3 {
+    color: var(--npo-green);
+}
+
+.solution-card.solution-card--orange h3 {
+    color: var(--primary-orange);
+}
+
+.member-avatar {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #14b8a6;
+    color: transparent;
+    font-size: 0;
+}
+
+.member-avatar.member-avatar-yamaguchi { background-image: url('../img/icon/yamaguchi.png'); }
+.member-avatar.member-avatar-jun { background-image: url('../img/icon/jun.png'); }
+.member-avatar.member-avatar-rie { background-image: url('../img/icon/rie.png'); }
+.member-avatar.member-avatar-tamanari { background-image: url('../img/icon/tamanari.png'); }
+.member-avatar.member-avatar-monica { background-image: url('../img/icon/monica.png'); }
+
+#partners .program-card:nth-child(1) .program-header {
+    background: linear-gradient(135deg, #3b82f6, #1e40af);
+}
+
+#partners .program-card:nth-child(2) .program-header {
+    background: linear-gradient(135deg, var(--primary-orange), #ea580c);
+}
+
+#partners .program-card:nth-child(3) .program-header {
+    background: linear-gradient(135deg, var(--accent-purple), #7c3aed);
+}
+
+#contact .section-title {
+    color: white;
+}
+
+#contact .section-subtitle {
+    color: rgba(255, 255, 255, 0.9);
 }
