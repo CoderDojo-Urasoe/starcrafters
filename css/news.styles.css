@@ -99,6 +99,15 @@ main {
     white-space: nowrap;
 }
 
+.event-highlight h6 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #000;
+    display: inline-block;
+    white-space: nowrap;
+}
+
 .event-highlight p {
     font-size: 1.1rem;
     line-height: 1.8;
@@ -118,13 +127,9 @@ main {
     padding: 1.5rem;
     border-radius: 15px;
     border: 1px solid var(--neutral-200);
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 2rem; /* Space between columns */
-}
-
-.communicator-profile .communicator-column {
-    /* Styles for each column if needed */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 2rem; /* Space between items */
 }
 
 .communicator-profile .communicator-image {
