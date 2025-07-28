@@ -1659,6 +1659,7 @@ html {
 .member-avatar.member-avatar-rie { background-image: url('../img/icon/rie.png'); }
 .member-avatar.member-avatar-tamanari { background-image: url('../img/icon/tamanari.png'); }
 .member-avatar.member-avatar-monica { background-image: url('../img/icon/monica.png'); }
+.member-avatar.member-avatar-aki { background-image: url('../img/icon/aki.png'); }
 
 #partners .program-card:nth-child(1) .program-header {
     background: linear-gradient(135deg, #3b82f6, #1e40af);
