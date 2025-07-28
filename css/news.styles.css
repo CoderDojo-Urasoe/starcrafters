@@ -4,12 +4,25 @@ main {
     padding-top: 120px; /* 固定ヘッダーの高さ分 */
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .event-header-image {
     width: 100%;
     height: 300px;
     object-fit: cover;
     border-radius: 20px;
     margin-bottom: 2rem;
+}
+
+.ai-disclaimer {
+    text-align: right;
+    margin-top: 5px;
+    font-size: 0.8rem; /* Adjust as needed */
+    color: var(--neutral-500);
 }
 
 .event-details {
@@ -21,12 +34,15 @@ main {
     margin: 0 auto;
 }
 .event-details h3 {
-    font-size: 1.5rem;
-    color: var(--primary-teal);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--neutral-800);
     margin-bottom: 1.5rem;
-    border-bottom: 2px solid var(--primary-teal);
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 3px solid var(--primary-teal);
+    display: inline-block;
 }
+
 .event-details ul {
     list-style: none;
     padding-left: 0;
@@ -51,6 +67,100 @@ main {
 .event-details .content-list li {
     margin-bottom: 0.5rem;
 }
+
+.event-highlight {
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.event-highlight h4 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--primary-teal), var(--primary-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-orange);
+    white-space: nowrap;
+}
+
+.event-highlight h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--primary-teal), var(--primary-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-orange);
+    white-space: nowrap;
+}
+
+.event-highlight p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.event-highlight img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    margin-top: 1.5rem;
+}
+
+/* Communicator Profile Section */
+.communicator-profile {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid var(--neutral-200);
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 2rem; /* Space between columns */
+}
+
+.communicator-profile .communicator-column {
+    /* Styles for each column if needed */
+}
+
+.communicator-profile .communicator-image {
+    width: 150px; /* Smaller size */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 2rem; /* Space from text */
+    margin-bottom: 1rem;
+    border: 4px solid white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.communicator-profile .communicator-info h4 {
+    margin-bottom: 1.5rem;
+}
+
+.communicator-profile .communicator-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.communicator-profile .communicator-details li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    display: block; /* Override default li style */
+}
+
+@media (max-width: 768px) {
+    .communicator-profile {
+        grid-template-columns: 1fr; /* Stack columns on mobile */
+    }
+}
+
+
 .map-container {
     margin-top: 2rem;
     position: relative;
@@ -89,5 +199,24 @@ main {
     }
     .event-details li .label {
         margin-bottom: 0.5rem;
+    }
+    .event-details h3 {
+        font-size: 1.5rem;
+    }
+    .event-highlight h4 {
+        font-size: 1.4rem;
+        white-space: normal; /* Allow title to wrap on mobile */
+    }
+    .communicator-profile {
+        flex-direction: column; /* Stack on mobile */
+        align-items: center; /* Center items on mobile */
+    }
+    .communicator-profile .communicator-image {
+        order: 1; /* Image on top on mobile */
+        margin: 0 auto 1.5rem auto; /* Center image and add bottom margin */
+    }
+    .communicator-profile .communicator-info {
+        order: 2; /* Text below image on mobile */
+        text-align: center; /* Center text on mobile */
     }
 }
