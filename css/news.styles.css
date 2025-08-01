@@ -93,9 +93,10 @@ main {
     background: linear-gradient(135deg, var(--primary-teal), var(--primary-blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: block;
+    display: inline-block;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--primary-orange);
+    white-space: nowrap;
 }
 
 .event-highlight h6 {
@@ -103,7 +104,8 @@ main {
     font-weight: 700;
     margin-bottom: 1rem;
     color: #000;
-    display: block;
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .event-highlight p {
