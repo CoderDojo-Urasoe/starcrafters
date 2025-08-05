@@ -1258,6 +1258,40 @@ html {
        display: flex;
    }
 
+   /* お知らせセクションのモバイル最適化 */
+   .news-item-content {
+       flex-direction: column;
+       align-items: flex-start;
+       gap: 0.75rem;
+   }
+
+   .news-item-content .news-meta {
+       display: flex;
+       align-items: center;
+       gap: 1rem;
+       width: 100%;
+   }
+
+   .news-date {
+       min-width: auto;
+       font-size: 0.9rem;
+   }
+
+   .news-category {
+       font-size: 0.75rem;
+       padding: 0.25rem 0.6rem;
+   }
+
+   .news-title {
+       font-size: 0.95rem;
+       line-height: 1.5;
+       width: 100%;
+   }
+
+   .news-item {
+       padding: 1.25rem;
+   }
+
    .hero-content {
        grid-template-columns: 1fr;
        gap: 3rem;
@@ -1461,7 +1495,12 @@ html {
   }
 
   .team-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+  }
+
+  .team-member {
+      padding: 1.5rem 0.75rem;
   }
 
   .member-avatar {
