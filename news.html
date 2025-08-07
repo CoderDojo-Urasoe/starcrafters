@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NPO法人StarCraftersのお知らせページ。最新のイベント情報やお知らせをご確認いただけます。">
+
+    <!-- OGP (Open Graph Protocol) & Twitter Card -->
+    <meta property="og:url" content="https://starcrafters.example.com/news.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="お知らせ | NPO法人StarCrafters" />
+    <meta property="og:description" content="NPO法人StarCraftersの最新のお知らせ・イベント情報をご確認いただけます。" />
+    <meta property="og:site_name" content="NPO法人StarCrafters" />
+    <meta property="og:image" content="https://starcrafters.example.com/img/keyvisual/001.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Star__Crafters" />
+
+    <title>お知らせ | NPO法人StarCrafters</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/news.styles.css" />
+    <script src="js/analytics.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="index.html" class="logo" data-tooltip="Designed by NAMIKO SERIZAWA">
+                <img src="img/starcrafters-logo.png" alt="StarCrafters logo" class="logo-image" />
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#programs">取り組んでいること</a></li>
+                <li><a href="index.html#about">私たちについて</a></li>
+                <li><a href="index.html#contact">お問い合わせ</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="index.html#programs">取り組んでいること</a></li>
+                <li><a href="index.html#about">私たちについて</a></li>
+                <li><a href="index.html#contact">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <main>
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>📰 お知らせ</h1>
+            <p>最新のイベント情報やお知らせをご確認いただけます</p>
+        </div>
+    </section>
+
+    <!-- News Content -->
+    <section class="section news-page">
+        <div class="section-container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <a href="index.html">ホーム</a>
+                <span>></span>
+                <span>お知らせ</span>
+            </nav>
+
+            <!-- News List -->
+            <div class="news-list-container">
+                <div id="newsContainer" class="news-list loading">
+                    <!-- お知らせがJavaScriptで動的に挿入されます -->
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container">
+            <p>&copy; 2025 <strong>特定非営利活動法人StarCrafters</strong></p>
+        </div>
+    </footer>
+
+    <script src="js/news-data.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // ページ読み込み時に全てのお知らせを表示
+        document.addEventListener('DOMContentLoaded', function() {
+            const newsContainer = document.getElementById('newsContainer');
+            const allNews = getAllNews();
+            
+            if (allNews.length === 0) {
+                newsContainer.innerHTML = '<p class="no-news">現在お知らせはありません。</p>';
+                return;
+            }
+            
+            newsContainer.innerHTML = allNews.map(generateNewsHTML).join('');
+            
+            // アニメーション効果を追加
+            setTimeout(() => {
+                newsContainer.classList.add('loaded');
+            }, 100);
+        });
+    </script>
+</body>
+</html>

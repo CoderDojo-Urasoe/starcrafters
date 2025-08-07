@@ -367,6 +367,8 @@ html {
 
 .view-more-container {
     text-align: center;
+    margin-top: 2rem;
+    padding: 2rem 0;
 }
 
 .hero-content {
