@@ -21,7 +21,7 @@ const newsData = [
     },
     {
         id: 2,
-        date: "2024.07.18",
+        date: "2025.07.15",
         category: "イベント",
         categoryClass: "category-event",
         title: "8月2日に体験イベントを開催予定です。詳細は後ほどお知らせ致します。",
@@ -30,7 +30,7 @@ const newsData = [
     },
     {
         id: 1,
-        date: "2024.07.01",
+        date: "2025.07.01",
         category: "お知らせ",
         categoryClass: "category-notice",
         title: "NPO法人StarCrafters設立！合わせてウェブサイトを開設しました。コンテンツはこれから充実させていきます。",
