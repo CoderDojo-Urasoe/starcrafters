@@ -288,12 +288,12 @@ main {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-.event-highlight.teacherteacher p {
-    font-size: 0.95rem;
-    line-height: 1.5;
+.teacherteacher-intro {
+    font-size: 1rem;
+    line-height: 1.8;
     color: var(--neutral-700);
     margin: 1.1rem 0;
-    text-align: center;
+    text-align: left !important;
 }
 
 .event-highlight.teacherteacher h3 {
