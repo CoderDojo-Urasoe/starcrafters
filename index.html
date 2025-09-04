@@ -83,11 +83,35 @@
             <div class="section-header loading">
                 <h2 class="section-title">📰 お知らせ</h2>
             </div>
-            <div id="newsContainer" class="news-list loading">
-                <!-- お知らせがJavaScriptで動的に挿入されます -->
-            </div>
-            <div class="view-more-container">
-                <a href="news.html" class="btn-secondary">すべてのお知らせを見る</a>
+            <div class="news-list loading">
+                 <a href="news/cooking.pdf" class="news-item">
+                    <div class="news-item-content">
+                        <span class="news-date">2025.07.29</span>
+                        <span class="news-category category-event">イベント</span>
+                        <p class="news-title">8月2日（土）親子で楽しむクッキングイベントの資料ダウンロードはこちらから※当日はブース内のQRコードからもダウンロードできます</p>
+                    </div>
+                </a>
+                <a href="news/event-20250802.html" class="news-item">
+                    <div class="news-item-content">
+                        <span class="news-date">2025.07.15</span>
+                        <span class="news-category category-event">イベント</span>
+                        <p class="news-title">8月2日（土）親子で、まなび、あそぶマルシェ開催！ドローンプログラミング体験、お母さんの癒し・絵本セラビー、大人向け読み聞かせ会、栄養と発達を学ぶ簡単クッキング会など盛りだくさんです！</p>
+                    </div>
+                </a>
+                <a href="#" class="news-item">
+                    <div class="news-item-content">
+                        <span class="news-date">2024.07.18</span>
+                        <span class="news-category category-event">イベント</span>
+                        <p class="news-title">8月2日に体験イベントを開催予定です。詳細は後ほどお知らせ致します。</p>
+                    </div>
+                </a>
+                <a href="#" class="news-item">
+                    <div class="news-item-content">
+                        <span class="news-date">2024.07.01</span>
+                        <span class="news-category category-notice">お知らせ</span>
+                        <p class="news-title">NPO法人StarCrafters設立！合わせてウェブサイトを開設しました。コンテンツはこれから充実させていきます。</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -582,26 +606,6 @@
         </div>
     </footer>
 
-    <script src="js/news-data.js"></script>
     <script src="js/script.js"></script>
-    <script>
-        // ページ読み込み時に最新3件のお知らせを表示
-        document.addEventListener('DOMContentLoaded', function() {
-            const newsContainer = document.getElementById('newsContainer');
-            const latestNews = getLatestNews(3);
-            
-            if (latestNews.length === 0) {
-                newsContainer.innerHTML = '<p class="no-news">現在お知らせはありません。</p>';
-                return;
-            }
-            
-            newsContainer.innerHTML = latestNews.map(generateNewsHTML).join('');
-            
-            // アニメーション効果を追加
-            setTimeout(() => {
-                newsContainer.classList.add('loaded');
-            }, 100);
-        });
-    </script>
 </body>
 </html>
