@@ -23,6 +23,7 @@ main {
     height: auto;
     border-radius: 20px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    margin-top: 2rem;
     margin-bottom: 1.5rem;
 }
 
@@ -805,6 +806,7 @@ main {
 .event-footer {
     background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
     position: relative;
+    color: var(--neutral-800);
 }
 
 .footer-logos {
@@ -1519,5 +1521,23 @@ main {
 .btn-meta:hover {
     background-color: #e0e0e0;
     border-color: #ccc;
+    color: #000;
+}
+
+.social-share {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+}
+
+.social-share .social-icon {
+    display: inline-block;
+    margin: 0 0.75rem;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.social-share .social-icon:hover {
     color: #000;
 }
