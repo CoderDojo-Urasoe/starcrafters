@@ -1498,3 +1498,26 @@ main {
 .hebocon-link:hover::after {
     transform: scale(1.2);
 }
+
+.meta-actions {
+    margin-top: 0.5rem;
+}
+
+.btn-meta {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1px solid #ddd;
+}
+
+.btn-meta:hover {
+    background-color: #e0e0e0;
+    border-color: #ccc;
+    color: #000;
+}
