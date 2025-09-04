@@ -161,7 +161,7 @@ main {
 .schedule-time {
     min-width: 120px;
     font-weight: 700;
-    color: var(--primary-teal);
+    color: #0d7c6c; /* Darker teal for better contrast */
     font-size: 1rem;
     background: rgba(20, 184, 166, 0.1);
     padding: 0.5rem 0.8rem;
@@ -259,11 +259,10 @@ main {
     color: var(--primary-teal);
     text-align: center;
     margin-bottom: 1.2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .award-badge {
-    background: linear-gradient(135deg, #ffd700, #ffed4e);
+    background: #ffd700;
     color: #8b4513;
     padding: 0.8rem 1.5rem;
     border-radius: 50px;
@@ -277,7 +276,6 @@ main {
 
 .award-badge strong {
     font-size: 1.1rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .event-highlight.teacherteacher img {
@@ -334,21 +332,21 @@ main {
 }
 
 .catch {
-    background: linear-gradient(135deg, var(--primary-teal), #0891b2);
-    color: white;
+    background: var(--neutral-100);
+    color: var(--neutral-800);
     padding: 1.1rem 1.5rem;
     border-radius: 15px;
     text-align: center;
     font-size: 1rem;
     font-weight: 600;
     margin: 1.5rem 0;
-    box-shadow: 0 6px 20px rgba(20, 184, 166, 0.3);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--neutral-200);
+    box-shadow: none;
 }
 
 .podcast-link {
     display: inline-block;
-    background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+    background: linear-gradient(135deg, #c81e1e, #d93737);
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 25px;
@@ -358,11 +356,11 @@ main {
     margin: 0.5rem 0;
     transition: all 0.3s ease;
     box-shadow: 0 3px 10px rgba(255, 107, 107, 0.3);
-    border: 2px solid #ff6b6b;
+    border: 2px solid #c81e1e;
 }
 
 .podcast-link:hover {
-    background: linear-gradient(135deg, #ff5252, #ff7979);
+    background: linear-gradient(135deg, #d93737, #c81e1e);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
     text-decoration: none;
@@ -397,7 +395,6 @@ main {
     color: #d63031;
     text-align: center;
     margin-bottom: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hebocon-intro-content {
@@ -481,7 +478,7 @@ main {
 
 .hebocon-link {
     display: inline-block;
-    background: linear-gradient(135deg, #00b894, #00cec9);
+    background: linear-gradient(135deg, #006956, #007573);
     color: white;
     padding: 0.8rem 1.5rem;
     border-radius: 25px;
@@ -490,11 +487,11 @@ main {
     font-size: 1rem;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 184, 148, 0.3);
-    border: 2px solid #00b894;
+    border: 2px solid #006956;
 }
 
 .hebocon-link:hover {
-    background: linear-gradient(135deg, #00a085, #00b7b3);
+    background: linear-gradient(135deg, #007573, #006956);
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0, 184, 148, 0.4);
     text-decoration: none;
@@ -546,63 +543,72 @@ main {
     font-weight: 800;
     color: var(--primary-teal);
     margin-bottom: 1.2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     line-height: 1.3;
 }
 
 .hero-meta {
     display: flex;
-    flex-direction: row;
-    gap: 1rem;
+    flex-direction: column; /* Stack vertically by default */
+    gap: 1.5rem; /* Increased gap */
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 1.5rem; /* Add some space from the title */
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
 }
 
-.event-date {
+@media (min-width: 768px) {
+    .hero-meta {
+        flex-direction: row; /* Side-by-side on larger screens */
+        gap: 2.5rem;
+    }
+}
+
+.event-date, .event-venue {
+    /* Remove all button-like styles */
+    background: none;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    align-items: center; /* Align icon and text */
+    gap: 0.8rem;
+}
+
+.event-date::before, .event-venue::before {
+    font-size: 2rem; /* Larger icons */
+    line-height: 1;
+}
+
+.event-date::before {
+    content: '📅';
+}
+
+.event-venue::before {
+    content: '📍';
+}
+
+.meta-text {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background: white;
-    padding: 0.6rem 1.1rem;
-    border-radius: 25px;
-    border: 2px solid var(--primary-orange);
-    box-shadow: 0 4px 15px rgba(255, 165, 0, 0.2);
+    align-items: flex-start;
 }
 
 .meta-label {
-    font-size: 0.7rem;
-    font-weight: 600;
-    color: var(--primary-orange);
-    margin-bottom: 0.2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+    font-weight: 500; /* Less aggressive weight */
+    color: var(--neutral-600);
+    margin-bottom: 0.3rem;
+    text-transform: none; /* Remove uppercase */
+    letter-spacing: 0;
 }
 
 .meta-value {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: 700;
-    color: var(--primary-orange);
-}
-
-.event-venue {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: white;
-    padding: 0.4rem 0.8rem;
-    border-radius: 20px;
-    border: 2px solid var(--neutral-400);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.event-venue .meta-label {
-    color: var(--neutral-600);
-}
-
-.event-venue .meta-value {
-    font-size: 0.8rem;
-    font-weight: 600;
     color: var(--neutral-800);
 }
 
@@ -619,7 +625,6 @@ main {
     text-align: center;
     padding: 0.5rem 0;
     background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-    border-top: 2px solid var(--primary-teal);
 }
 
 .btn-hero {
@@ -634,7 +639,6 @@ main {
     box-shadow: 0 8px 25px rgba(255, 165, 0, 0.3);
     border: 3px solid var(--primary-orange);
     transition: all 0.3s ease;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
 }
@@ -693,7 +697,7 @@ main {
     position: absolute;
     top: 1rem;
     left: 1rem;
-    background: #FF6B6B;
+    background: #d93737;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 20px;
@@ -745,7 +749,7 @@ main {
 }
 
 .popularity-badge {
-    background: #FF6B6B;
+    background: #d93737;
     color: white;
     padding: 0.3rem 0.8rem;
     border-radius: 15px;
@@ -755,7 +759,7 @@ main {
 
 /* Event Info Ribbon */
 .event-info-ribbon {
-    background: #FF6B6B;
+    background: #d93737;
     margin: 3rem 0;
     padding: 2rem 0;
     position: relative;
@@ -789,14 +793,12 @@ main {
     font-weight: 700;
     color: white;
     margin-bottom: 0.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .event-venue {
     font-size: 1.5rem;
     font-weight: 600;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Event Footer */
@@ -893,7 +895,6 @@ main {
     font-weight: 700;
     line-height: 1.3;
     margin-bottom: 1rem;
-    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
 }
 
 .page-header-content p {
@@ -1310,9 +1311,7 @@ main {
     font-size: 1.6rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, var(--primary-teal), var(--primary-blue));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--primary-teal);
     display: inline-block;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--primary-orange);
@@ -1323,9 +1322,7 @@ main {
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, var(--primary-teal), var(--primary-blue));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--primary-teal);
     display: inline-block;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--primary-orange);
@@ -1457,4 +1454,47 @@ main {
         order: 2; /* Text below image on mobile */
         text-align: center; /* Center text on mobile */
     }
+}
+/* --- Link Style Enhancements --- */
+
+/* Event application button */
+.btn-apply {
+    display: inline-block;
+    background: linear-gradient(135deg, #d95f00, #f59e0b);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    box-shadow: 0 8px 25px rgba(255, 126, 95, 0.4);
+    border: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-apply:hover {
+    background: linear-gradient(135deg, #f59e0b, #d95f00);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(255, 126, 95, 0.5);
+    color: white;
+    text-decoration: none;
+}
+
+/* External links */
+.podcast-link::after,
+.hebocon-link::after {
+    content: ' ↗';
+    font-family: 'Arial', sans-serif;
+    font-size: 0.9em;
+    font-weight: normal;
+    margin-left: 4px;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.podcast-link:hover::after,
+.hebocon-link:hover::after {
+    transform: scale(1.2);
 }
