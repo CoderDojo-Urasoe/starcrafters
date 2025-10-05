@@ -1353,6 +1353,14 @@ main {
     margin-top: 1.5rem;
 }
 
+.event-body-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    margin: 1.5rem 0;
+}
+
 /* Communicator Profile Section */
 .communicator-profile {
     background-color: #f8f9fa;
