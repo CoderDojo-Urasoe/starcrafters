@@ -1,5 +1,14 @@
 // お知らせデータ管理
 const newsData = [
+    {
+        id: 5,
+        date: "2025.11.16",
+        category: "イベント",
+        categoryClass: "category-event",
+        title: "「不登校」これからの選択肢を考える 開催決定！",
+        link: "news/event-20251116.html",
+        featured: true
+    },
     
     {
         id: 4,

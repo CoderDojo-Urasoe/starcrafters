@@ -1247,11 +1247,12 @@ main {
 }
 
 .event-header-image {
-    width: 100%;
+    max-width: 100%;
     height: 300px;
-    object-fit: cover;
+    width: auto;
     border-radius: 20px;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
+    display: block;
 }
 
 .ai-disclaimer {
