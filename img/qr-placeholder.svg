@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="QRコードのダミー画像">
+    <rect x="5" y="5" width="210" height="210" rx="16" ry="16" fill="#f8fafc" stroke="#94a3b8" stroke-width="4"/>
+    <rect x="30" y="30" width="60" height="60" fill="#0ea5e9" opacity="0.2"/>
+    <rect x="130" y="30" width="30" height="30" fill="#14b8a6" opacity="0.4"/>
+    <rect x="170" y="70" width="30" height="30" fill="#f97316" opacity="0.4"/>
+    <rect x="80" y="110" width="50" height="50" fill="#8b5cf6" opacity="0.25"/>
+    <rect x="150" y="150" width="40" height="40" fill="#ec4899" opacity="0.3"/>
+    <rect x="40" y="160" width="30" height="30" fill="#0ea5e9" opacity="0.35"/>
+    <rect x="120" y="60" width="20" height="20" fill="#0f172a" opacity="0.4"/>
+    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, 'Noto Sans JP', sans-serif" font-size="22" fill="#334155">
+        QR準備中
+    </text>
+</svg>
