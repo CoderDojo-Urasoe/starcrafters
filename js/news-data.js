@@ -1,15 +1,50 @@
 // お知らせデータ管理
 const newsData = [
     {
-        id: 5,
+        id: 9,
+        date: "2025.12.27",
+        category: "イベント",
+        categoryClass: "category-event",
+        title: "DTMを体験しよう！初心者向けの音楽制作ワークショップを開催します。",
+        link: "news/event-20251227.html",
+        featured: true
+    },
+    {
+        id: 8,
         date: "2025.11.16",
         category: "イベント",
         categoryClass: "category-event",
-        title: "「不登校」これからの選択肢を考える 開催決定！",
+        title: "「不登校」これからの選択肢を考える！参加者募集！",
         link: "news/event-20251116.html",
         featured: true
     },
-    
+    {
+        id: 7,
+        date: "2025.10.05",
+        category: "イベント",
+        categoryClass: "category-event",
+        title: "ハイブリッド型探究学習2学期！10月〜12月までの全6回、様々な分野の楽しみながら学ぶコンテンツが目白押しです！",
+        link: "news/event-202510-12.html",
+        featured: true
+    },
+    {
+        id: 6,
+        date: "2025.09.27",
+        category: "お知らせ",
+        categoryClass: "category-notice",
+        title: "親子で創作・デジタル体験イベントの午前の部は先着順となります。現時点、申込み多数のため、各ブースともキャンセル待ちとなる可能性が高く、体験できない場合もございますので予めご了承下さい",
+        link: "#",
+        featured: false
+    },
+    {
+        id: 5,
+        date: "2025.09.01",
+        category: "イベント",
+        categoryClass: "category-event",
+        title: "9月28日（日）親子で楽しむ創作体験 with TeacherTeacher 開催！ポッドキャストで大人気のTeacherTeacherのお二人と沖縄で“生”対話できる特別イベントです。",
+        link: "news/2025-09-28.html",
+        featured: true
+    },
     {
         id: 4,
         date: "2025.07.29",
@@ -24,22 +59,22 @@ const newsData = [
         date: "2025.07.15",
         category: "イベント",
         categoryClass: "category-event",
-        title: "8月2日（土）親子で、まなび、あそぶマルシェ開催！ドローンプログラミング体験、お母さんの癒し・絵本セラピー、大人向け読み聞かせ会、栄養と発達を学ぶ簡単クッキング会など盛りだくさんです！",
+        title: "8月2日（土）親子で、まなび、あそぶマルシェ開催！ドローンプログラミング体験、お母さんの癒し・絵本セラビー、大人向け読み聞かせ会、栄養と発達を学ぶ簡単クッキング会など盛りだくさんです！",
         link: "news/event-20250802.html",
         featured: true
     },
     {
         id: 2,
-        date: "2025.07.15",
+        date: "2024.07.18",
         category: "イベント",
         categoryClass: "category-event",
         title: "8月2日に体験イベントを開催予定です。詳細は後ほどお知らせ致します。",
         link: "#",
-        featured: true
+        featured: false
     },
     {
         id: 1,
-        date: "2025.07.01",
+        date: "2024.07.01",
         category: "お知らせ",
         categoryClass: "category-notice",
         title: "NPO法人StarCrafters設立！合わせてウェブサイトを開設しました。コンテンツはこれから充実させていきます。",
