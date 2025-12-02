@@ -1274,10 +1274,14 @@ main {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--neutral-800);
-    margin-bottom: 1.5rem;
+    margin: 2.5rem 0 1.6rem;
     padding-bottom: 0.8rem;
     border-bottom: 3px solid var(--primary-teal);
     display: inline-block;
+}
+
+.event-details h3:first-of-type {
+    margin-top: 0;
 }
 
 .event-details ul {

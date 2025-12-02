@@ -67,6 +67,48 @@
             text-align: left;
             vertical-align: top;
         }
+
+        .event-table p {
+            margin: 0 0 0.8rem;
+            line-height: 1.7;
+        }
+
+        .target-base {
+            font-weight: 600;
+            color: var(--neutral-800);
+        }
+
+        .target-note {
+            font-size: 0.95rem;
+            color: var(--neutral-600);
+        }
+
+        .target-device-callout {
+            background: rgba(0, 166, 166, 0.08);
+            border-left: 4px solid var(--primary-teal);
+            padding: 1rem 1.2rem;
+            border-radius: 10px;
+        }
+
+        .target-device-callout .callout-title {
+            font-weight: 700;
+            margin: 0 0 0.6rem;
+            color: var(--primary-teal);
+        }
+
+        .target-device-callout ul {
+            margin: 0;
+            padding-left: 1.2rem;
+        }
+
+        .target-device-callout li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .target-device-callout li:last-child {
+            margin-bottom: 0;
+        }
     </style>
 </head>
 
@@ -113,24 +155,34 @@
                     <h3><i class="fa-solid fa-circle-info"></i> 開催概要</h3>
                     <table class="event-table">
                         <tr>
-                            <th><i class="fa-solid fa-calendar-days"></i> 日時</th>
+                            <th>日時</th>
                             <td>2025年12月27日（土）14:00 - 17:00</td>
                         </tr>
                         <tr>
-                            <th><i class="fa-solid fa-location-dot"></i> 会場</th>
+                            <th>会場</th>
                             <td>てだこホールマルチメディア室</td>
                         </tr>
                         <tr>
-                            <th><i class="fa-solid fa-ticket"></i> 参加費</th>
+                            <th>参加費</th>
                             <td>無料</td>
                         </tr>
                         <tr>
-                            <th><i class="fa-solid fa-users"></i> 定員</th>
+                            <th>定員</th>
                             <td>10名程度</td>
                         </tr>
                         <tr>
-                            <th><i class="fa-solid fa-bullseye"></i> 対象</th>
-                            <td>DTM初心者の方、PC操作がある程度できる方（小学4年生以上推奨）<br>※お子さんがPC操作に不慣れな場合は親子で楽しむ参加形態でもOKです<br><br>会場のMacBookでGarageBand（GarageBand）を使って体験頂く予定ですが、ご自身のMac、またはiPadを持参しても構いません。その場合は予めGarageBandをインストールしてからご参加下さい。
+                            <th>対象</th>
+                            <td>
+                                <p class="target-base">DTM初心者の方、PC操作がある程度できる方（小学4年生以上推奨）</p>
+                                <p class="target-note">※お子さんがPC操作に不慣れな場合は親子で楽しむ参加形態でもOKです</p>
+                                <div class="target-device-callout">
+                                    <p class="callout-title">持ち物・推奨環境</p>
+                                    <ul>
+                                        <li>会場のMacBookでGarageBand（GarageBand）を体験予定。ご自身のMac／iPadを持参する場合は、事前にGarageBandをインストールしてからご参加ください。</li>
+                                        <li>iPad版のGarage Bandを使うと、よりスムーズに楽しくDTM体験が可能です。iPadをお持ちの方はぜひご持参ください。</li>
+                                        <li>MacまたはiPadに接続できるイヤフォン／ヘッドフォンも忘れずにお持ちください。</li>
+                                    </ul>
+                                </div>
                             </td>
                         </tr>
                     </table>
@@ -142,6 +194,9 @@
                             <p>パソコンを使って音楽を作る楽しさを体験してみませんか？初心者の方でも講師が丁寧にサポートしますので、安心してご参加いただけます。</p>
                         </div>
                     </div>
+
+                    <h3><i class="fa-solid fa-chalkboard-user"></i> 講師紹介</h3>
+                    <p>講師は、ミュージシャンとしても活動されている<a href="https://dtm.okinawa/" target="_blank" rel="noopener">DTMオキナワ</a>の安田さん！</p>
 
                     <h3><i class="fa-solid fa-envelope"></i> お申し込み方法</h3>
                     <p>皆さんとお会いできるのを楽しみにしています♪ 以下のフォームよりお申し込み下さい。</p>
