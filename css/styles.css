@@ -307,6 +307,15 @@ html {
     margin-bottom: 2rem;
 }
 
+.news-more {
+    text-align: center;
+}
+
+.news-more .btn-primary {
+    display: inline-block;
+    padding: 0.8rem 2.5rem;
+}
+
 .news-item {
     display: flex;
     justify-content: space-between;
