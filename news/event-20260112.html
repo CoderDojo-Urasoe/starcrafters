@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="2026年1月12日（月・祝）開催！遊王祭 x CoderDojo - ポケカ、ミニ四駆、デジタル体験まで親子で楽しめる遊びの祭り。入場無料で誰でも参加OK。" />
+
+    <!-- OGP (Open Graph Protocol) & Twitter Card -->
+    <meta property="og:url" content="https://www.star-crafters.org/news/event-20260112.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="遊王祭 x CoderDojo | NPO法人StarCrafters" />
+    <meta property="og:description"
+        content="ポケカ、ミニ四駆、プログラミング、Scratch、Minecraftなど、親子で楽しめる体験が大集合！2026年1月12日（月・祝）南城市役所で開催。" />
+    <meta property="og:site_name" content="NPO法人StarCrafters" />
+    <meta property="og:image" content="https://www.star-crafters.org/img/news/20250929/key-visual.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@Star__Crafters" />
+
+    <title>イベント：遊王祭 x CoderDojo | NPO法人StarCrafters</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/news.styles.css" />
+    <style>
+        #event-page {
+            padding-top: 0 !important;
+        }
+
+        .playfest-header-bg {
+            background-image: linear-gradient(rgba(16, 24, 40, 0.7), rgba(16, 24, 40, 0.8)), url('/img/activity-01.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 20px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 2rem;
+        }
+
+        .playfest-header-bg .section-title {
+            color: white;
+            border-bottom-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .playfest-header-bg .section-subtitle {
+            color: #f0f0f0;
+        }
+
+        .event-table th {
+            text-align: right;
+            vertical-align: top;
+            padding-right: 1rem;
+            white-space: nowrap;
+        }
+
+        .event-table td {
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .event-table p {
+            margin: 0 0 0.8rem;
+            line-height: 1.7;
+        }
+
+        .target-base {
+            font-weight: 600;
+            color: var(--neutral-800);
+        }
+
+        .target-note {
+            font-size: 0.95rem;
+            color: var(--neutral-600);
+        }
+
+        .playfest-program-list {
+            margin: 0;
+            padding-left: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .playfest-program-list li {
+            margin-bottom: 0.4rem;
+        }
+
+        .entry-callout {
+            background: rgba(255, 145, 56, 0.1);
+            border-left: 4px solid #ff9138;
+            border-radius: 12px;
+            padding: 1rem 1.2rem;
+            margin: 1rem 0;
+        }
+
+        .entry-callout strong {
+            display: inline-block;
+            margin-bottom: 0.4rem;
+        }
+
+        .playfest-highlight {
+            background: linear-gradient(135deg, rgba(255, 244, 219, 0.95), rgba(255, 255, 255, 0.95));
+            border: 1px solid rgba(255, 145, 56, 0.3);
+            border-radius: 18px;
+            padding: 1.5rem;
+            box-shadow: 0 12px 25px rgba(255, 145, 56, 0.15);
+        }
+
+        .playfest-highlight h4 {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 1.2rem;
+            color: #c75100;
+            margin-bottom: 0.8rem;
+        }
+
+        .playfest-highlight h4 .icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255, 145, 56, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .playfest-program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .program-card {
+            background: white;
+            border-radius: 14px;
+            padding: 1rem;
+            border: 1px solid rgba(255, 145, 56, 0.2);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+        }
+
+        .program-card h5 {
+            margin: 0 0 0.4rem;
+            font-size: 1.05rem;
+            color: #c75100;
+        }
+
+        .program-card p {
+            margin: 0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="/index.html" class="logo" data-tooltip="Designed by NAMIKO SERIZAWA">
+                <img src="/img/starcrafters-logo.png" alt="StarCrafters logo" class="logo-image" />
+            </a>
+            <ul class="nav-links">
+                <li><a href="/index.html#programs">取り組んでいること</a></li>
+                <li><a href="/index.html#about">私たちについて</a></li>
+                <li><a href="/info.html">子育てお役立ち情報</a></li>
+                <li><a href="/index.html#contact">お問い合わせ</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="/index.html#programs">取り組んでいること</a></li>
+                <li><a href="/index.html#about">私たちについて</a></li>
+                <li><a href="/info.html">子育てお役立ち情報</a></li>
+                <li><a href="/index.html#contact">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Event Section -->
+    <main>
+        <section id="event-page" class="section">
+            <div class="section-container">
+                <div class="section-header playfest-header-bg">
+                    <h2 class="section-title">遊王祭 x CoderDojo</h2>
+                    <p class="section-subtitle">ポケカ、ミニ四駆、ヘボコン、ドローン、Scratch、Minecraft、親子クッキングまで！あそびと学びの1日を家族みんなで楽しみましょう。</p>
+                </div>
+
+                <div class="event-details">
+                    <h3><i class="fa-solid fa-circle-info"></i> 開催概要</h3>
+                    <table class="event-table">
+                        <tr>
+                            <th>日時</th>
+                            <td>2026年1月12日（月・祝）10:00 - 16:00</td>
+                        </tr>
+                        <tr>
+                            <th>会場</th>
+                            <td>
+                                南城市役所（沖縄県南城市佐敷新里1870）
+                                <p class="target-note" style="margin-top: 0.5rem;">会場内の多目的スペースで複数コンテンツを同時開催します。現地スタッフが各ブースをご案内します。</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>費用</th>
+                            <td>無料</td>
+                        </tr>
+                        <tr>
+                            <th>対象</th>
+                            <td>
+                                <p class="target-base">遊びを楽しみたい方は誰でも参加いただけます！</p>
+                                <p class="target-note">※ブースごとに推奨年齢や付き添いの必要条件が異なる場合があります。当日は受付で最新情報をご確認ください。</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h3><i class="fa-solid fa-star"></i> 体験できるコンテンツ</h3>
+                    <div class="event-highlight playfest-highlight">
+                        <div class="event-highlight-text">
+                            <h4><span class="icon"><i class="fa-solid fa-gamepad"></i></span>遊びのワクワクが詰まった7つのブース</h4>
+                            <p>アナログもデジタルも、好きなことに全力で取り組めるラインアップを揃えました。来場した瞬間から家族の笑顔が溢れる体験ばかりです。</p>
+                            <div class="playfest-program-grid">
+                                <div class="program-card">
+                                    <h5>ポケカ大会</h5>
+                                    <p>親子＆キッズ向けのカジュアルトーナメント。初心者デッキでも歓迎です。</p>
+                                </div>
+                                <div class="program-card">
+                                    <h5>ミニ四駆体験</h5>
+                                    <p>自分でカスタムしたマシンでコースを疾走。チューニング講座も実施予定。</p>
+                                </div>
+                                <div class="program-card">
+                                    <h5>ヘボコン</h5>
+                                    <p>技術力不問！ユニークな手作りロボットを持ち寄って笑いのバトルを楽しもう。</p>
+                                </div>
+                                <div class="program-card">
+                                    <h5>ドローンプログラミング</h5>
+                                    <p>Scratchでルートを指示し、空のミッションに挑戦。初めての方でもスタッフがサポート。</p>
+                                </div>
+                                <div class="program-card">
+                                    <h5>Scratchでスマブラ！</h5>
+                                    <p>自分だけの必殺技をコードで実装。発想力とロジックでゲームづくりに挑戦します。</p>
+                                </div>
+                                <div class="program-card">
+                                    <h5>Minecraft体験</h5>
+                                    <p>同じワールドで協力しながら課題に挑戦。建築も冒険も大歓迎です。</p>
+                                </div>
+                                <div class="program-card">
+                                    <h5>親子でスイーツ作り</h5>
+                                    <p>発達と栄養の関係を学びながら、おいしいスイーツを親子で調理。食育のヒントも得られます。</p>
+                                </div>
+                            </div>
+                            <p style="margin-top: 0.8rem;">このほかにも、自由に触れられるデジタル工作やボードゲームなど、来場者のペースで楽しめるコーナーを準備中です。</p>
+                        </div>
+                    </div>
+
+                    <h3><i class="fa-solid fa-envelope"></i> 申込方法</h3>
+                    <div class="entry-callout">
+                        <strong>ポケカ大会・ヘボコンは事前エントリー制です。</strong>
+                            <p>下記の申込みフォームから希望するコンテンツを選び、必要事項を入力してください。</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="https://forms.gle/QzvHefCRAyK63fq78" target="_blank" class="btn-primary">ポケカ・ヘボコンの事前エントリーはこちら</a>
+                    </div>
+                    <p class="target-note" style="margin-top: 0.6rem;">その他のブースは事前申込み不要です。混雑状況により整理券対応となる場合があります。</p>
+
+                    <!-- SNS Share Buttons -->
+                    <div class="share-buttons">
+                        <p>このイベントをSNSでシェアする</p>
+                        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.star-crafters.org%2Fnews%2Fevent-20260112.html&text=%E9%81%8A%E7%8E%8B%E7%A5%AD%20x%20CoderDojo%20%E9%96%8B%E5%82%AC%E6%B1%BA%E5%AE%9A%EF%BC%81%20%7C%20NPO%E6%B3%95%E4%BA%BAStarCrafters"
+                            class="share-x" target="_blank" title="Xでシェア"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.star-crafters.org%2Fnews%2Fevent-20260112.html"
+                            class="share-facebook" target="_blank" title="Facebookでシェア"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/star__crafters/?locale=ja_JP" class="share-instagram"
+                            target="_blank" title="Instagramでフォロー"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+
+                    <h3><i class="fa-solid fa-map-location-dot"></i> 会場アクセス</h3>
+                    <div class="map-container">
+                        <iframe src="https://maps.google.com/maps?q=%E5%8D%97%E5%9F%8E%E5%B8%82%E5%BD%B9%E6%89%80&output=embed"
+                            width="600" height="450" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="back-to-top-container">
+                    <a href="/index.html" class="btn-secondary">トップページに戻る</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container">
+            <p>&copy; 2025 <strong>特定非営利活動法人StarCrafters</strong></p>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
