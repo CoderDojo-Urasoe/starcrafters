@@ -37,7 +37,7 @@
         }
 
         .dtm-header-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/news/20251227/header.png');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/news/20251227/header.jpeg');
             background-size: cover;
             background-position: center;
             color: white;
@@ -109,27 +109,96 @@
         .target-device-callout li:last-child {
             margin-bottom: 0;
         }
+
+        /* New Feature Section Styles */
+        .feature-section {
+            margin: 3rem 0;
+        }
+
+        .feature-row {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        .feature-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .feature-row:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .feature-image {
+            flex: 1;
+        }
+
+        .feature-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-image img:hover {
+            transform: scale(1.02);
+        }
+
+        .feature-text {
+            flex: 1;
+            padding: 1rem;
+        }
+
+        .feature-text h4 {
+            color: var(--primary-teal);
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .feature-text p {
+            line-height: 1.8;
+            color: var(--neutral-700);
+            font-size: 1.05rem;
+        }
+
+        @media (max-width: 768px) {
+
+            .feature-row,
+            .feature-row:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .feature-image,
+            .feature-text {
+                flex: auto;
+                width: 100%;
+            }
+
+            .feature-text {
+                padding: 0;
+            }
+        }
     </style>
+
 </head>
 
 <body>
     <!-- Header -->
     <header class="header" id="header">
-        <nav class="nav">
-            <a href="/index.html" class="logo" data-tooltip="Designed by NAMIKO SERIZAWA">
-                <img src="/img/starcrafters-logo.png" alt="StarCrafters logo" class="logo-image" />
-            </a>
+        <nav class="nav"><a href="/index.html" class="logo" data-tooltip="Designed by NAMIKO SERIZAWA"><img
+                    src="/img/starcrafters-logo.png" alt="StarCrafters logo" class="logo-image" /></a>
             <ul class="nav-links">
                 <li><a href="/index.html#programs">取り組んでいること</a></li>
                 <li><a href="/index.html#about">私たちについて</a></li>
                 <li><a href="/info.html">子育てお役立ち情報</a></li>
                 <li><a href="/index.html#contact">お問い合わせ</a></li>
             </ul>
-            <div class="mobile-menu" id="mobileMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <div class="mobile-menu" id="mobileMenu"><span></span><span></span><span></span></div>
         </nav>
         <!-- Mobile Navigation -->
         <div class="mobile-nav" id="mobileNav">
@@ -141,7 +210,6 @@
             </ul>
         </div>
     </header>
-
     <!-- Event Section -->
     <main>
         <section id="event-page" class="section">
@@ -150,9 +218,8 @@
                     <h2 class="section-title">DTMを体験しよう！</h2>
                     <p class="section-subtitle">音楽制作（DTM）に興味がある方必見！<br>初心者の方でも安心して参加できるワークショップを開催します。</p>
                 </div>
-
                 <div class="event-details">
-                    <h3><i class="fa-solid fa-circle-info"></i> 開催概要</h3>
+                    <h3><i class="fa-solid fa-circle-info"></i>開催概要</h3>
                     <table class="event-table">
                         <tr>
                             <th>日時</th>
@@ -160,12 +227,9 @@
                         </tr>
                         <tr>
                             <th>会場</th>
-                            <td>
-                                てだこホールマルチメディア室
-                                <p class="target-note" style="margin-top: 0.5rem;">
+                            <td>てだこホールマルチメディア室 <p class="target-note" style="margin-top: 0.5rem;">
                                     オンライン参加も可能です。ただしオンライン参加の場合は、GarageBandを利用可能なiPadかMacを準備の上、ご参加いただく必要がございます。また、オンラインはGoogle
-                                    Meetsを利用致します。
-                                </p>
+                                    Meetsを利用致します。 </p>
                             </td>
                         </tr>
                         <tr>
@@ -186,66 +250,109 @@
                                     <ul>
                                         <li>会場のMacBookでGarageBand（GarageBand）を体験予定。ご自身のMac／iPadを持参する場合は、事前にGarageBandをインストールしてからご参加ください。
                                         </li>
-                                        <li>iPad版のGarage Bandを使うと、よりスムーズに楽しくDTM体験が可能です。iPadをお持ちの方はぜひご持参ください。</li>
+                                        <li>iPad版のGarage Bandを使うと、よりスムーズに楽しくDTM体験が可能です。iPadをお持ちの方はぜひご持参ください。
+                                        </li>
                                         <li>MacまたはiPadに接続できるイヤフォン／ヘッドフォンも忘れずにお持ちください。</li>
+                                        <li>イヤフォン/ヘッドフォンは、マイク付きのものだとベターです。高価なものである必要はありません。iPhoneに付いているような簡単なもので十分です。
+                                        </li>
                                     </ul>
                                 </div>
                             </td>
                         </tr>
                     </table>
+                    <h3><i class="fa-solid fa-star"></i>ワークショップで体験できること</h3>
+                    <div class="feature-section">
 
-                    <h3><i class="fa-solid fa-star"></i> 内容</h3>
-                    <div class="event-highlight">
-                        <div class="event-highlight-text">
-                            <h4>DTM（Desktop Music）体験</h4>
-                            <p>パソコンを使って音楽を作る楽しさを体験してみませんか？初心者の方でも講師が丁寧にサポートしますので、安心してご参加いただけます。</p>
+                        <div class="feature-row">
+                            <div class="feature-image"><img src="/img/news/20251227/20251227_01.jpg"
+                                    alt="GarageBandの画面で音楽制作"></div>
+                            <div class="feature-text">
+                                <h4><i class="fa-solid fa-music"></i>直感的な音楽づくり</h4>
+                                <p>GarageBand（ガレージバンド）というアプリを使います。
+                                    まるで積み木を組み立てるように、画面上に素材を並べるだけで、あっという間にプロっぽい曲ができあがります！
+                                    楽譜が読めなくても、楽器が弾けなくても大丈夫です。 </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-row">
+                            <div class="feature-image"><img src="/img/news/20251227/20251227_02.jpg"
+                                    alt="機材を使った本格的な制作環境"></div>
+                            <div class="feature-text">
+                                <h4><i class="fa-solid fa-headphones"></i>本格的な機材に触れる</h4>
+                                <p>会場にはMacBookを用意しています。
+                                    普段なかなか触れる機会の少ないソフトや機器に触れて、クリエイター気分を味わってみましょう。 自分のiPadやMacを持ち込んでの参加も大歓迎です!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-row">
+                            <div class="feature-image"><img src="/img/news/20251227/20251227_03.jpg" alt="講師や参加者との交流">
+                            </div>
+                            <div class="feature-text">
+                                <h4><i class="fa-solid fa-people-group"></i>みんなで楽しむ</h4>
+                                <p>一人で黙々と作業するだけでなく、講師や他の参加者と一緒に音を聴き合ったり、アイデアを交換したり。
+                                    音楽を通じたコミュニケーションもこのワークショップの醍醐味です。 親子での参加も大歓迎です！ </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-row">
+                            <div class="feature-image"><img src="/img/news/20251227/20251227_04.jpg" alt="完成した作品を聴いて笑顔">
+                            </div>
+                            <div class="feature-text">
+                                <h4><i class="fa-solid fa-face-smile-beam"></i>「できた！」の喜び</h4>
+                                <p>最後には、自分で作った曲をみんなに発表する時間も（希望者のみ）。
+                                    「自分にも曲が作れた！」という達成感は、きっと大きな自信になります。
+                                    世界に一つだけの、あなただけのオリジナル曲を作りましょう。 </p>
+                            </div>
                         </div>
                     </div>
-
-                    <h3><i class="fa-solid fa-chalkboard-user"></i> 講師紹介</h3>
-                    <p>講師は、ミュージシャン、エンジニア、起業家として多彩な活動をされている<a href="https://dtm.okinawa/" target="_blank"
-                            rel="noopener">DTMオキナワ</a>主宰の安田陽さんです！</p>
-
-                    <h3><i class="fa-solid fa-envelope"></i> お申し込み方法</h3>
-                    <p>皆さんとお会いできるのを楽しみにしています♪ 以下のフォームよりお申し込み下さい。</p>
-                    <div class="button-container">
-                        <a href="https://forms.gle/r7LbF372r8mr4g4k8" target="_blank" class="btn-primary">お申し込みはこちら</a>
+                    <h3><i class="fa-solid fa-chalkboard-user"></i>講師紹介</h3>
+                    <div
+                        style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                        <img src="/img/news/20251227/dtmokinawa-logo.jpg" alt="DTMオキナワ ロゴ"
+                            style="width: 120px; height: auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                        <p style="flex: 1; margin: 0;">
+                            講師は、ミュージシャン、エンジニア、起業家として多彩な活動をされている<a href="https://dtm.okinawa/" target="_blank"
+                                rel="noopener">DTMオキナワ</a>主宰の安田陽さんです！
+                        </p>
                     </div>
-
+                    <h3><i class="fa-solid fa-envelope"></i>お申し込み方法</h3>
+                    <p>皆さんとお会いできるのを楽しみにしています♪ 以下のフォームよりお申し込み下さい。</p>
+                    <div class="button-container"><a href="https://forms.gle/r7LbF372r8mr4g4k8" target="_blank"
+                            class="btn-primary">お申し込みはこちら</a></div>
                     <!-- SNS Share Buttons -->
                     <div class="share-buttons">
-                        <p>このイベントをSNSでシェアする</p>
-                        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.star-crafters.org%2Fnews%2Fevent-20251227.html&text=DTM%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%20%E9%96%8B%E5%82%AC%E6%B1%BA%E5%AE%9A%EF%BC%81%20%7C%20NPO%E6%B3%95%E4%BA%BAStarCrafters"
-                            class="share-x" target="_blank" title="Xでシェア"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.star-crafters.org%2Fnews%2Fevent-20251227.html"
+                        <p>このイベントをSNSでシェアする</p><a
+                            href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.star-crafters.org%2Fnews%2Fevent-20251227.html&text=DTM%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%20%E9%96%8B%E5%82%AC%E6%B1%BA%E5%AE%9A%EF%BC%81%20%7C%20NPO%E6%B3%95%E4%BA%BAStarCrafters"
+                            class="share-x" target="_blank" title="Xでシェア"><i class="fa-brands fa-x-twitter"></i></a><a
+                            href="https.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.star-crafters.org%2Fnews%2Fevent-20251227.html"
                             class="share-facebook" target="_blank" title="Facebookでシェア"><i
-                                class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/star__crafters/?locale=ja_JP" class="share-instagram"
+                                class="fa-brands fa-facebook-f"></i></a><a
+                            href="https://www.instagram.com/star__crafters/?locale=ja_JP" class="share-instagram"
                             target="_blank" title="Instagramでフォロー"><i class="fa-brands fa-instagram"></i></a>
                     </div>
-
-                    <h3><i class="fa-solid fa-map-location-dot"></i> 会場アクセス</h3>
-                    <div class="map-container">
-                        <iframe
+                    <h3><i class="fa-solid fa-map-location-dot"></i>会場アクセス</h3>
+                    <p style="margin-bottom: 1rem;">
+                        <strong>アイム・ユニバースてだこホール 1階 マルチメディア室</strong><br>
+                        〒901-2103 沖縄県浦添市仲間１丁目９−３
+                    </p>
+                    <div class="map-container"><iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.800013319087!2d127.72067416718512!3d26.25025644718705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e56b0195968c7b%3A0x4ce2a359795984d7!2z44Gm44Gp44GT44Ob44O844Or!5e0!3m2!1sja!2sjp!4v1678886400000!5m2!1sja!2sjp"
                             width="600" height="450" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                 </div>
-                <div class="back-to-top-container">
-                    <a href="/index.html" class="btn-secondary">トップページに戻る</a>
+                <div class="back-to-top-container"><a href="/index.html" class="btn-secondary">トップページに戻る</a>
                 </div>
             </div>
         </section>
     </main>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="section-container">
-            <p>&copy; 2025 <strong>特定非営利活動法人StarCrafters</strong></p>
+            <p>&copy;
+                2025 <strong>特定非営利活動法人StarCrafters</strong></p>
         </div>
     </footer>
-
     <script src="/js/script.js"></script>
 </body>
 

@@ -1,14 +1,6 @@
 // お知らせデータ管理
 const newsData = [
-    {
-        id: 10,
-        date: "2026.01.12",
-        category: "イベント",
-        categoryClass: "category-event",
-        title: "遊王祭 x CoderDojo - ポケカ、ミニ四駆、デジタル体験まで親子で楽しむ遊びの祭りを開催します。",
-        link: "news/event-20260112.html",
-        featured: true
-    },
+
     {
         id: 9,
         date: "2025.12.27",
