@@ -162,6 +162,34 @@
             font-size: 0.95rem;
             line-height: 1.6;
         }
+
+        .program-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 0.8rem;
+            display: block;
+        }
+
+        .playfest-highlight {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .playfest-highlight::after {
+            content: "仮の内容です";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-15deg);
+            font-size: 5rem;
+            color: rgba(0, 0, 0, 0.1);
+            pointer-events: none;
+            white-space: nowrap;
+            z-index: 0;
+            font-weight: 700;
+        }
     </style>
 </head>
 
@@ -201,7 +229,8 @@
             <div class="section-container">
                 <div class="section-header playfest-header-bg">
                     <h2 class="section-title">遊王祭 x CoderDojo</h2>
-                    <p class="section-subtitle">ポケカ、ミニ四駆、ヘボコン、ドローン、Scratch、Minecraft、親子クッキングまで！あそびと学びの1日を家族みんなで楽しみましょう。</p>
+                    <p class="section-subtitle">ポケカ、ミニ四駆、ヘボコン、ドローン、Scratch、Minecraft、親子クッキングまで！あそびと学びの1日を家族みんなで楽しみましょう。
+                    </p>
                 </div>
 
                 <div class="event-details">
@@ -215,7 +244,8 @@
                             <th>会場</th>
                             <td>
                                 南城市役所（沖縄県南城市佐敷新里1870）
-                                <p class="target-note" style="margin-top: 0.5rem;">会場内の多目的スペースで複数コンテンツを同時開催します。現地スタッフが各ブースをご案内します。</p>
+                                <p class="target-note" style="margin-top: 0.5rem;">
+                                    会場内の多目的スペースで複数コンテンツを同時開催します。現地スタッフが各ブースをご案内します。</p>
                             </td>
                         </tr>
                         <tr>
@@ -238,30 +268,37 @@
                             <p>アナログもデジタルも、好きなことに全力で取り組めるラインアップを揃えました。来場した瞬間から家族の笑顔が溢れる体験ばかりです。</p>
                             <div class="playfest-program-grid">
                                 <div class="program-card">
+                                    <img src="/img/news/20260112/pokeca.jpg" alt="ポケカ大会" loading="lazy">
                                     <h5>ポケカ大会</h5>
                                     <p>親子＆キッズ向けのカジュアルトーナメント。初心者デッキでも歓迎です。</p>
                                 </div>
                                 <div class="program-card">
+                                    <img src="/img/news/20260112/mini4wd.jpg" alt="ミニ四駆体験" loading="lazy">
                                     <h5>ミニ四駆体験</h5>
                                     <p>自分でカスタムしたマシンでコースを疾走。チューニング講座も実施予定。</p>
                                 </div>
                                 <div class="program-card">
+                                    <img src="/img/news/20260112/hebocon.jpg" alt="ヘボコン" loading="lazy">
                                     <h5>ヘボコン</h5>
                                     <p>技術力不問！ユニークな手作りロボットを持ち寄って笑いのバトルを楽しもう。</p>
                                 </div>
                                 <div class="program-card">
+                                    <img src="/img/news/20260112/drone.jpg" alt="ドローンプログラミング" loading="lazy">
                                     <h5>ドローンプログラミング</h5>
                                     <p>Scratchでルートを指示し、空のミッションに挑戦。初めての方でもスタッフがサポート。</p>
                                 </div>
                                 <div class="program-card">
+                                    <img src="/img/news/20260112/scratch-game.jpg" alt="Scratchでスマブラ！" loading="lazy">
                                     <h5>Scratchでスマブラ！</h5>
                                     <p>自分だけの必殺技をコードで実装。発想力とロジックでゲームづくりに挑戦します。</p>
                                 </div>
                                 <div class="program-card">
+                                    <img src="/img/news/20260112/minecraft.jpg" alt="Minecraft体験" loading="lazy">
                                     <h5>Minecraft体験</h5>
                                     <p>同じワールドで協力しながら課題に挑戦。建築も冒険も大歓迎です。</p>
                                 </div>
                                 <div class="program-card">
+                                    <img src="/img/news/20260112/cooking.jpg" alt="親子でスイーツ作り" loading="lazy">
                                     <h5>親子でスイーツ作り</h5>
                                     <p>発達と栄養の関係を学びながら、おいしいスイーツを親子で調理。食育のヒントも得られます。</p>
                                 </div>
@@ -273,10 +310,11 @@
                     <h3><i class="fa-solid fa-envelope"></i> 申込方法</h3>
                     <div class="entry-callout">
                         <strong>ポケカ大会・ヘボコンは事前エントリー制です。</strong>
-                            <p>下記の申込みフォームから希望するコンテンツを選び、必要事項を入力してください。</p>
-                        </div>
-                        <div class="button-container">
-                            <a href="https://forms.gle/QzvHefCRAyK63fq78" target="_blank" class="btn-primary">ポケカ・ヘボコンの事前エントリーはこちら</a>
+                        <p>下記の申込みフォームから希望するコンテンツを選び、必要事項を入力してください。</p>
+                    </div>
+                    <div class="button-container">
+                        <a href="https://forms.gle/QzvHefCRAyK63fq78" target="_blank"
+                            class="btn-primary">ポケカ・ヘボコンの事前エントリーはこちら</a>
                     </div>
                     <p class="target-note" style="margin-top: 0.6rem;">その他のブースは事前申込み不要です。混雑状況により整理券対応となる場合があります。</p>
 
@@ -294,7 +332,8 @@
 
                     <h3><i class="fa-solid fa-map-location-dot"></i> 会場アクセス</h3>
                     <div class="map-container">
-                        <iframe src="https://maps.google.com/maps?q=%E5%8D%97%E5%9F%8E%E5%B8%82%E5%BD%B9%E6%89%80&output=embed"
+                        <iframe
+                            src="https://maps.google.com/maps?q=%E5%8D%97%E5%9F%8E%E5%B8%82%E5%BD%B9%E6%89%80&output=embed"
                             width="600" height="450" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
