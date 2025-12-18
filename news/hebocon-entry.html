@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="ヘボコン in 南城の参加者募集ページ。親子で手作りロボットを持ち寄って笑いと驚きの対戦を楽しもう。事前エントリー制、入場無料。" />
+
+    <meta property="og:url" content="https://www.star-crafters.org/news/hebocon-entry.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ヘボコン in 南城 | NPO法人StarCrafters" />
+    <meta property="og:description"
+        content="大人も子どももヘボいロボットを創って、笑いのバトルに挑戦！南城市役所で2026年1月12日開催。事前エントリー制です。" />
+    <meta property="og:site_name" content="NPO法人StarCrafters" />
+    <meta property="og:image" content="https://www.star-crafters.org/img/news/20260112/hebocon-keyvisual.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Star__Crafters" />
+
+    <title>ヘボコン in 南城 | 参加者募集 | NPO法人StarCrafters</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/news.styles.css" />
+    <style>
+        #event-page {
+            padding-top: 0 !important;
+        }
+
+        .hebocon-hero {
+            background-image: linear-gradient(rgba(10, 16, 36, 0.75), rgba(10, 16, 36, 0.75)),
+                url('/img/news/20260112/hebocon-keyvisual.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            padding: 4rem 2rem;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .hebocon-hero .section-title {
+            color: #fff9f0;
+            border-bottom-color: rgba(255, 255, 255, 0.4);
+            margin-bottom: 0.6rem;
+        }
+
+        .hebocon-hero .section-subtitle {
+            color: rgba(255, 255, 255, 0.85);
+            margin-top: 0.4rem;
+            line-height: 1.6;
+        }
+
+        .entry-callout {
+            background: rgba(255, 145, 56, 0.1);
+            border-left: 4px solid #ff9138;
+            border-radius: 12px;
+            padding: 1rem 1.2rem;
+            margin: 1rem 0;
+        }
+
+        .entry-callout strong {
+            display: inline-block;
+            margin-bottom: 0.4rem;
+        }
+
+        .playfest-highlight {
+            background: linear-gradient(135deg, rgba(255, 244, 219, 0.95), rgba(255, 255, 255, 0.95));
+            border: 1px solid rgba(255, 145, 56, 0.3);
+            border-radius: 18px;
+            padding: 1.5rem;
+            box-shadow: 0 12px 25px rgba(255, 145, 56, 0.15);
+        }
+
+        .playfest-highlight h4 {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 1.2rem;
+            color: #c75100;
+            margin-bottom: 0.8rem;
+        }
+
+        .playfest-highlight p {
+            margin: 0 0 0.8rem;
+            line-height: 1.6;
+        }
+
+        .playfest-program-grid {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            margin-top: 1rem;
+        }
+
+        .program-card {
+            background: white;
+            border-radius: 14px;
+            padding: 1rem;
+            border: 1px solid rgba(255, 145, 56, 0.2);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+        }
+
+        .program-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 0.8rem;
+            display: block;
+        }
+
+        .event-table th {
+            text-align: right;
+            vertical-align: top;
+            padding-right: 1rem;
+            white-space: nowrap;
+        }
+
+        .event-table td {
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .target-base {
+            font-weight: 600;
+            color: var(--neutral-800);
+        }
+
+        .target-note {
+            font-size: 0.95rem;
+            color: var(--neutral-600);
+        }
+
+        .map-container {
+            margin-top: 1.5rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1rem;
+            max-width: 640px;
+        }
+        .hero-visual {
+            margin: 0 auto 1.5rem;
+            width: 100%;
+            max-width: 820px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .hero-visual img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .highlight-visual {
+            margin-top: 1rem;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        .highlight-visual img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .iframe-wrapper {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%;
+            border-radius: 16px;
+            margin-top: 0.8rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .iframe-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="/index.html" class="logo" data-tooltip="Designed by NAMIKO SERIZAWA">
+                <img src="/img/starcrafters-logo.png" alt="StarCrafters logo" class="logo-image" />
+            </a>
+            <ul class="nav-links">
+                <li><a href="/index.html#programs">取り組んでいること</a></li>
+                <li><a href="/index.html#about">私たちについて</a></li>
+                <li><a href="/info.html">子育てお役立ち情報</a></li>
+                <li><a href="/index.html#contact">お問い合わせ</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="/index.html#programs">取り組んでいること</a></li>
+                <li><a href="/index.html#about">私たちについて</a></li>
+                <li><a href="/info.html">子育てお役立ち情報</a></li>
+                <li><a href="/index.html#contact">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="event-page" class="section">
+            <div class="section-container">
+                <div class="hebocon-hero">
+                    <h2 class="section-title">ヘボコン in 南城市</h2>
+                    <p class="section-subtitle hero-subtitle">ヘボさを皆でたたえあう、大人も子どもも、みんなで楽しむロボット相撲バトルです！</p>
+                </div>
+
+                <div class="hero-visual">
+                    <img src="/img/news/20260112/hebocon.jpg" alt="ヘボコンの様子" loading="lazy">
+                </div>
+                <div class="event-details">
+                    <h3><i class="fa-solid fa-circle-info"></i> 開催概要</h3>
+                    <p class="target-note">大会の雰囲気やルールは、<a href="https://hebocon.org/ja/whats" target="_blank">公式サイト</a>でもご確認ください。</p>
+                    <table class="event-table">
+                        <tr>
+                            <th>日時</th>
+                            <td>2026年1月12日（月・祝）10:00 - 16:00</td>
+                        </tr>
+                        <tr>
+                            <th>会場</th>
+                            <td>
+                                南城市役所（沖縄県南城市佐敷新里1870）
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>費用</th>
+                            <td>無料（ヘボコン参加は事前申込み必須）</td>
+                        </tr>
+                        <tr>
+                            <th>対象</th>
+                            <td>
+                                <p class="target-base">初めての方も、ヘボコン経験者も大歓迎！</p>
+                                <p class="target-note">100均のおもちゃに段ボールで工作、ラジコンカーをデコる、まともに動かなくでも、バラバラになっちゃってもOK！皆で楽しみましょう！親子参加でも、単独参加でもOKです。</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="target-note" style="margin-top: 0.5rem;">
+                        参加者はヘボいロボットを以下の範囲で制作してきてください。
+                        <ul>
+                            <li>サイズは縦50cm×横50cm、重量1kg以内。高さに制限はなし</li>
+                            <li>プログラミングによる自動操縦など、高い技術力を見せつけた場合は「ハイテクノロジーペナルティー」で減点されます</li>
+                            <li>100cm×50cmの土俵で相撲を行います</li>
+                        </ul>
+                    </div>
+                    <div class="iframe-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/YCx_scvzxNY?si=sjKNX5_SWJOTBWwe"
+                            title="Hebocon 公式動画" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen loading="lazy"></iframe>
+                    </div>
+
+                    <h3><i class="fa-solid fa-robot"></i> ヘボコン in 南城とは</h3>
+                    <div class="playfest-highlight">
+                        <div class="event-highlight-text">
+                            <h4><span class="icon"><i class="fa-solid fa-face-laugh"></i></span>みんなで創り、笑い合える対戦会</h4>
+                            <p>ヘボコンは、勝敗ではなく、アイデアと創造力、掛け合いの楽しさをみなで笑い合い、楽しみ合うロボットコンテストです。</p>
+                            <p>完成度よりも、参加者それぞれが表現したいこと、とにかく創りたいモノ、正しさや正解はなく、とにかくヘボくても自分を表現したいことを形にして見せつけることを大切にします。</p>
+                            <p>当日動かなくてもOK。試合前にバラバラになった？OK！ロボットを忘れてきた？最高！そんなノリの笑いあふれるイベントです。</p>
+                            <div class="highlight-visual">
+                                <img src="/img/news/20260112/hebocon2.jpg" alt="ヘボコンの熱戦" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3><i class="fa-solid fa-envelope"></i> 参加申込</h3>
+                    <div class="entry-callout">
+                        <strong>ヘボコン in 南城は事前エントリー制です。</strong>
+                        <p>申込フォームに必要事項を記入し、作品の準備状況などを教えてください。大人も子どもも、初めての方もどうぞ！</p>
+                        <p class="target-note" style="margin-top: 0.4rem;">申込期限：2026年1月11日まで</p>
+                    </div>
+                    <div class="button-container">
+                        <a href="https://forms.gle/U4zBZeeYTVZd2fXb6" target="_blank" class="btn-primary">ヘボコン参加申込みフォーム</a>
+                    </div>
+                    <p class="target-note" style="margin: 0.6rem 0 1rem; text-align: center;">
+                        <a href="https://drive.google.com/file/d/1BPus9bWOYiHnawXvqrOS9Vl0fCHY7qZP/view?usp=drive_link" target="_blank" rel="noopener">ヘボコンin南城市のチラシ.pdf（4.7MB）</a>
+                    </p>
+
+                    <h3><i class="fa-solid fa-map-location-dot"></i> 会場アクセス</h3>
+                    <div class="map-container">
+                        <iframe
+                            src="https://maps.google.com/maps?q=%E5%8D%97%E5%9F%8E%E5%B8%82%E5%BD%B9%E6%89%80&output=embed"
+                            width="600" height="450" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="section-container">
+            <p>&copy; 2025 <strong>特定非営利活動法人StarCrafters</strong></p>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

@@ -172,23 +172,25 @@
             display: block;
         }
 
-        .playfest-highlight {
-            position: relative;
-            overflow: hidden;
+        .application-grid {
+            display: grid;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         }
 
-        .playfest-highlight::after {
-            content: "仮の内容です";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(-15deg);
-            font-size: 5rem;
-            color: rgba(0, 0, 0, 0.1);
-            pointer-events: none;
-            white-space: nowrap;
-            z-index: 0;
-            font-weight: 700;
+        .entry-card {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(255, 145, 56, 0.3);
+            border-radius: 16px;
+            padding: 1rem 1.1rem;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+        }
+
+        .entry-card h4 {
+            margin: 0 0 0.4rem;
+            font-size: 1.1rem;
+            color: #c75100;
         }
     </style>
 </head>
@@ -228,8 +230,8 @@
         <section id="event-page" class="section">
             <div class="section-container">
                 <div class="section-header playfest-header-bg">
-                    <h2 class="section-title">遊王祭 x CoderDojo</h2>
-                    <p class="section-subtitle">ポケカ、ミニ四駆、ヘボコン、ドローン、Scratch、Minecraft、親子クッキングまで！あそびと学びの1日を家族みんなで楽しみましょう。
+                    <h2 class="section-title">遊王祭 x CoderDojo（in 南城）</h2>
+                    <p class="section-subtitle">ポケカ、ミニ四駆、ヘボコン、ドローン、Scratch、Minecraft、親子クッキング、乗馬体験まで！あそびと学びの1日を家族みんなで楽しみましょう。
                     </p>
                 </div>
 
@@ -280,7 +282,7 @@
                                 <div class="program-card">
                                     <img src="/img/news/20260112/hebocon.jpg" alt="ヘボコン" loading="lazy">
                                     <h5>ヘボコン</h5>
-                                    <p>技術力不問！ユニークな手作りロボットを持ち寄って笑いのバトルを楽しもう。</p>
+                                    <p>技術力不問！ユニークな手作りロボットを持ち寄って笑いのバトルを楽しもう。<a href="/news/hebocon-entry.html" target="_blank" rel="noopener">ヘボコン専用ページ</a>でもっと詳しく。</p>
                                 </div>
                                 <div class="program-card">
                                     <img src="/img/news/20260112/drone.jpg" alt="ドローンプログラミング" loading="lazy">
@@ -289,8 +291,8 @@
                                 </div>
                                 <div class="program-card">
                                     <img src="/img/news/20260112/scratch-game.jpg" alt="Scratchでスマブラ！" loading="lazy">
-                                    <h5>Scratchでスマブラ！</h5>
-                                    <p>自分だけの必殺技をコードで実装。発想力とロジックでゲームづくりに挑戦します。</p>
+                                    <h5>Scratchでゲーム創り！</h5>
+                                    <p>スマブラや弾幕ゲームを体験！それを改造する方法を学びます！</p>
                                 </div>
                                 <div class="program-card">
                                     <img src="/img/news/20260112/minecraft.jpg" alt="Minecraft体験" loading="lazy">
@@ -302,8 +304,14 @@
                                     <h5>親子でスイーツ作り</h5>
                                     <p>発達と栄養の関係を学びながら、おいしいスイーツを親子で調理。食育のヒントも得られます。</p>
                                 </div>
+                                <div class="program-card">
+                                    <img src="/img/news/20260112/hose.jpg" alt="乗馬体験" loading="lazy">
+                                    <h5>乗馬体験</h5>
+                                    <p>馬は人の心の状態を敏感に感じ取り、正直に反応する動物です。馬とのコミュニケーション、そして乗馬体験してみましょう！</p>
+                                </div>
                             </div>
-                            <p style="margin-top: 0.8rem;">このほかにも、自由に触れられるデジタル工作やボードゲームなど、来場者のペースで楽しめるコーナーを準備中です。</p>
+                            <p class="target-note" style="margin-top: 0.8rem;">ヘボコンの詳しいスケジュールや参加ルールは<a href="/news/hebocon-entry.html" target="_blank" rel="noopener">ヘボコン専用ページ</a>で確認できます。</p>
+                            <p style="margin-top: 0.8rem;">このほかにも、親子で学び、楽しむブースやキッチンカーでの飲食ブースを準備してお待ちしています！</p>
                         </div>
                     </div>
 
@@ -312,9 +320,25 @@
                         <strong>ポケカ大会・ヘボコンは事前エントリー制です。</strong>
                         <p>下記の申込みフォームから希望するコンテンツを選び、必要事項を入力してください。</p>
                     </div>
-                    <div class="button-container">
-                        <a href="https://forms.gle/QzvHefCRAyK63fq78" target="_blank"
-                            class="btn-primary">ポケカ・ヘボコンの事前エントリーはこちら</a>
+                    <div class="application-grid">
+                        <article class="entry-card">
+                            <h4>南城市ポケモンカード大会</h4>
+                            <p>第３回南城市ポケモンカード大会＠南城市役所の参加申込フォームです。</p>
+                            <p class="target-note">申込期限：2026年1月11日まで</p>
+                            <div class="button-container">
+                                <a href="https://forms.gle/F9srNUUnoTaLV8v76" target="_blank"
+                                    class="btn-primary">参加申込フォーム</a>
+                            </div>
+                        </article>
+                        <article class="entry-card">
+                            <h4>ヘボコン in 南城</h4>
+                            <p>大人も子どももヘボいロボットを創って参加しましょう！</p>
+                            <p class="target-note">申込期限：2026年1月11日まで</p>
+                            <div class="button-container">
+                                <a href="https://forms.gle/U4zBZeeYTVZd2fXb6" target="_blank"
+                                    class="btn-primary">参加申込みフォーム</a>
+                            </div>
+                        </article>
                     </div>
                     <p class="target-note" style="margin-top: 0.6rem;">その他のブースは事前申込み不要です。混雑状況により整理券対応となる場合があります。</p>
 

@@ -2,6 +2,24 @@
 const newsData = [
 
     {
+        id: 11,
+        date: "2026.01.12",
+        category: "イベント",
+        categoryClass: "category-event",
+        title: "1/12開催の遊王祭×CoderDojoでポケカ大会・ヘボコン・ミニ四駆など遊びが集結！",
+        link: "news/event-20260112.html",
+        featured: true
+    },
+    {
+        id: 10,
+        date: "2026.01.12",
+        category: "イベント",
+        categoryClass: "category-event",
+        title: "ヘボコン in 南城の参加者募集ページを公開。ヘボいロボット相撲を笑顔で楽しもう！",
+        link: "news/hebocon-entry.html",
+        featured: true
+    },
+    {
         id: 9,
         date: "2025.12.27",
         category: "イベント",
