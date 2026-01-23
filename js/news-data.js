@@ -2,7 +2,7 @@
 const newsData = [
     {
         id: 9,
-        date: "2026.01.03",
+        date: "2026.01.23",
         category: "イベント",
         categoryClass: "category-event",
         title: "ハイブリッド型探究学習3学期！1月〜3月の全5回で多彩な学びを楽しもう。",
@@ -20,7 +20,7 @@ const newsData = [
     },
     {
         id: 7,
-        date: "2026.01.12",
+        date: "2025.12.20",
         category: "イベント",
         categoryClass: "category-event",
         title: "遊王祭×CoderDojo（1月12日）でポケカ・ミニ四駆・ヘボコンなど“遊びの祭り”を開催！",
@@ -29,7 +29,7 @@ const newsData = [
     },
     {
         id: 6,
-        date: "2026.01.12",
+        date: "2025.12.20",
         category: "イベント",
         categoryClass: "category-event",
         title: "ヘボコン in 南城の参加者募集ページを公開。ヘボいロボット相撲で笑い合おう！",
@@ -85,14 +85,16 @@ const newsData = [
 
 // 最新のお知らせを取得する関数
 function getLatestNews(count = 3) {
+    const parseNewsDate = (dateStr) => new Date(dateStr.replace(/\./g, "-"));
     return newsData
-        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .sort((a, b) => parseNewsDate(b.date) - parseNewsDate(a.date))
         .slice(0, count);
 }
 
 // 全てのお知らせを取得する関数
 function getAllNews() {
-    return newsData.sort((a, b) => new Date(b.date) - new Date(a.date));
+    const parseNewsDate = (dateStr) => new Date(dateStr.replace(/\./g, "-"));
+    return newsData.sort((a, b) => parseNewsDate(b.date) - parseNewsDate(a.date));
 }
 
 // お知らせHTMLを生成する関数
