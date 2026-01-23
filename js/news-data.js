@@ -1,35 +1,52 @@
 // お知らせデータ管理
 const newsData = [
-
-    {
-        id: 11,
-        date: "2026.01.12",
-        category: "イベント",
-        categoryClass: "category-event",
-        title: "1/12開催の遊王祭×CoderDojoでポケカ大会・ヘボコン・ミニ四駆など遊びが集結！",
-        link: "news/event-20260112.html",
-        featured: true
-    },
-    {
-        id: 10,
-        date: "2026.01.12",
-        category: "イベント",
-        categoryClass: "category-event",
-        title: "ヘボコン in 南城の参加者募集ページを公開。ヘボいロボット相撲を笑顔で楽しもう！",
-        link: "news/hebocon-entry.html",
-        featured: true
-    },
     {
         id: 9,
-        date: "2025.12.27",
+        date: "2026.01.03",
         category: "イベント",
         categoryClass: "category-event",
-        title: "DTMを体験しよう！初心者向けの音楽制作ワークショップを開催します。",
-        link: "news/event-20251227.html",
+        title: "ハイブリッド型探究学習3学期！1月〜3月の全5回で多彩な学びを楽しもう。",
+        link: "news/event-202601-03.html",
         featured: true
     },
     {
         id: 8,
+        date: "2025.12.31",
+        category: "イベント",
+        categoryClass: "category-event",
+        title: "Minecraftカウントダウン2026！新年をマイクラワールドで祝おう!",
+        link: "news/event-20251231.html",
+        featured: true
+    },
+    {
+        id: 7,
+        date: "2026.01.12",
+        category: "イベント",
+        categoryClass: "category-event",
+        title: "遊王祭×CoderDojo（1月12日）でポケカ・ミニ四駆・ヘボコンなど“遊びの祭り”を開催！",
+        link: "news/event-20260112.html",
+        featured: true
+    },
+    {
+        id: 6,
+        date: "2026.01.12",
+        category: "イベント",
+        categoryClass: "category-event",
+        title: "ヘボコン in 南城の参加者募集ページを公開。ヘボいロボット相撲で笑い合おう！",
+        link: "news/hebocon-entry.html",
+        featured: true
+    },
+    {
+        id: 5,
+        date: "2025.12.27",
+        category: "イベント",
+        categoryClass: "category-event",
+        title: "（募集終了）DTMを体験しよう！初心者向けの音楽制作ワークショップを開催します。",
+        link: "news/event-20251227.html",
+        featured: true
+    },
+    {
+        id: 4,
         date: "2025.11.16",
         category: "イベント",
         categoryClass: "category-event",
@@ -38,7 +55,7 @@ const newsData = [
         featured: true
     },
     {
-        id: 7,
+        id: 3,
         date: "2025.10.05",
         category: "イベント",
         categoryClass: "category-event",
@@ -47,7 +64,7 @@ const newsData = [
         featured: true
     },
     {
-        id: 6,
+        id: 2,
         date: "2025.09.27",
         category: "お知らせ",
         categoryClass: "category-notice",
@@ -56,49 +73,13 @@ const newsData = [
         featured: false
     },
     {
-        id: 5,
+        id: 1,
         date: "2025.09.01",
         category: "イベント",
         categoryClass: "category-event",
         title: "9月28日（日）親子で楽しむ創作体験 with TeacherTeacher 開催！ポッドキャストで大人気のTeacherTeacherのお二人と沖縄で“生”対話できる特別イベントです。",
         link: "news/2025-09-28.html",
         featured: true
-    },
-    {
-        id: 4,
-        date: "2025.07.29",
-        category: "イベント",
-        categoryClass: "category-event",
-        title: "8月2日（土）親子で楽しむクッキングイベントの資料ダウンロードはこちらから※当日はブース内のQRコードからもダウンロードできます",
-        link: "news/cooking.pdf",
-        featured: true
-    },
-    {
-        id: 3,
-        date: "2025.07.15",
-        category: "イベント",
-        categoryClass: "category-event",
-        title: "8月2日（土）親子で、まなび、あそぶマルシェ開催！ドローンプログラミング体験、お母さんの癒し・絵本セラビー、大人向け読み聞かせ会、栄養と発達を学ぶ簡単クッキング会など盛りだくさんです！",
-        link: "news/event-20250802.html",
-        featured: true
-    },
-    {
-        id: 2,
-        date: "2024.07.18",
-        category: "イベント",
-        categoryClass: "category-event",
-        title: "8月2日に体験イベントを開催予定です。詳細は後ほどお知らせ致します。",
-        link: "#",
-        featured: false
-    },
-    {
-        id: 1,
-        date: "2024.07.01",
-        category: "お知らせ",
-        categoryClass: "category-notice",
-        title: "NPO法人StarCrafters設立！合わせてウェブサイトを開設しました。コンテンツはこれから充実させていきます。",
-        link: "#",
-        featured: false
     }
 ];
 
