@@ -62,7 +62,8 @@ html {
 .logo {
     display: block;
     text-decoration: none;
-    position: relative; /* For tooltip positioning */
+    position: relative;
+    /* For tooltip positioning */
 }
 
 .logo-image {
@@ -71,6 +72,7 @@ html {
     object-fit: contain;
     transition: transform 0.3s ease;
 }
+
 /* Tooltip for logo */
 .logo[data-tooltip]:hover::after {
     opacity: 1;
@@ -80,7 +82,8 @@ html {
 .logo[data-tooltip]::after {
     content: attr(data-tooltip);
     position: absolute;
-    bottom: -40px; /* Adjust as needed */
+    bottom: -40px;
+    /* Adjust as needed */
     left: 50%;
     transform: translateX(-50%);
     background: var(--neutral-800);
@@ -89,11 +92,13 @@ html {
     border-radius: 4px;
     font-size: 12px;
     white-space: nowrap;
-    z-index: 10001; /* Ensure it's above other elements */
+    z-index: 10001;
+    /* Ensure it's above other elements */
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s, visibility 0.3s;
-    pointer-events: none; /* So it doesn't interfere with mouse events on the logo */
+    pointer-events: none;
+    /* So it doesn't interfere with mouse events on the logo */
 }
 
 .logo:hover .logo-image {
@@ -218,10 +223,10 @@ html {
 /* Hero Section */
 .hero {
     min-height: 100vh;
-    background: linear-gradient(135deg, 
-        rgba(20, 184, 166, 0.08) 0%, 
-        rgba(14, 165, 233, 0.08) 50%, 
-        rgba(139, 92, 246, 0.08) 100%);
+    background: linear-gradient(135deg,
+            rgba(20, 184, 166, 0.08) 0%,
+            rgba(14, 165, 233, 0.08) 50%,
+            rgba(139, 92, 246, 0.08) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -283,12 +288,19 @@ html {
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         transform: translate(-50%, 0);
     }
+
     40% {
         transform: translate(-50%, -15px);
     }
+
     60% {
         transform: translate(-50%, -8px);
     }
@@ -356,9 +368,17 @@ html {
     color: white;
 }
 
-.category-event { background: var(--primary-orange); }
-.category-notice { background: var(--primary-blue); }
-.category-report { background: var(--npo-green); }
+.category-event {
+    background: var(--primary-orange);
+}
+
+.category-notice {
+    background: var(--primary-blue);
+}
+
+.category-report {
+    background: var(--npo-green);
+}
 
 .news-title {
     font-weight: 500;
@@ -371,7 +391,9 @@ html {
     transition: transform 0.3s ease;
 }
 
-.news-item:hover .news-arrow { transform: translateX(5px); }
+.news-item:hover .news-arrow {
+    transform: translateX(5px);
+}
 
 .view-more-container {
     text-align: center;
@@ -433,6 +455,7 @@ html {
 }
 
 .btn-primary {
+    display: inline-block;
     background: linear-gradient(135deg, var(--primary-teal), var(--primary-blue));
     color: white;
     padding: 1rem 2rem;
@@ -442,6 +465,7 @@ html {
     text-decoration: none;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(20, 184, 166, 0.3);
+    text-align: center;
 }
 
 .btn-primary:hover {
@@ -450,6 +474,7 @@ html {
 }
 
 .btn-secondary {
+    display: inline-block;
     background: white;
     color: var(--primary-teal);
     padding: 1rem 2rem;
@@ -458,6 +483,7 @@ html {
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .btn-secondary:hover {
@@ -531,8 +557,8 @@ html {
 
 /* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 2.0s;
+    animation-name: fade;
+    animation-duration: 2.0s;
 }
 
 /* Mission Section */
@@ -542,8 +568,13 @@ html {
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 .solution-card {
@@ -1260,291 +1291,293 @@ html {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-   .nav-links {
-       display: none;
-   }
+    .nav-links {
+        display: none;
+    }
 
-   .mobile-menu {
-       display: flex;
-   }
+    .mobile-menu {
+        display: flex;
+    }
 
-   /* お知らせセクションのモバイル最適化 */
-   .news-item-content {
-       flex-direction: column;
-       align-items: flex-start;
-       gap: 0.75rem;
-   }
+    /* お知らせセクションのモバイル最適化 */
+    .news-item-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
 
-   .news-item-content .news-meta {
-       display: flex;
-       align-items: center;
-       gap: 1rem;
-       width: 100%;
-   }
+    .news-item-content .news-meta {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
 
-   .news-date {
-       min-width: auto;
-       font-size: 0.9rem;
-   }
+    .news-date {
+        min-width: auto;
+        font-size: 0.9rem;
+    }
 
-   .news-category {
-       font-size: 0.75rem;
-       padding: 0.25rem 0.6rem;
-   }
+    .news-category {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.6rem;
+    }
 
-   .news-title {
-       font-size: 0.95rem;
-       line-height: 1.5;
-       width: 100%;
-   }
+    .news-title {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        width: 100%;
+    }
 
-   .news-item {
-       padding: 1.25rem;
-   }
+    .news-item {
+        padding: 1.25rem;
+    }
 
-   .hero-content {
-       grid-template-columns: 1fr;
-       gap: 3rem;
-       text-align: center;
-   }
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
 
-   .about-content {
-       grid-template-columns: 1fr;
-       gap: 3rem;
-   }
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
 
-   .mission-content {
-       flex-direction: column;
-       gap: 3rem;
-   }
+    .mission-content {
+        flex-direction: column;
+        gap: 3rem;
+    }
 
-   .mission-visual {
-       flex: none;
-   }
+    .mission-visual {
+        flex: none;
+    }
 
-   .hero-buttons {
-       justify-content: center;
-   }
+    .hero-buttons {
+        justify-content: center;
+    }
 
-   .contact-buttons {
-       flex-direction: column;
-       align-items: center;
-   }
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
 
-   .nav {
-       padding: 1rem;
-   }
+    .nav {
+        padding: 1rem;
+    }
 
-   .section {
-    padding: 3rem 0;
-  }
+    .section {
+        padding: 3rem 0;
+    }
 
-  .logo-content {
-      display: none;
-  }
+    .logo-content {
+        display: none;
+    }
 
-  .activities-content {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-  }
-  
-  .activities-table-container {
-      overflow-x: auto;
-  }
-  
-  .activities-table {
-      min-width: 600px;
-  }
-  
-  .activities-table th,
-  .activities-table td {
-      padding: 0.8rem;
-      font-size: 0.8rem;
-  }
+    .activities-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 
-  /* フォントサイズの調整 */
-  .mission-title {
-      font-size: 2rem;
-  }
-  
-  .section-title {
-      font-size: 2rem;
-  }
-  
-  .mission-text h3 {
-      font-size: 1.5rem;
-  }
-  
-  .stat-highlight {
-      font-size: 2.5rem;
-  }
+    .activities-table-container {
+        overflow-x: auto;
+    }
 
-  .hero-subtitle {
-      font-size: 1.1rem;
-  }
+    .activities-table {
+        min-width: 600px;
+    }
 
-  .hero-description {
-      font-size: 1rem;
-  }
+    .activities-table th,
+    .activities-table td {
+        padding: 0.8rem;
+        font-size: 0.8rem;
+    }
 
-  /* パディングの調整 */
-  .mission-text {
-      padding: 2rem;
-  }
-  
-  .hero-card {
-      padding: 2rem;
-  }
-  
-  .contact-info {
-      padding: 2rem;
-  }
+    /* フォントサイズの調整 */
+    .mission-title {
+        font-size: 2rem;
+    }
 
-  .story-intro {
-      padding: 2rem;
-  }
+    .section-title {
+        font-size: 2rem;
+    }
 
-  .npo-reason-card {
-      padding: 2rem;
-  }
+    .mission-text h3 {
+        font-size: 1.5rem;
+    }
 
-  .vision-card {
-      padding: 2rem;
-  }
+    .stat-highlight {
+        font-size: 2.5rem;
+    }
 
-  .program-content {
-      padding: 1.5rem;
-  }
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
 
-  .section-container {
-      padding: 0 1rem;
-  }
+    .hero-description {
+        font-size: 1rem;
+    }
 
-  .mission-container {
-      padding: 0 1rem;
-  }
+    /* パディングの調整 */
+    .mission-text {
+        padding: 2rem;
+    }
 
-  /* テーブルのモバイル最適化 */
-  .activities-table th {
-      font-size: 0.75rem;
-      padding: 0.8rem 0.5rem;
-  }
+    .hero-card {
+        padding: 2rem;
+    }
 
-  .activities-table td {
-      font-size: 0.75rem;
-      padding: 0.8rem 0.5rem;
-  }
+    .contact-info {
+        padding: 2rem;
+    }
 
-  /* カードグリッドの調整 */
-  .vision-grid {
-      grid-template-columns: 1fr;
-  }
+    .story-intro {
+        padding: 2rem;
+    }
 
-  .programs-grid {
-      grid-template-columns: 1fr;
-  }
+    .npo-reason-card {
+        padding: 2rem;
+    }
 
-  .examples-grid {
-      grid-template-columns: 1fr;
-  }
+    .vision-card {
+        padding: 2rem;
+    }
 
-  .why-npo-content {
-      grid-template-columns: 1fr;
-  }
+    .program-content {
+        padding: 1.5rem;
+    }
 
-  .team-grid {
-      grid-template-columns: repeat(2, 1fr);
-  }
+    .section-container {
+        padding: 0 1rem;
+    }
+
+    .mission-container {
+        padding: 0 1rem;
+    }
+
+    /* テーブルのモバイル最適化 */
+    .activities-table th {
+        font-size: 0.75rem;
+        padding: 0.8rem 0.5rem;
+    }
+
+    .activities-table td {
+        font-size: 0.75rem;
+        padding: 0.8rem 0.5rem;
+    }
+
+    /* カードグリッドの調整 */
+    .vision-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .programs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .examples-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-npo-content {
+        grid-template-columns: 1fr;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 480px) {
-  .hero-buttons {
-      flex-direction: column;
-      width: 100%;
-  }
-  
-  .btn-primary, .btn-secondary {
-      width: 100%;
-      text-align: center;
-  }
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
 
-  .contact-buttons {
-      flex-direction: column;
-      width: 100%;
-  }
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
 
-  .contact-buttons .btn-primary,
-  .contact-buttons .btn-secondary {
-      width: 100%;
-  }
+    .contact-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
 
-  .logo-icon {
-      width: 35px;
-      height: 35px;
-      font-size: 1.1rem;
-  }
+    .contact-buttons .btn-primary,
+    .contact-buttons .btn-secondary {
+        width: 100%;
+    }
 
-  .nav {
-      padding: 0.5rem 1rem;
-  }
+    .logo-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1.1rem;
+    }
 
-  .hero {
-      min-height: 90vh;
-  }
+    .nav {
+        padding: 0.5rem 1rem;
+    }
 
-  .mission-title {
-      font-size: 1.8rem;
-  }
+    .hero {
+        min-height: 90vh;
+    }
 
-  .section-title {
-      font-size: 1.8rem;
-  }
+    .mission-title {
+        font-size: 1.8rem;
+    }
 
-  .stat-highlight {
-      font-size: 2rem;
-  }
+    .section-title {
+        font-size: 1.8rem;
+    }
 
-  .team-grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
-  }
+    .stat-highlight {
+        font-size: 2rem;
+    }
 
-  .team-member {
-      padding: 1.5rem 0.75rem;
-  }
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
 
-  .member-avatar {
-      width: 50px;
-      height: 50px;
-      font-size: 1.2rem;
-  }
+    .team-member {
+        padding: 1.5rem 0.75rem;
+    }
 
-  .star-icon {
-      font-size: 3rem;
-  }
+    .member-avatar {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
 
-  .vision-icon,
-  .reason-icon {
-      font-size: 2.5rem;
-  }
+    .star-icon {
+        font-size: 3rem;
+    }
 
-  .example-image {
-      height: 150px;
-      font-size: 1.5rem;
-  }
+    .vision-icon,
+    .reason-icon {
+        font-size: 2.5rem;
+    }
+
+    .example-image {
+        height: 150px;
+        font-size: 1.5rem;
+    }
 }
 
 /* Animations */
 .loading {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease-out;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
 }
 
 .loading.loaded {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
+
 /* Logo Design Sectionに関するCSS */
 #logo-design {
     background: var(--neutral-800);
@@ -1589,12 +1622,14 @@ html {
     padding-top: 2rem;
     border-top: 1px solid var(--neutral-200);
 }
+
 .share-buttons p {
     margin-bottom: 1rem;
     font-weight: 500;
     color: var(--neutral-700);
     font-size: 1rem;
 }
+
 .share-buttons a {
     display: inline-block;
     margin: 0 0.75rem;
@@ -1602,12 +1637,25 @@ html {
     color: var(--neutral-500);
     transition: color 0.3s ease, transform 0.3s ease;
 }
+
 .share-buttons a:hover {
     transform: translateY(-4px);
 }
-.share-buttons .share-x:hover { color: #000000; /* X brand color */ }
-.share-buttons .share-facebook:hover { color: #1877F2; /* Facebook brand color */ }
-.share-buttons .share-instagram:hover { color: #E4405F; /* Instagram brand color */ }
+
+.share-buttons .share-x:hover {
+    color: #000000;
+    /* X brand color */
+}
+
+.share-buttons .share-facebook:hover {
+    color: #1877F2;
+    /* Facebook brand color */
+}
+
+.share-buttons .share-instagram:hover {
+    color: #E4405F;
+    /* Instagram brand color */
+}
 
 /* Added for inline style removal */
 
@@ -1621,18 +1669,53 @@ html {
     background-position: center;
 }
 
-.example-image-activity-01 { background-image: url('../img/activity-01.jpg'); }
-.example-image-activity-02 { background-image: url('../img/activity-02.jpg'); }
-.example-image-activity-03 { background-image: url('../img/activity-03.jpg'); }
-.example-image-activity-04 { background-image: url('../img/activity-04.jpg'); }
-.example-image-activity-05 { background-image: url('../img/activity-05.jpg'); }
-.example-image-activity-06 { background-image: url('../img/activity-06.jpg'); }
-.example-image-generative-ai { background-image: url('../img/example-generative-ai.png'); }
-.example-image-programming-beginner { background-image: url('../img/example-programming-beginner.png'); }
-.example-image-robocon-challenge { background-image: url('../img/example-robocon-challenge.jpg'); }
-.example-image-contest-challenge { background-image: url('../img/example-contest-challenge.png'); }
-.example-image-app-dev { background-image: url('../img/example-app-dev.png'); }
-.example-image-inquiry-learning { background-image: url('../img/example-inquiry-learning.png'); }
+.example-image-activity-01 {
+    background-image: url('../img/activity-01.jpg');
+}
+
+.example-image-activity-02 {
+    background-image: url('../img/activity-02.jpg');
+}
+
+.example-image-activity-03 {
+    background-image: url('../img/activity-03.jpg');
+}
+
+.example-image-activity-04 {
+    background-image: url('../img/activity-04.jpg');
+}
+
+.example-image-activity-05 {
+    background-image: url('../img/activity-05.jpg');
+}
+
+.example-image-activity-06 {
+    background-image: url('../img/activity-06.jpg');
+}
+
+.example-image-generative-ai {
+    background-image: url('../img/example-generative-ai.png');
+}
+
+.example-image-programming-beginner {
+    background-image: url('../img/example-programming-beginner.png');
+}
+
+.example-image-robocon-challenge {
+    background-image: url('../img/example-robocon-challenge.jpg');
+}
+
+.example-image-contest-challenge {
+    background-image: url('../img/example-contest-challenge.png');
+}
+
+.example-image-app-dev {
+    background-image: url('../img/example-app-dev.png');
+}
+
+.example-image-inquiry-learning {
+    background-image: url('../img/example-inquiry-learning.png');
+}
 
 #about .section-title {
     color: var(--npo-green);
@@ -1703,13 +1786,33 @@ html {
     font-size: 0;
 }
 
-.member-avatar.member-avatar-yamaguchi { background-image: url('../img/icon/yamaguchi.png'); }
-.member-avatar.member-avatar-jun { background-image: url('../img/icon/jun.png'); }
-.member-avatar.member-avatar-rie { background-image: url('../img/icon/rie.png'); }
-.member-avatar.member-avatar-tamanari { background-image: url('../img/icon/tamanari.png'); }
-.member-avatar.member-avatar-monica { background-image: url('../img/icon/monica.png'); }
-.member-avatar.member-avatar-aki { background-image: url('../img/icon/aki.png'); }
-.member-avatar.member-avatar-kiyoko { background-image: url('../img/icon/kiyoko.png'); }
+.member-avatar.member-avatar-yamaguchi {
+    background-image: url('../img/icon/yamaguchi.png');
+}
+
+.member-avatar.member-avatar-jun {
+    background-image: url('../img/icon/jun.png');
+}
+
+.member-avatar.member-avatar-rie {
+    background-image: url('../img/icon/rie.png');
+}
+
+.member-avatar.member-avatar-tamanari {
+    background-image: url('../img/icon/tamanari.png');
+}
+
+.member-avatar.member-avatar-monica {
+    background-image: url('../img/icon/monica.png');
+}
+
+.member-avatar.member-avatar-aki {
+    background-image: url('../img/icon/aki.png');
+}
+
+.member-avatar.member-avatar-kiyoko {
+    background-image: url('../img/icon/kiyoko.png');
+}
 
 #partners .program-card:nth-child(1) .program-header {
     background: linear-gradient(135deg, #3b82f6, #1e40af);
@@ -1748,6 +1851,7 @@ html {
 }
 
 .contact-prompt .btn-primary {
-    display: inline-block; /* To allow margin-top and other block-level properties */
+    display: inline-block;
+    /* To allow margin-top and other block-level properties */
     margin-top: 1rem;
 }

@@ -1,6 +1,15 @@
 // お知らせデータ管理
 const newsData = [
     {
+        id: 10,
+        date: "2026.01.27",
+        category: "イベント",
+        categoryClass: "category-event",
+        title: "Minecraft DAY!!（2月1日）開催！純粋にマイクラを楽しむ一日。参加者募集中！",
+        link: "news/event-20260201.html",
+        featured: true
+    },
+    {
         id: 9,
         date: "2026.01.23",
         category: "イベント",
