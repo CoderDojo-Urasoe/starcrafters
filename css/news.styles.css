@@ -1,7 +1,8 @@
 /* css/news.styles.css */
 
 main {
-    padding-top: 120px; /* 固定ヘッダーの高さ分 */
+    padding-top: 120px;
+    /* 固定ヘッダーの高さ分 */
 }
 
 /* Hero Section Styles */
@@ -162,7 +163,8 @@ main {
 .schedule-time {
     min-width: 120px;
     font-weight: 700;
-    color: #0d7c6c; /* Darker teal for better contrast */
+    color: #0d7c6c;
+    /* Darker teal for better contrast */
     font-size: 1rem;
     background: rgba(20, 184, 166, 0.1);
     padding: 0.5rem 0.8rem;
@@ -505,15 +507,15 @@ main {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
+
     .hebocon-intro h3 {
         font-size: 1.5rem;
     }
-    
+
     .hebocon-intro {
         padding: 2rem;
     }
-    
+
     .hebocon-intro-image {
         max-width: 250px;
     }
@@ -549,12 +551,15 @@ main {
 
 .hero-meta {
     display: flex;
-    flex-direction: column; /* Stack vertically by default */
-    gap: 1.5rem; /* Increased gap */
+    flex-direction: column;
+    /* Stack vertically by default */
+    gap: 1.5rem;
+    /* Increased gap */
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 1.5rem; /* Add some space from the title */
+    margin-top: 1.5rem;
+    /* Add some space from the title */
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(5px);
@@ -563,24 +568,29 @@ main {
 
 @media (min-width: 768px) {
     .hero-meta {
-        flex-direction: row; /* Side-by-side on larger screens */
+        flex-direction: row;
+        /* Side-by-side on larger screens */
         gap: 2.5rem;
     }
 }
 
-.event-date, .event-venue {
+.event-date,
+.event-venue {
     /* Remove all button-like styles */
     background: none;
     padding: 0;
     border: none;
     box-shadow: none;
     display: flex;
-    align-items: center; /* Align icon and text */
+    align-items: center;
+    /* Align icon and text */
     gap: 0.8rem;
 }
 
-.event-date::before, .event-venue::before {
-    font-size: 2rem; /* Larger icons */
+.event-date::before,
+.event-venue::before {
+    font-size: 2rem;
+    /* Larger icons */
     line-height: 1;
 }
 
@@ -600,10 +610,12 @@ main {
 
 .meta-label {
     font-size: 0.9rem;
-    font-weight: 500; /* Less aggressive weight */
+    font-weight: 500;
+    /* Less aggressive weight */
     color: var(--neutral-600);
     margin-bottom: 0.3rem;
-    text-transform: none; /* Remove uppercase */
+    text-transform: none;
+    /* Remove uppercase */
     letter-spacing: 0;
 }
 
@@ -774,13 +786,11 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
-    background: repeating-linear-gradient(
-        45deg,
-        transparent 0px,
-        transparent 10px,
-        rgba(255, 255, 255, 0.1) 10px,
-        rgba(255, 255, 255, 0.1) 20px
-    );
+    background: repeating-linear-gradient(45deg,
+            transparent 0px,
+            transparent 10px,
+            rgba(255, 255, 255, 0.1) 10px,
+            rgba(255, 255, 255, 0.1) 20px);
 }
 
 .ribbon-content {
@@ -859,8 +869,15 @@ main {
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 /* News Page Styles */
@@ -984,116 +1001,116 @@ main {
     .page-header {
         min-height: 30vh;
     }
-    
+
     .page-header-content h1 {
         font-size: 2rem;
     }
-    
+
     .page-header-content p {
         font-size: 1rem;
     }
-    
+
     .breadcrumb {
         font-size: 0.8rem;
         margin-bottom: 1.5rem;
     }
-    
+
     /* Hero Section Mobile */
     .hero-section {
         min-height: 30vh;
     }
-    
+
     .hero-header {
         padding: 1.2rem 0.8rem;
     }
-    
+
     .hero-meta {
         flex-direction: column;
         gap: 0.4rem;
     }
-    
+
     .hero-title {
         font-size: 1.3rem;
         line-height: 1.2;
         margin-bottom: 1rem;
     }
-    
+
     .event-date {
         padding: 0.4rem 0.7rem;
     }
-    
+
     .meta-label {
         font-size: 0.6rem;
     }
-    
+
     .meta-value {
         font-size: 0.8rem;
     }
-    
+
     .event-venue {
         padding: 0.3rem 0.6rem;
     }
-    
+
     .event-venue .meta-value {
         font-size: 0.75rem;
     }
-    
+
     .hero-cta {
         padding: 0.3rem 0;
     }
-    
+
     .btn-hero {
         font-size: 1rem;
         padding: 0.7rem 1.3rem;
     }
-    
+
     /* TeacherTeacher Section Mobile */
     .event-highlight.teacherteacher {
         padding: 1.5rem;
         margin: 0.3rem 0 1.5rem 0;
     }
-    
+
     .event-highlight.teacherteacher h2 {
         font-size: 1.4rem;
         margin-bottom: 1rem;
     }
-    
+
     .award-badge {
         padding: 0.6rem 1rem;
         font-size: 0.9rem;
         margin: 1rem 0;
     }
-    
+
     .award-badge strong {
         font-size: 1rem;
     }
-    
+
     .event-highlight.teacherteacher p {
         font-size: 0.9rem;
         margin: 1rem 0;
     }
-    
+
     .event-highlight.teacherteacher h3 {
         font-size: 1.1rem;
         margin: 1.3rem 0 0.6rem 0;
     }
-    
+
     .event-highlight.teacherteacher ul {
         padding: 1.2rem;
         margin: 1rem 0;
     }
-    
+
     .event-highlight.teacherteacher li {
         font-size: 0.85rem;
         margin: 0.5rem 0;
     }
-    
+
     .catch {
         padding: 1rem 1.2rem;
         font-size: 0.95rem;
         margin: 1.3rem 0;
     }
-    
+
     /* Event Cards Mobile */
     .event-cards {
         grid-template-columns: 1fr;
@@ -1101,140 +1118,140 @@ main {
         margin: 1.2rem 0;
         padding: 0 1rem;
     }
-    
+
     .experience-card {
         margin-bottom: 0.5rem;
     }
-    
+
     .experience-content {
         padding: 1.2rem;
     }
-    
+
     .experience-content h4 {
         font-size: 1.1rem;
         margin-bottom: 0.8rem;
     }
-    
+
     .experience-content p {
         font-size: 0.9rem;
     }
-    
+
     .event-card img {
         height: 180px;
     }
-    
+
     /* Hebocon Intro Mobile */
     .hebocon-intro {
         padding: 1.5rem;
         margin: 1rem 0;
     }
-    
+
     .hebocon-intro h3 {
         font-size: 1.3rem;
         margin-bottom: 1.5rem;
     }
-    
+
     .hebocon-intro-text h4 {
         font-size: 1.1rem;
         margin-bottom: 0.8rem;
     }
-    
+
     .hebocon-subtitle {
         font-size: 1rem;
         margin-bottom: 1.2rem;
     }
-    
+
     .hebocon-intro-text p {
         font-size: 0.9rem;
         margin: 0.8rem 0;
     }
-    
+
     .participation-note {
         padding: 1rem;
         margin: 1.2rem 0;
         font-size: 0.9rem;
     }
-    
+
     .hebocon-intro-image {
         max-width: 200px;
     }
-    
+
     .hebocon-intro-links {
         padding: 1.2rem;
     }
-    
+
     .hebocon-link {
         padding: 0.6rem 1rem;
         font-size: 0.9rem;
     }
-    
+
     /* Schedule Mobile */
     .schedule-list {
         margin: 1.2rem 0;
     }
-    
+
     .schedule-item {
         flex-direction: column;
         gap: 0.5rem;
         padding: 1rem;
     }
-    
+
     .schedule-time {
         font-size: 0.9rem;
         font-weight: 600;
     }
-    
+
     .schedule-content {
         font-size: 0.85rem;
     }
-    
+
     /* Hero Intro Mobile */
     .hero-intro {
         padding: 1.5rem 1rem;
     }
-    
+
     .hero-intro p {
         font-size: 0.9rem;
         margin: 1rem 0;
     }
-    
+
     .intro-highlight {
         font-size: 1rem;
         padding: 1rem;
         margin: 1.2rem 0;
     }
-    
+
     .event-text {
         padding: 1rem;
     }
-    
+
     .event-text h3 {
         font-size: 1.1rem;
     }
-    
+
     .event-text p {
         font-size: 0.9rem;
     }
-    
+
     /* Event Info Ribbon Mobile */
     .event-date {
         font-size: 1.5rem;
     }
-    
+
     .event-venue {
         font-size: 1.2rem;
     }
-    
+
     /* Footer Mobile */
     .footer-logos {
         flex-direction: column;
         gap: 1.5rem;
     }
-    
+
     .footer-decorations {
         gap: 1rem;
     }
-    
+
     .decoration {
         font-size: 1.5rem;
     }
@@ -1247,9 +1264,9 @@ main {
 }
 
 .event-header-image {
-    max-width: 100%;
-    height: 300px;
-    width: auto;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
     border-radius: 20px;
     margin: 0 auto 2rem;
     display: block;
@@ -1258,7 +1275,8 @@ main {
 .ai-disclaimer {
     text-align: right;
     margin-top: 5px;
-    font-size: 0.8rem; /* Adjust as needed */
+    font-size: 0.8rem;
+    /* Adjust as needed */
     color: var(--neutral-500);
 }
 
@@ -1270,6 +1288,7 @@ main {
     max-width: 800px;
     margin: 0 auto;
 }
+
 .event-details h3 {
     font-size: 1.8rem;
     font-weight: 700;
@@ -1288,23 +1307,27 @@ main {
     list-style: none;
     padding-left: 0;
 }
+
 .event-details li {
     margin-bottom: 1.2rem;
     display: flex;
     align-items: flex-start;
     line-height: 1.7;
 }
+
 .event-details li .label {
     font-weight: 700;
     color: var(--neutral-800);
     min-width: 100px;
     margin-right: 1rem;
 }
+
 .event-details .content-list {
     list-style: '✓ ';
     padding-left: 1.5rem;
     margin-top: 0.5rem;
 }
+
 .event-details .content-list li {
     margin-bottom: 0.5rem;
 }
@@ -1354,7 +1377,7 @@ main {
 .event-highlight img {
     width: 100%;
     border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     margin-top: 1.5rem;
 }
 
@@ -1362,7 +1385,7 @@ main {
     width: 100%;
     height: auto;
     border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     margin: 1.5rem 0;
 }
 
@@ -1373,19 +1396,23 @@ main {
     border-radius: 15px;
     border: 1px solid var(--neutral-200);
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    gap: 2rem; /* Space between items */
+    flex-direction: column;
+    /* Stack items vertically */
+    gap: 2rem;
+    /* Space between items */
 }
 
 .communicator-profile .communicator-image {
-    width: 150px; /* Smaller size */
+    width: 150px;
+    /* Smaller size */
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    margin-left: 2rem; /* Space from text */
+    margin-left: 2rem;
+    /* Space from text */
     margin-bottom: 1rem;
     border: 4px solid white;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .communicator-profile .communicator-info h4 {
@@ -1401,12 +1428,14 @@ main {
 .communicator-profile .communicator-details li {
     margin-bottom: 0.8rem;
     line-height: 1.6;
-    display: block; /* Override default li style */
+    display: block;
+    /* Override default li style */
 }
 
 @media (max-width: 768px) {
     .communicator-profile {
-        grid-template-columns: 1fr; /* Stack columns on mobile */
+        grid-template-columns: 1fr;
+        /* Stack columns on mobile */
     }
 }
 
@@ -1414,28 +1443,30 @@ main {
 .map-container {
     margin-top: 2rem;
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
     height: 0;
     overflow: hidden;
     border-radius: 15px;
     border: 1px solid var(--neutral-200);
 }
+
 .map-container iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    border:0;
+    border: 0;
 }
 
 .event-details .button-container {
-    text-align: center; 
+    text-align: center;
     margin: 2.5rem 0 2rem;
 }
 
 .back-to-top-container {
-    text-align: center; 
+    text-align: center;
     margin-top: 3rem;
 }
 
@@ -1443,33 +1474,48 @@ main {
     .event-details {
         padding: 1.5rem;
     }
+
     .event-details li {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .event-details li .label {
         margin-bottom: 0.5rem;
     }
+
     .event-details h3 {
         font-size: 1.5rem;
     }
+
     .event-highlight h4 {
         font-size: 1.4rem;
-        white-space: normal; /* Allow title to wrap on mobile */
+        white-space: normal;
+        /* Allow title to wrap on mobile */
     }
+
     .communicator-profile {
-        flex-direction: column; /* Stack on mobile */
-        align-items: center; /* Center items on mobile */
+        flex-direction: column;
+        /* Stack on mobile */
+        align-items: center;
+        /* Center items on mobile */
     }
+
     .communicator-profile .communicator-image {
-        order: 1; /* Image on top on mobile */
-        margin: 0 auto 1.5rem auto; /* Center image and add bottom margin */
+        order: 1;
+        /* Image on top on mobile */
+        margin: 0 auto 1.5rem auto;
+        /* Center image and add bottom margin */
     }
+
     .communicator-profile .communicator-info {
-        order: 2; /* Text below image on mobile */
-        text-align: center; /* Center text on mobile */
+        order: 2;
+        /* Text below image on mobile */
+        text-align: center;
+        /* Center text on mobile */
     }
 }
+
 /* --- Link Style Enhancements --- */
 
 /* Event application button */
