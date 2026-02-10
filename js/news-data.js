@@ -1,6 +1,15 @@
 // お知らせデータ管理
 const newsData = [
     {
+        id: 11,
+        date: "2026.02.10",
+        category: "イベント",
+        categoryClass: "category-event",
+        title: "ミチシルベ2026に参加します（2月14日）ドローン・生成AI・プログラミング体験！",
+        link: "news/event-20260214.html",
+        featured: true
+    },
+    {
         id: 10,
         date: "2026.01.27",
         category: "イベント",
