@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="南城市の中学生が主催者となり、自分たちで楽しめる場所を立ち上げる挑戦。StarCraftersはその立ち上げと運営を支援しています。" />
+
+    <meta property="og:url" content="https://www.star-crafters.org/news/info-20260510.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="南城市の中学生が、自分たちの楽しむ場所をつくる｜StarCrafters" />
+    <meta property="og:description"
+        content="南城市の中学生が主催者となり、自分たちで楽しめる場所を立ち上げる挑戦。StarCraftersはその立ち上げと運営を支援しています。" />
+    <meta property="og:site_name" content="NPO法人StarCrafters" />
+    <meta property="og:image" content="https://www.star-crafters.org/img/news/20260510/ogp.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Star__Crafters" />
+
+    <title>南城市の中学生が、自分たちの楽しむ場所をつくる｜StarCrafters</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/news.styles.css" />
+    <script src="../js/analytics.js"></script>
+
+    <style>
+        .support-hero {
+            background: linear-gradient(135deg, rgba(240, 253, 250, 0.95), rgba(255, 247, 237, 0.95));
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(20, 184, 166, 0.22);
+            box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+            margin-bottom: 2.5rem;
+        }
+
+        .support-hero__image {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            display: block;
+            background: var(--neutral-100);
+        }
+
+        .support-hero__body {
+            padding: clamp(1.5rem, 4vw, 3rem);
+            text-align: center;
+        }
+
+        .support-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #0f766e;
+            background: rgba(20, 184, 166, 0.12);
+            border: 1px solid rgba(20, 184, 166, 0.28);
+            border-radius: 999px;
+            padding: 0.45rem 1rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .support-hero h1 {
+            color: var(--neutral-800);
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            line-height: 1.35;
+            letter-spacing: 0;
+            margin-bottom: 1rem;
+        }
+
+        .support-hero__lead {
+            color: var(--primary-teal);
+            font-size: clamp(1.05rem, 2.4vw, 1.35rem);
+            font-weight: 700;
+            margin-bottom: 1.8rem;
+        }
+
+        .support-actions {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .article-lead {
+            font-size: 1.2rem;
+            line-height: 2;
+            color: var(--neutral-700);
+            background: white;
+            border-left: 6px solid var(--primary-orange);
+            border-radius: 18px;
+            padding: clamp(1.4rem, 4vw, 2.2rem);
+            box-shadow: 0 8px 28px rgba(15, 23, 42, 0.07);
+            margin-bottom: 2rem;
+        }
+
+        .overview-card {
+            background: white;
+            border: 2px solid rgba(20, 184, 166, 0.28);
+            border-radius: 20px;
+            padding: clamp(1.4rem, 4vw, 2rem);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            margin-bottom: 2.5rem;
+        }
+
+        .overview-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .overview-item {
+            background: var(--neutral-50);
+            border-radius: 14px;
+            padding: 1.1rem;
+            border-left: 4px solid var(--primary-teal);
+        }
+
+        .overview-item dt {
+            color: var(--primary-teal);
+            font-weight: 800;
+            margin-bottom: 0.35rem;
+        }
+
+        .overview-item dd {
+            color: var(--neutral-700);
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        .overview-note {
+            margin-top: 1.2rem;
+            padding: 1rem 1.2rem;
+            background: rgba(248, 250, 252, 0.9);
+            border-radius: 12px;
+            border-left: 4px solid var(--primary-orange);
+            color: var(--neutral-600);
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+        .overview-note strong {
+            color: var(--neutral-800);
+        }
+
+        .message-card {
+            background: linear-gradient(135deg, #ecfdf5, #ffffff);
+            border-radius: 20px;
+            padding: clamp(1.5rem, 4vw, 2.5rem);
+            border: 1px solid rgba(5, 150, 105, 0.25);
+            margin: 2.5rem 0;
+            text-align: center;
+        }
+
+        .message-card p {
+            color: var(--npo-green);
+            font-size: clamp(1.2rem, 3vw, 1.6rem);
+            font-weight: 800;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .point-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
+            margin-top: 1.4rem;
+        }
+
+        .point-card {
+            background: white;
+            border: 1px solid var(--neutral-200);
+            border-radius: 16px;
+            padding: 1.3rem;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+        }
+
+        .point-card h4 {
+            color: var(--primary-teal);
+            font-size: 1.05rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .point-card p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin: 0;
+            color: var(--neutral-600);
+        }
+
+        .support-image {
+            width: 100%;
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            margin: 1rem 0 2.5rem;
+            background: var(--neutral-100);
+        }
+
+        .related-links {
+            display: grid;
+            gap: 0.85rem;
+            margin-top: 1rem;
+        }
+
+        .related-links a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            color: var(--neutral-800);
+            text-decoration: none;
+            background: white;
+            border: 1px solid var(--neutral-200);
+            border-radius: 14px;
+            padding: 1rem 1.2rem;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .related-links a:hover {
+            transform: translateY(-2px);
+            border-color: var(--primary-teal);
+        }
+
+        .share-panel {
+            text-align: center;
+            border-top: 1px solid var(--neutral-200);
+            padding-top: 2rem;
+            margin-top: 2.5rem;
+        }
+
+        .share-panel .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+        }
+
+        .share-panel__actions {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .btn-instagram {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            background: white;
+            color: #d9468f;
+            padding: 1rem 2rem;
+            border: 2px solid #d9468f;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .btn-instagram:hover {
+            background: #d9468f;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding-top: 96px;
+            }
+
+            .event-details {
+                padding: 1rem;
+            }
+
+            .support-hero__body {
+                text-align: left;
+            }
+
+            .support-actions {
+                flex-direction: column;
+            }
+
+            .support-actions .btn-primary {
+                width: 100%;
+            }
+
+            .overview-grid,
+            .point-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .article-lead {
+                font-size: 1rem;
+                line-height: 1.8;
+            }
+
+            .related-links a {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .support-hero__image {
+                aspect-ratio: 3 / 1;
+                max-height: 380px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="../index.html" class="logo" data-tooltip="Designed by NAMIKO SERIZAWA">
+                <img src="../img/starcrafters-logo.png" alt="StarCrafters logo" class="logo-image" />
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html#programs">取り組んでいること</a></li>
+                <li><a href="../index.html#about">私たちについて</a></li>
+                <li><a href="../info.html">子育てお役立ち情報</a></li>
+                <li><a href="../index.html#contact">お問い合わせ</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="../index.html#programs">取り組んでいること</a></li>
+                <li><a href="../index.html#about">私たちについて</a></li>
+                <li><a href="../info.html">子育てお役立ち情報</a></li>
+                <li><a href="../index.html#contact">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="section news-page" style="padding-top: 2rem;">
+            <div class="section-container">
+                <nav class="breadcrumb">
+                    <a href="../index.html">ホーム</a>
+                    <span>></span>
+                    <a href="../news.html">お知らせ</a>
+                    <span>></span>
+                    <span>南城市の中学生が、自分たちの楽しむ場所をつくる</span>
+                </nav>
+
+                <article class="event-details">
+                    <section class="support-hero">
+                        <img class="support-hero__image" src="../img/news/20260510/main.jpg"
+                            alt="CoderDojo南城プレ開催のメインビジュアル" />
+                        <div class="support-hero__body">
+                            <div class="support-label">中学生主体の挑戦</div>
+                            <h1>南城市の中学生が、自分たちの“楽しむ場所”をつくる</h1>
+                            <p class="support-hero__lead">この挑戦を、StarCraftersが支えています</p>
+                            <div class="support-actions">
+                                <a class="btn-primary" href="https://qtendou.github.io/Dojo/news/20260510.html"
+                                    target="_blank" rel="noopener noreferrer">取り組みの詳細を見る</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <p class="article-lead">
+                        南城市の中学生たちが、自分たちで「楽しめる場所」をつくろうとしています。<br />
+                        このイベントは、その小さな一歩となる挑戦です。
+                    </p>
+
+                    <section class="overview-card" id="event">
+                        <h3>イベント概要</h3>
+                        <dl class="overview-grid">
+                            <div class="overview-item">
+                                <dt>日付</dt>
+                                <dd>2026年5月10日（日）14:00〜17:00</dd>
+                            </div>
+                            <div class="overview-item">
+                                <dt>場所</dt>
+                                <dd>南城市役所 1F 大会議室<br />沖縄県南城市佐敷字新里1870番地</dd>
+                            </div>
+                            <div class="overview-item">
+                                <dt>対象</dt>
+                                <dd>小学3年生〜18歳までの方<br />PC操作がある程度できる方推奨</dd>
+                            </div>
+                            <div class="overview-item">
+                                <dt>内容</dt>
+                                <dd>プログラミング、マイクラ、デジタル創作などを自由に楽しむプレ開催</dd>
+                            </div>
+                        </dl>
+                        <p class="overview-note">
+                            <strong>持ち物：</strong>
+                            ノートパソコン、タブレットなど創作活動に必要な機器を持参ください。
+                            会場に体験用のパソコンを数台準備していますが、借用は交代制、順番待ちになりますのでご了承ください。
+                        </p>
+                    </section>
+
+                    <section class="event-highlight">
+                        <h4>このイベントについて</h4>
+                        <p>
+                            このイベントは、南城市の中学生が主体となって企画している「CoderDojo南城」のプレ開催です。
+                            自分たちが楽しいと思える時間を、自分たちの手で地域にひらいていくための一歩です。
+                        </p>
+                        <p>
+                            プログラミングやマインクラフト、デジタル創作をきっかけに、子どもたちが自分のペースで過ごせる
+                            新しい居場所づくりを目指しています。
+                        </p>
+                    </section>
+
+                    <section class="event-highlight">
+                        <h4>StarCraftersの関わり</h4>
+                        <p>
+                            この取り組みの主役は、南城市の中学生たちです。StarCraftersは主催者ではなく、
+                            子どもたちの挑戦を支える支援・伴走の立場で関わっています。
+                        </p>
+                        <p>
+                            企画や運営の相談、安全面の確認、当日の運営、広報まわりのサポートを通して、
+                            中学生たちが自分たちの思いを形にできるよう伴走しています。
+                        </p>
+                    </section>
+
+                    <section class="event-highlight">
+                        <h4>見どころ</h4>
+                        <div class="point-grid">
+                            <div class="point-card">
+                                <h4>子どもたち自身のアイデア</h4>
+                                <p>「こんな場所があったら楽しい」を、中学生自身が考え、形にしようとしています。</p>
+                            </div>
+                            <div class="point-card">
+                                <h4>地域での新しい居場所</h4>
+                                <p>好きなことに没頭しながら、同じ関心を持つ仲間と出会える時間をつくります。</p>
+                            </div>
+                            <div class="point-card">
+                                <h4>プレ開催という挑戦</h4>
+                                <p>まずは小さく始めて、参加する子どもたちと一緒により良い形を探っていきます。</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <img class="support-image" src="../img/news/20260510/planning.jpg"
+                        alt="CoderDojo南城プレ開催に向けた企画の様子" />
+
+                    <section class="message-card">
+                        <p>小さな一歩を、地域みんなで応援していきます。</p>
+                    </section>
+
+                    <section class="event-highlight">
+                        <h4>関連リンク</h4>
+                        <div class="related-links">
+                            <a href="https://qtendou.github.io/Dojo/news/20260510.html" target="_blank"
+                                rel="noopener noreferrer">
+                                <span>CoderDojo南城 プレ開催ページ</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.city.nanjo.okinawa.jp/topics/1777527579/" target="_blank"
+                                rel="noopener noreferrer">
+                                <span>南城市役所 新着情報</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section class="share-panel">
+                        <h4>応援をシェア</h4>
+                        <p>中学生たちの挑戦を、ぜひ広げてください。</p>
+                        <div class="share-panel__actions">
+                            <a class="btn-secondary"
+                                href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.star-crafters.org%2Fnews%2Finfo-20260510.html&text=%E5%8D%97%E5%9F%8E%E5%B8%82%E3%81%AE%E4%B8%AD%E5%AD%A6%E7%94%9F%E3%81%8C%E3%80%81%E8%87%AA%E5%88%86%E3%81%9F%E3%81%A1%E3%81%AE%E6%A5%BD%E3%81%97%E3%82%80%E5%A0%B4%E6%89%80%E3%82%92%E3%81%A4%E3%81%8F%E3%82%8B%EF%BD%9CStarCrafters"
+                                target="_blank" rel="noopener noreferrer" aria-label="Xでシェア">
+                                <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                                X
+                            </a>
+                            <a class="btn-instagram" href="https://www.instagram.com/star__crafters/" target="_blank"
+                                rel="noopener noreferrer" aria-label="Instagramでシェア">
+                                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                                Instagram
+                            </a>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="section-container">
+            <p>&copy; 2026 <strong>特定非営利活動法人StarCrafters</strong></p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

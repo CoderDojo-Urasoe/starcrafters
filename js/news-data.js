@@ -1,6 +1,15 @@
 // お知らせデータ管理
 const newsData = [
     {
+        id: 12,
+        date: "2026.05.01",
+        category: "お知らせ",
+        categoryClass: "category-notice",
+        title: "南城市の中学生が、自分たちの楽しむ場所をつくる挑戦を支援しています",
+        link: "news/info-20260510.html",
+        featured: true
+    },
+    {
         id: 11,
         date: "2026.02.10",
         category: "イベント",
