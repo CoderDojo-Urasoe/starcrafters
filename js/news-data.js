@@ -3,9 +3,9 @@ const newsData = [
     {
         id: 12,
         date: "2026.05.01",
-        category: "お知らせ",
-        categoryClass: "category-notice",
-        title: "南城市の中学生が、自分たちの楽しむ場所をつくる挑戦を支援しています",
+        category: "イベント",
+        categoryClass: "category-event",
+        title: "CoderDojo南城プレ開催・参加者募集!!",
         link: "news/info-20260510.html",
         featured: true
     },
