@@ -83,6 +83,7 @@
 
         .flyer-list {
             display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 1.5rem;
             margin: 1.5rem 0 2.5rem;
         }
@@ -150,6 +151,10 @@
                 display: block;
                 min-width: 0;
             }
+
+            .flyer-list {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -196,8 +201,16 @@
                 <article class="event-details simple-news">
                     <h1>通信制高校・サポート校 進路相談会のお知らせ</h1>
                     <p class="simple-lead">
-                        進路や学校選びに不安を感じる保護者・子どもたちに向けて、通信制高校・サポート校の先生と直接話せる相談会が開催されます。オンライン相談「MetaLife会場」も予定されています。
+                        進路や学校選びに不安を感じる保護者・子どもたちに向けて、通信制高校・サポート校の先生と直接話せる相談会が開催されます。詳しい内容は下記チラシをご確認ください。
                     </p>
+
+                    <h3>チラシ</h3>
+                    <div class="flyer-list">
+                        <img src="../img/news/info-20260620/flyer-main.jpg"
+                            alt="通信制高校・サポート校進路相談会の案内チラシ。開催日時や講演会、個別相談会の情報を掲載。" />
+                        <img src="../img/news/info-20260620/flyer-detail.jpg"
+                            alt="通信制高校・サポート校進路相談会の案内チラシ。オンライン会場や来場者の声などの情報を掲載。" />
+                    </div>
 
                     <section class="speaker-note">
                         <h3>Teacher Teacher 福田遼さんの講演会も予定されています</h3>
@@ -208,20 +221,12 @@
                         </p>
                     </section>
 
-                    <h3>チラシ</h3>
-                    <div class="flyer-list">
-                        <img src="../img/news/info-20260620/flyer-main.jpg"
-                            alt="通信制高校・サポート校進路相談会の案内チラシ。Teacher Teacher講演会やMetaLife相談会の情報を掲載。" />
-                        <img src="../img/news/info-20260620/flyer-detail.jpg"
-                            alt="通信制高校・サポート校進路相談会の案内チラシ。Teacher Teacher講演会やMetaLife相談会の情報を掲載。" />
-                    </div>
-
                     <h3>開催概要</h3>
                     <ul class="summary-list">
                         <li><strong>日時</strong>2026年6月20日（土）12:15〜16:00</li>
                         <li><strong>会場</strong>那覇商工会議所 3階ホール</li>
                         <li><strong>対象</strong>進路や学校選びについて情報を必要としている保護者・子どもたち</li>
-                        <li><strong>内容</strong>個別相談、Teacher Teacher 福田遼さん講演会、オンライン相談 MetaLife会場</li>
+                        <li><strong>内容</strong>個別相談、Teacher Teacher 福田遼さん講演会など</li>
                         <li><strong>参加方法</strong>入場無料・入退場自由。申込方法はチラシをご確認ください。</li>
                     </ul>
 
