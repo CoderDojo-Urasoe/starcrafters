@@ -11,7 +11,7 @@
     <meta property="og:title" content="通信制高校・サポート校 進路相談会のお知らせ | StarCrafters" />
     <meta property="og:description" content="進路や学校選びに悩む保護者・子どもたちへ。通信制高校・サポート校の先生と直接話せる相談会が開催されます。" />
     <meta property="og:site_name" content="NPO法人StarCrafters" />
-    <meta property="og:image" content="https://www.star-crafters.org/img/news/info-20260620/flyer-main.jpg" />
+    <meta property="og:image" content="https://www.star-crafters.org/img/news/info-20260620/2026-05-07_14.48.16%20%281%29.webp" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@Star__Crafters" />
 
@@ -88,6 +88,16 @@
             margin: 1.5rem 0 2.5rem;
         }
 
+        .flyer-button {
+            appearance: none;
+            background: transparent;
+            border: 0;
+            cursor: zoom-in;
+            display: block;
+            padding: 0;
+            width: 100%;
+        }
+
         .flyer-list img {
             width: 100%;
             max-width: 520px;
@@ -97,6 +107,13 @@
             border-radius: 12px;
             border: 1px solid var(--neutral-200);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .flyer-caption {
+            color: var(--neutral-500);
+            font-size: 0.9rem;
+            text-align: center;
+            margin-top: 0.7rem;
         }
 
         .summary-list {
@@ -136,6 +153,44 @@
         .button-container {
             text-align: center;
             margin-top: 2rem;
+        }
+
+        .lightbox {
+            align-items: center;
+            background: rgba(15, 23, 42, 0.86);
+            display: none;
+            inset: 0;
+            justify-content: center;
+            padding: 1rem;
+            position: fixed;
+            z-index: 1000;
+        }
+
+        .lightbox.is-open {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: min(94vw, 760px);
+            max-height: 92vh;
+            width: auto;
+            height: auto;
+            border-radius: 12px;
+            background: white;
+        }
+
+        .lightbox__close {
+            border: 0;
+            color: white;
+            cursor: pointer;
+            font-weight: 700;
+            position: fixed;
+            right: 1rem;
+            top: 1rem;
+            text-decoration: none;
+            background: rgba(15, 23, 42, 0.72);
+            border-radius: 999px;
+            padding: 0.55rem 0.95rem;
         }
 
         @media (max-width: 768px) {
@@ -206,10 +261,16 @@
 
                     <h3>チラシ</h3>
                     <div class="flyer-list">
-                        <img src="../img/news/info-20260620/flyer-main.jpg"
-                            alt="通信制高校・サポート校進路相談会の案内チラシ。開催日時や講演会、個別相談会の情報を掲載。" />
-                        <img src="../img/news/info-20260620/flyer-detail.jpg"
-                            alt="通信制高校・サポート校進路相談会の案内チラシ。オンライン会場や来場者の声などの情報を掲載。" />
+                        <button class="flyer-button" type="button" data-lightbox-target="flyer-main">
+                            <img src="../img/news/info-20260620/2026-05-07_14.48.16%20%281%29.webp"
+                                alt="通信制高校・サポート校進路相談会の案内チラシ。開催日時や講演会、個別相談会の情報を掲載。" />
+                            <p class="flyer-caption">画像をタップすると大きく表示できます</p>
+                        </button>
+                        <button class="flyer-button" type="button" data-lightbox-target="flyer-detail">
+                            <img src="../img/news/info-20260620/2026-05-07_14.48.37.webp"
+                                alt="通信制高校・サポート校進路相談会の案内チラシ。オンライン会場や来場者の声などの情報を掲載。" />
+                            <p class="flyer-caption">画像をタップすると大きく表示できます</p>
+                        </button>
                     </div>
 
                     <section class="speaker-note">
@@ -244,6 +305,17 @@
         </section>
     </main>
 
+    <div class="lightbox" id="flyer-main" aria-label="チラシ拡大表示" role="dialog" aria-modal="true">
+        <button class="lightbox__close" type="button" data-lightbox-close>閉じる</button>
+        <img src="../img/news/info-20260620/2026-05-07_14.48.16%20%281%29.webp"
+            alt="通信制高校・サポート校進路相談会の案内チラシ。開催日時や講演会、個別相談会の情報を掲載。" />
+    </div>
+    <div class="lightbox" id="flyer-detail" aria-label="チラシ拡大表示" role="dialog" aria-modal="true">
+        <button class="lightbox__close" type="button" data-lightbox-close>閉じる</button>
+        <img src="../img/news/info-20260620/2026-05-07_14.48.37.webp"
+            alt="通信制高校・サポート校進路相談会の案内チラシ。オンライン会場や来場者の声などの情報を掲載。" />
+    </div>
+
     <footer class="footer">
         <div class="section-container">
             <p>&copy; 2026 <strong>特定非営利活動法人StarCrafters</strong></p>
@@ -251,6 +323,35 @@
     </footer>
 
     <script src="../js/script.js"></script>
+    <script>
+        document.querySelectorAll('[data-lightbox-target]').forEach((button) => {
+            button.addEventListener('click', () => {
+                const lightbox = document.getElementById(button.dataset.lightboxTarget);
+                if (lightbox) {
+                    lightbox.classList.add('is-open');
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        });
+
+        document.querySelectorAll('.lightbox').forEach((lightbox) => {
+            lightbox.addEventListener('click', (event) => {
+                if (event.target === lightbox || event.target.hasAttribute('data-lightbox-close')) {
+                    lightbox.classList.remove('is-open');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                document.querySelectorAll('.lightbox.is-open').forEach((lightbox) => {
+                    lightbox.classList.remove('is-open');
+                });
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
 </body>
 
 </html>

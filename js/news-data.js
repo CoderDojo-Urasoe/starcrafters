@@ -3,8 +3,8 @@ const newsData = [
     {
         id: 13,
         date: "2026.06.20",
-        category: "イベント",
-        categoryClass: "category-event",
+        category: "お知らせ",
+        categoryClass: "category-notice",
         title: "通信制高校・サポート校 進路相談会のお知らせ",
         link: "news/info-20260620.html",
         featured: true
