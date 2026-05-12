@@ -1,6 +1,15 @@
 // お知らせデータ管理
 const newsData = [
     {
+        id: 14,
+        date: "2026.05.12",
+        category: "お知らせ",
+        categoryClass: "category-notice",
+        title: "南城市家庭教育講座「不登校の解決方法を知ろう！学ぼう！」のご案内",
+        link: "news/info-20260530.html",
+        featured: true
+    },
+    {
         id: 13,
         date: "2026.05.08",
         category: "お知らせ",
