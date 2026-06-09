@@ -1,6 +1,15 @@
 // お知らせデータ管理
 const newsData = [
     {
+        id: 15,
+        date: "2026.06.21",
+        category: "イベント",
+        categoryClass: "category-event",
+        title: "南遊祭のお知らせ",
+        link: "news/info-20260621.html",
+        featured: true
+    },
+    {
         id: 14,
         date: "2026.05.12",
         category: "お知らせ",

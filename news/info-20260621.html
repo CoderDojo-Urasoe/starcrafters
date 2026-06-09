@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="2026年6月21日（日）、南城市役所で開催される南遊祭のお知らせです。CoderDojo南城によるScratchゲーム体験など、親子で楽しめる体験が予定されています。" />
+
+    <meta property="og:url" content="https://www.star-crafters.org/news/info-20260621.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="南遊祭のお知らせ | StarCrafters" />
+    <meta property="og:description"
+        content="ミニ四駆体験、乗馬体験、鉄道模型体験、ポケモンカード交流会、CoderDojo南城によるScratchゲーム体験など、親子で楽しめる内容が予定されています。" />
+    <meta property="og:site_name" content="NPO法人StarCrafters" />
+    <meta property="og:image" content="https://www.star-crafters.org/img/news/info-20260621/flyer-main.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Star__Crafters" />
+
+    <title>南遊祭のお知らせ | StarCrafters</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/news.styles.css" />
+    <script src="../js/analytics.js"></script>
+
+    <style>
+        main {
+            padding-top: 112px;
+        }
+
+        .news-page {
+            padding-top: 2rem;
+        }
+
+        .simple-news h1 {
+            color: var(--primary-teal);
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            line-height: 1.4;
+            letter-spacing: 0;
+            margin-bottom: 1rem;
+        }
+
+        .simple-lead {
+            color: var(--neutral-700);
+            font-size: 1.08rem;
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .event-hero {
+            background: linear-gradient(135deg, rgba(240, 253, 250, 0.95), rgba(255, 247, 237, 0.9));
+            border: 1px solid rgba(20, 184, 166, 0.24);
+            border-radius: 18px;
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+
+        .event-hero__body {
+            padding: clamp(1.4rem, 4vw, 2.2rem);
+        }
+
+        .event-meta {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+            margin-top: 1.2rem;
+        }
+
+        .event-meta__item {
+            background: rgba(255, 255, 255, 0.88);
+            border: 1px solid rgba(20, 184, 166, 0.2);
+            border-radius: 14px;
+            padding: 1rem;
+        }
+
+        .event-meta__label {
+            color: var(--primary-teal);
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .event-meta__value {
+            color: var(--neutral-800);
+            font-weight: 700;
+            line-height: 1.6;
+        }
+
+        .flyer-button {
+            appearance: none;
+            background: transparent;
+            border: 0;
+            cursor: zoom-in;
+            display: block;
+            padding: 0;
+            width: 100%;
+        }
+
+        .flyer-image {
+            background: var(--neutral-100);
+            border: 1px solid var(--neutral-200);
+            border-radius: 14px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            display: block;
+            height: auto;
+            margin: 1.5rem auto 0.6rem;
+            max-width: 680px;
+            width: 100%;
+        }
+
+        .flyer-caption {
+            color: var(--neutral-500);
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .summary-list {
+            background: rgba(240, 253, 250, 0.55);
+            border: 1px solid rgba(20, 184, 166, 0.22);
+            border-radius: 14px;
+            padding: 1.2rem;
+            margin: 1rem 0 2rem;
+        }
+
+        .summary-list li {
+            display: block;
+            line-height: 1.8;
+            margin-bottom: 0.9rem;
+        }
+
+        .summary-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .summary-list strong {
+            color: var(--primary-teal);
+            display: inline-block;
+            min-width: 5.5em;
+        }
+
+        .experience-grid {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            margin: 1rem 0 2rem;
+        }
+
+        .experience-card {
+            background: #ffffff;
+            border: 1px solid var(--neutral-200);
+            border-radius: 14px;
+            box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+            padding: 1.2rem;
+        }
+
+        .experience-card h4 {
+            color: var(--primary-teal);
+            font-size: 1.08rem;
+            line-height: 1.5;
+            margin: 0 0 0.6rem;
+        }
+
+        .experience-card p {
+            color: var(--neutral-600);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .relationship-note {
+            background: linear-gradient(135deg, rgba(240, 253, 250, 0.9), #ffffff);
+            border: 1px solid rgba(20, 184, 166, 0.24);
+            border-left: 5px solid var(--primary-teal);
+            border-radius: 14px;
+            color: var(--neutral-700);
+            line-height: 1.9;
+            margin: 1rem 0 2rem;
+            padding: 1.25rem;
+        }
+
+        .link-list {
+            display: grid;
+            gap: 0.8rem;
+            margin: 1rem 0 2rem;
+        }
+
+        .link-list a {
+            align-items: center;
+            background: white;
+            border: 1px solid var(--neutral-200);
+            border-radius: 12px;
+            color: var(--neutral-800);
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 1.1rem;
+            text-decoration: none;
+        }
+
+        .link-list a:hover {
+            border-color: var(--primary-teal);
+            color: var(--primary-teal);
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .lightbox {
+            align-items: center;
+            background: rgba(15, 23, 42, 0.86);
+            display: none;
+            inset: 0;
+            justify-content: center;
+            padding: 1rem;
+            position: fixed;
+            z-index: 10001;
+        }
+
+        .lightbox.is-open {
+            display: flex;
+        }
+
+        .lightbox img {
+            background: white;
+            border-radius: 12px;
+            height: auto;
+            max-height: 92vh;
+            max-width: min(94vw, 900px);
+            width: auto;
+        }
+
+        .lightbox__close {
+            background: rgba(15, 23, 42, 0.72);
+            border: 0;
+            border-radius: 999px;
+            color: white;
+            cursor: pointer;
+            font-weight: 700;
+            padding: 0.55rem 0.95rem;
+            position: fixed;
+            right: 1rem;
+            top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding-top: 96px;
+            }
+
+            .news-page {
+                padding-top: 1.25rem;
+            }
+
+            .event-details {
+                padding: 1.2rem;
+            }
+
+            .event-meta,
+            .experience-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .summary-list strong {
+                display: block;
+                min-width: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="../index.html" class="logo" data-tooltip="Designed by NAMIKO SERIZAWA">
+                <img src="../img/starcrafters-logo.png" alt="StarCrafters logo" class="logo-image" />
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html#programs">取り組んでいること</a></li>
+                <li><a href="../index.html#about">私たちについて</a></li>
+                <li><a href="../info.html">子育てお役立ち情報</a></li>
+                <li><a href="../index.html#contact">お問い合わせ</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="../index.html#programs">取り組んでいること</a></li>
+                <li><a href="../index.html#about">私たちについて</a></li>
+                <li><a href="../info.html">子育てお役立ち情報</a></li>
+                <li><a href="../index.html#contact">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="section news-page">
+            <div class="section-container">
+                <nav class="breadcrumb">
+                    <a href="../index.html">ホーム</a>
+                    <span>&gt;</span>
+                    <a href="../news.html">お知らせ</a>
+                    <span>&gt;</span>
+                    <span>南遊祭のお知らせ</span>
+                </nav>
+
+                <article class="event-details simple-news">
+                    <section class="event-hero">
+                        <div class="event-hero__body">
+                            <h1>南遊祭のお知らせ</h1>
+                            <p class="simple-lead">
+                                6月21日（日）、南城市役所で「南遊祭」が開催されます。<br />
+                                ミニ四駆体験、乗馬体験、鉄道模型体験、ポケモンカード交流会、CoderDojo南城によるScratchゲーム体験など、親子で楽しめる内容が予定されています。<br />
+                                StarCraftersは、CoderDojo南城の立ち上げ・運営支援を通して本イベントに関わっています。
+                            </p>
+                            <div class="event-meta">
+                                <div class="event-meta__item">
+                                    <span class="event-meta__label">日時</span>
+                                    <span class="event-meta__value">2026年6月21日（日）10:00〜16:00</span>
+                                </div>
+                                <div class="event-meta__item">
+                                    <span class="event-meta__label">会場</span>
+                                    <span class="event-meta__value">南城市役所</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="flyer-button" type="button" data-lightbox-target="flyer-main">
+                            <img class="flyer-image" src="../img/news/info-20260621/flyer-main.jpg"
+                                alt="2026年6月21日に南城市役所で開催される南遊祭のチラシ。ミニ四駆、乗馬、鉄道模型、ポケモンカード、CoderDojo南城のScratchゲーム体験などを紹介。" />
+                            <p class="flyer-caption">画像をタップすると大きく表示できます</p>
+                        </button>
+                    </section>
+
+                    <h3>イベント概要</h3>
+                    <ul class="summary-list">
+                        <li><strong>イベント名</strong>南遊祭</li>
+                        <li><strong>日時</strong>2026年6月21日（日）10:00〜16:00</li>
+                        <li><strong>会場</strong>南城市役所</li>
+                        <li><strong>主催</strong>遊びのギルド</li>
+                        <li><strong>共催</strong>南城市（予定）</li>
+                        <li><strong>内容</strong>ミニ四駆、乗馬、マーケット、鉄道模型、ポケモンカード、Scratchゲーム体験など、親子で楽しめる体験ブースが予定されています。</li>
+                    </ul>
+
+                    <h3>予定されている体験</h3>
+                    <p class="simple-lead">
+                        チラシでは、以下の体験ブースが紹介されています。内容や参加方法は当日の運営状況により変わる場合がありますので、詳しくはチラシや主催者の案内をご確認ください。
+                    </p>
+                    <div class="experience-grid">
+                        <section class="experience-card">
+                            <h4>ミニ四駆体験＆大会</h4>
+                        </section>
+                        <section class="experience-card">
+                            <h4>乗馬体験</h4>
+                        </section>
+                        <section class="experience-card">
+                            <h4>そらいろファンファンマーケット</h4>
+                        </section>
+                        <section class="experience-card">
+                            <h4>鉄道模型体験</h4>
+                        </section>
+                        <section class="experience-card">
+                            <h4>ポケモンカード体験交流会</h4>
+                        </section>
+                        <section class="experience-card">
+                            <h4>CoderDojo南城 Scratchでゲーム</h4>
+                        </section>
+                    </div>
+
+                    <h3>StarCraftersとの関わり</h3>
+                    <div class="relationship-note">
+                        StarCraftersは、CoderDojo南城の立ち上げと運営を支援しています。今回の南遊祭では、CoderDojo南城が出展し、StarCraftersのスタッフも一緒にブース運営に関わります。
+                    </div>
+
+                    <h3>関連リンク</h3>
+                    <div class="link-list">
+                        <a href="https://www.instagram.com/asobi_no_guild/" target="_blank" rel="noopener noreferrer">
+                            <span>遊びのギルド Instagram</span>
+                            <span aria-hidden="true">→</span>
+                        </a>
+                        <a href="https://x.com/asobi_no_guild?lang=ja" target="_blank" rel="noopener noreferrer">
+                            <span>遊びのギルド X</span>
+                            <span aria-hidden="true">→</span>
+                        </a>
+                        <a href="https://qtendou.github.io/Dojo/index.html" target="_blank"
+                            rel="noopener noreferrer">
+                            <span>CoderDojo南城の紹介ページ</span>
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div class="lightbox" id="flyer-main" aria-label="南遊祭チラシの拡大表示" role="dialog" aria-modal="true">
+        <button class="lightbox__close" type="button" data-lightbox-close>閉じる</button>
+        <img src="../img/news/info-20260621/flyer-main.jpg"
+            alt="2026年6月21日に南城市役所で開催される南遊祭のチラシ。ミニ四駆、乗馬、鉄道模型、ポケモンカード、CoderDojo南城のScratchゲーム体験などを紹介。" />
+    </div>
+
+    <footer class="footer">
+        <div class="section-container">
+            <p>&copy; 2026 <strong>特定非営利活動法人StarCrafters</strong></p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        document.querySelectorAll('[data-lightbox-target]').forEach((button) => {
+            button.addEventListener('click', () => {
+                const lightbox = document.getElementById(button.dataset.lightboxTarget);
+                if (lightbox) {
+                    lightbox.classList.add('is-open');
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        });
+
+        document.querySelectorAll('.lightbox').forEach((lightbox) => {
+            lightbox.addEventListener('click', (event) => {
+                if (event.target === lightbox || event.target.hasAttribute('data-lightbox-close')) {
+                    lightbox.classList.remove('is-open');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                document.querySelectorAll('.lightbox.is-open').forEach((lightbox) => {
+                    lightbox.classList.remove('is-open');
+                });
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+</body>
+
+</html>
