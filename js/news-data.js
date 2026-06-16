@@ -2,10 +2,10 @@
 const newsData = [
     {
         id: 15,
-        date: "2026.06.21",
+        date: "2026.06.16",
         category: "イベント",
         categoryClass: "category-event",
-        title: "南遊祭のお知らせ",
+        title: "第2回CoderDojo南城 in 南遊祭 開催のお知らせ",
         link: "news/info-20260621.html",
         featured: true
     },

@@ -5,25 +5,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="2026年6月21日（日）、南城市役所で開催される南遊祭のお知らせです。CoderDojo南城によるScratchゲーム体験など、親子で楽しめる体験が予定されています。" />
+        content="2026年6月21日（日）、南城市役所で開催される南遊祭会場内で第2回CoderDojo南城を開催します。主催メンバーが制作したゲーム体験を楽しめます。" />
 
     <meta property="og:url" content="https://www.star-crafters.org/news/info-20260621.html" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="南遊祭のお知らせ | StarCrafters" />
+    <meta property="og:title" content="第2回CoderDojo南城 in 南遊祭 開催のお知らせ | StarCrafters" />
     <meta property="og:description"
-        content="ミニ四駆体験、乗馬体験、鉄道模型体験、ポケモンカード交流会、CoderDojo南城によるScratchゲーム体験など、親子で楽しめる内容が予定されています。" />
+        content="南遊祭の会場内で、第2回CoderDojo南城を開催します。事前予約不要で、主催メンバーが制作したゲーム体験を楽しめます。" />
     <meta property="og:site_name" content="NPO法人StarCrafters" />
-    <meta property="og:image" content="https://www.star-crafters.org/img/news/info-20260621/flyer-main.jpg" />
+    <meta property="og:image" content="https://www.star-crafters.org/img/news/info-20260621/TOP.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@Star__Crafters" />
 
-    <title>南遊祭のお知らせ | StarCrafters</title>
+    <title>第2回CoderDojo南城 in 南遊祭 開催のお知らせ | StarCrafters</title>
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/news.styles.css" />
@@ -38,59 +38,230 @@
             padding-top: 2rem;
         }
 
-        .simple-news h1 {
-            color: var(--primary-teal);
-            font-size: clamp(1.8rem, 4vw, 2.6rem);
-            line-height: 1.4;
-            letter-spacing: 0;
-            margin-bottom: 1rem;
-        }
-
-        .simple-lead {
+        .dojo-news {
             color: var(--neutral-700);
-            font-size: 1.08rem;
-            line-height: 1.9;
-            margin-bottom: 1.5rem;
         }
 
-        .event-hero {
-            background: linear-gradient(135deg, rgba(240, 253, 250, 0.95), rgba(255, 247, 237, 0.9));
-            border: 1px solid rgba(20, 184, 166, 0.24);
-            border-radius: 18px;
-            margin-bottom: 2rem;
+        .dojo-hero {
+            background:
+                radial-gradient(circle at top right, rgba(14, 165, 233, 0.18), transparent 28%),
+                linear-gradient(135deg, #f8fffe 0%, #eefbf8 42%, #fff7ed 100%);
+            border: 1px solid rgba(20, 184, 166, 0.18);
+            border-radius: 28px;
+            box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+            margin-bottom: 2.5rem;
             overflow: hidden;
         }
 
-        .event-hero__body {
-            padding: clamp(1.4rem, 4vw, 2.2rem);
+        .dojo-hero__body {
+            padding: clamp(1.6rem, 4vw, 3rem);
         }
 
-        .event-meta {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 1rem;
-            margin-top: 1.2rem;
-        }
-
-        .event-meta__item {
-            background: rgba(255, 255, 255, 0.88);
-            border: 1px solid rgba(20, 184, 166, 0.2);
-            border-radius: 14px;
-            padding: 1rem;
-        }
-
-        .event-meta__label {
-            color: var(--primary-teal);
-            display: block;
+        .dojo-label {
+            align-items: center;
+            background: rgba(15, 23, 42, 0.05);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 999px;
+            color: var(--neutral-700);
+            display: inline-flex;
             font-size: 0.85rem;
-            font-weight: 700;
-            margin-bottom: 0.25rem;
+            font-weight: 800;
+            gap: 0.5rem;
+            letter-spacing: 0.08em;
+            margin-bottom: 1rem;
+            padding: 0.45rem 0.9rem;
+            text-transform: uppercase;
         }
 
-        .event-meta__value {
+        .dojo-hero h1 {
             color: var(--neutral-800);
+            font-size: clamp(2rem, 5vw, 3.3rem);
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .dojo-lead {
+            color: var(--neutral-700);
+            font-size: 1.06rem;
+            line-height: 1.95;
+            margin-bottom: 1.4rem;
+        }
+
+        .dojo-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.9rem;
+            margin-top: 1.75rem;
+        }
+
+        .btn-secondary {
+            align-items: center;
+            background: rgba(255, 255, 255, 0.86);
+            border: 1px solid rgba(15, 23, 42, 0.12);
+            border-radius: 999px;
+            color: var(--neutral-800);
+            display: inline-flex;
             font-weight: 700;
-            line-height: 1.6;
+            justify-content: center;
+            min-height: 52px;
+            padding: 0.85rem 1.4rem;
+            text-decoration: none;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary-teal);
+            transform: translateY(-1px);
+        }
+
+        .dojo-hero__media {
+            display: flex;
+            min-height: 100%;
+            padding: clamp(1.2rem, 3vw, 1.8rem);
+        }
+
+        .dojo-hero__media img {
+            border-radius: 22px;
+            box-shadow: 0 18px 42px rgba(15, 23, 42, 0.14);
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .overview-grid {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            margin: 1.2rem 0 2.2rem;
+        }
+
+        .overview-item {
+            background: #ffffff;
+            border: 1px solid rgba(148, 163, 184, 0.22);
+            border-radius: 18px;
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+            padding: 1.25rem 1.3rem;
+        }
+
+        .overview-item--full {
+            grid-column: 1 / -1;
+        }
+
+        .overview-item dt {
+            color: var(--neutral-500);
+            font-size: 0.82rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.7rem;
+            text-transform: uppercase;
+        }
+
+        .overview-item dd {
+            color: var(--neutral-800);
+            font-size: 1.02rem;
+            font-weight: 700;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        .section-note {
+            color: var(--neutral-700);
+            font-size: 1.02rem;
+            line-height: 1.9;
+            margin: 0 0 1rem;
+        }
+
+        .experience-grid {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            margin: 1.2rem 0 2.2rem;
+        }
+
+        .experience-card {
+            background:
+                linear-gradient(180deg, rgba(20, 184, 166, 0.08), rgba(255, 255, 255, 0.96) 42%),
+                #ffffff;
+            border: 1px solid rgba(20, 184, 166, 0.16);
+            border-radius: 20px;
+            box-shadow: 0 16px 32px rgba(15, 23, 42, 0.06);
+            padding: 1.35rem;
+        }
+
+        .experience-card h4 {
+            color: var(--neutral-800);
+            font-size: 1.08rem;
+            line-height: 1.5;
+            margin: 0 0 0.6rem;
+        }
+
+        .experience-card p {
+            color: var(--neutral-600);
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        .entry-note {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.92), rgba(15, 118, 110, 0.94));
+            border-radius: 22px;
+            color: #f8fafc;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: minmax(0, 1.1fr) auto;
+            margin: 1rem 0 2.4rem;
+            padding: clamp(1.4rem, 3vw, 2rem);
+        }
+
+        .entry-note h3 {
+            color: #ffffff;
+            margin-top: 0;
+        }
+
+        .entry-note p {
+            color: rgba(248, 250, 252, 0.92);
+            line-height: 1.9;
+            margin: 0;
+        }
+
+        .entry-note .btn-primary {
+            align-self: center;
+            white-space: nowrap;
+        }
+
+        .gallery-grid {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1.15fr 0.85fr;
+            margin: 1.2rem 0 2.4rem;
+        }
+
+        .gallery-card {
+            background: #ffffff;
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            border-radius: 20px;
+            box-shadow: 0 16px 34px rgba(15, 23, 42, 0.07);
+            overflow: hidden;
+        }
+
+        .gallery-card img {
+            display: block;
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .gallery-card__body {
+            padding: 1rem 1.1rem 1.2rem;
+        }
+
+        .gallery-card__body p {
+            color: var(--neutral-600);
+            line-height: 1.8;
+            margin: 0;
         }
 
         .flyer-button {
@@ -100,117 +271,55 @@
             cursor: zoom-in;
             display: block;
             padding: 0;
+            text-align: left;
             width: 100%;
         }
 
-        .flyer-image {
-            background: var(--neutral-100);
-            border: 1px solid var(--neutral-200);
-            border-radius: 14px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-            display: block;
-            height: auto;
-            margin: 1.5rem auto 0.6rem;
-            max-width: 680px;
-            width: 100%;
-        }
-
-        .flyer-caption {
-            color: var(--neutral-500);
-            font-size: 0.9rem;
-            text-align: center;
-        }
-
-        .summary-list {
-            background: rgba(240, 253, 250, 0.55);
-            border: 1px solid rgba(20, 184, 166, 0.22);
-            border-radius: 14px;
-            padding: 1.2rem;
-            margin: 1rem 0 2rem;
-        }
-
-        .summary-list li {
-            display: block;
-            line-height: 1.8;
-            margin-bottom: 0.9rem;
-        }
-
-        .summary-list li:last-child {
-            margin-bottom: 0;
-        }
-
-        .summary-list strong {
-            color: var(--primary-teal);
-            display: inline-block;
-            min-width: 5.5em;
-        }
-
-        .experience-grid {
+        .link-grid {
             display: grid;
-            gap: 1rem;
+            gap: 0.9rem;
             grid-template-columns: repeat(2, minmax(0, 1fr));
-            margin: 1rem 0 2rem;
+            margin-top: 1rem;
         }
 
-        .experience-card {
+        .link-card {
             background: #ffffff;
-            border: 1px solid var(--neutral-200);
-            border-radius: 14px;
-            box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
-            padding: 1.2rem;
-        }
-
-        .experience-card h4 {
-            color: var(--primary-teal);
-            font-size: 1.08rem;
-            line-height: 1.5;
-            margin: 0 0 0.6rem;
-        }
-
-        .experience-card p {
-            color: var(--neutral-600);
-            font-size: 0.95rem;
-            line-height: 1.7;
-            margin: 0;
-        }
-
-        .relationship-note {
-            background: linear-gradient(135deg, rgba(240, 253, 250, 0.9), #ffffff);
-            border: 1px solid rgba(20, 184, 166, 0.24);
-            border-left: 5px solid var(--primary-teal);
-            border-radius: 14px;
-            color: var(--neutral-700);
-            line-height: 1.9;
-            margin: 1rem 0 2rem;
-            padding: 1.25rem;
-        }
-
-        .link-list {
-            display: grid;
-            gap: 0.8rem;
-            margin: 1rem 0 2rem;
-        }
-
-        .link-list a {
-            align-items: center;
-            background: white;
-            border: 1px solid var(--neutral-200);
-            border-radius: 12px;
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            border-radius: 18px;
+            box-shadow: 0 14px 28px rgba(15, 23, 42, 0.05);
             color: var(--neutral-800);
-            display: flex;
-            justify-content: space-between;
-            padding: 1rem 1.1rem;
+            display: block;
+            padding: 1.15rem 1.2rem;
             text-decoration: none;
+            transition: transform 0.2s ease, border-color 0.2s ease;
         }
 
-        .link-list a:hover {
+        .link-card:hover {
             border-color: var(--primary-teal);
-            color: var(--primary-teal);
+            transform: translateY(-2px);
         }
 
-        .button-container {
-            text-align: center;
-            margin: 2rem 0;
+        .link-card__eyebrow {
+            color: var(--neutral-500);
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.4rem;
+            text-transform: uppercase;
+        }
+
+        .link-card__title {
+            display: block;
+            font-weight: 800;
+            line-height: 1.6;
+        }
+
+        .link-card__text {
+            color: var(--neutral-600);
+            display: block;
+            line-height: 1.75;
+            margin-top: 0.45rem;
         }
 
         .lightbox {
@@ -250,6 +359,20 @@
             top: 1rem;
         }
 
+        @media (max-width: 900px) {
+            .dojo-hero,
+            .gallery-grid,
+            .entry-note,
+            .link-grid,
+            .experience-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .dojo-hero__media {
+                padding-top: 0;
+            }
+        }
+
         @media (max-width: 768px) {
             main {
                 padding-top: 96px;
@@ -259,18 +382,12 @@
                 padding-top: 1.25rem;
             }
 
-            .event-details {
-                padding: 1.2rem;
-            }
-
-            .event-meta,
-            .experience-grid {
+            .overview-grid {
                 grid-template-columns: 1fr;
             }
 
-            .summary-list strong {
-                display: block;
-                min-width: 0;
+            .overview-item--full {
+                grid-column: auto;
             }
         }
     </style>
@@ -312,90 +429,120 @@
                     <span>&gt;</span>
                     <a href="../news.html">お知らせ</a>
                     <span>&gt;</span>
-                    <span>南遊祭のお知らせ</span>
+                    <span>第2回CoderDojo南城 in 南遊祭 開催のお知らせ</span>
                 </nav>
 
-                <article class="event-details simple-news">
-                    <section class="event-hero">
-                        <div class="event-hero__body">
-                            <h1>南遊祭のお知らせ</h1>
-                            <p class="simple-lead">
-                                6月21日（日）、南城市役所で「南遊祭」が開催されます。<br />
-                                ミニ四駆体験、乗馬体験、鉄道模型体験、ポケモンカード交流会、CoderDojo南城によるScratchゲーム体験など、親子で楽しめる内容が予定されています。<br />
-                                StarCraftersは、CoderDojo南城の立ち上げ・運営支援を通して本イベントに関わっています。
+                <article class="event-details dojo-news">
+                    <section class="dojo-hero">
+                        <div class="dojo-hero__body">
+                            <p class="dojo-label">Event News / 2026.06.16</p>
+                            <h1>第2回CoderDojo南城 in 南遊祭<br />開催のお知らせ</h1>
+                            <p class="dojo-lead">
+                                2026年6月21日（日）、南城市役所で開催される「南遊祭」の会場内で、第2回CoderDojo南城を開催します。<br />
+                                今回は主催メンバーが制作したゲームの体験・展示が中心です。お祭りを楽しみながら、子どもたちの創作にぜひ触れてみてください。
                             </p>
-                            <div class="event-meta">
-                                <div class="event-meta__item">
-                                    <span class="event-meta__label">日時</span>
-                                    <span class="event-meta__value">2026年6月21日（日）10:00〜16:00</span>
-                                </div>
-                                <div class="event-meta__item">
-                                    <span class="event-meta__label">会場</span>
-                                    <span class="event-meta__value">南城市役所</span>
-                                </div>
+                            <div class="dojo-actions">
+                                <a class="btn-primary" href="https://line.me/ti/g2/et2RMUPfWSarXC6NyS1pV4Phf2cipNI4Tadpcg?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
+                                    target="_blank" rel="noopener noreferrer">LINEで最新情報を見る</a>
+                                <a class="btn-secondary" href="https://forms.gle/9Gci9aAaHjvnj59h7" target="_blank"
+                                    rel="noopener noreferrer">お問い合わせ</a>
                             </div>
                         </div>
-                        <button class="flyer-button" type="button" data-lightbox-target="flyer-main">
-                            <img class="flyer-image" src="../img/news/info-20260621/flyer-main.jpg"
-                                alt="2026年6月21日に南城市役所で開催される南遊祭のチラシ。ミニ四駆、乗馬、鉄道模型、ポケモンカード、CoderDojo南城のScratchゲーム体験などを紹介。" />
-                            <p class="flyer-caption">画像をタップすると大きく表示できます</p>
-                        </button>
+                        <div class="dojo-hero__media">
+                            <img src="../img/news/info-20260621/TOP.jpg"
+                                alt="第2回CoderDojo南城 in 南遊祭の案内ビジュアル。南城市役所での開催を伝えるポスター画像。" />
+                        </div>
                     </section>
 
-                    <h3>イベント概要</h3>
-                    <ul class="summary-list">
-                        <li><strong>イベント名</strong>南遊祭</li>
-                        <li><strong>日時</strong>2026年6月21日（日）10:00〜16:00</li>
-                        <li><strong>会場</strong>南城市役所</li>
-                        <li><strong>主催</strong>遊びのギルド</li>
-                        <li><strong>共催</strong>南城市（予定）</li>
-                        <li><strong>内容</strong>ミニ四駆、乗馬、マーケット、鉄道模型、ポケモンカード、Scratchゲーム体験など、親子で楽しめる体験ブースが予定されています。</li>
-                    </ul>
+                    <h3>開催概要</h3>
+                    <dl class="overview-grid">
+                        <div class="overview-item">
+                            <dt>日時</dt>
+                            <dd>2026年6月21日（日）10:00〜16:00</dd>
+                        </div>
+                        <div class="overview-item">
+                            <dt>会場</dt>
+                            <dd>南城市役所<br />「南遊祭」会場内のCoderDojoブース</dd>
+                        </div>
+                        <div class="overview-item">
+                            <dt>参加費</dt>
+                            <dd>無料</dd>
+                        </div>
+                        <div class="overview-item">
+                            <dt>持ち物</dt>
+                            <dd>特になし</dd>
+                        </div>
+                        <div class="overview-item overview-item--full">
+                            <dt>内容</dt>
+                            <dd>CoderDojo南城の主催メンバーが制作したゲームの体験・展示を行います。会場を回る途中に、気軽に立ち寄って遊べる内容です。</dd>
+                        </div>
+                    </dl>
 
-                    <h3>予定されている体験</h3>
-                    <p class="simple-lead">
-                        当日は、以下の体験ブースが予定されています。内容や参加方法は当日の運営状況により変わる場合がありますので、最新情報は主催者の案内をご確認ください。
+                    <h3>どんな体験ができる？</h3>
+                    <p class="section-note">
+                        今回のブースは、子どもたち自身が作ったものを来場者に届ける場です。見て終わりではなく、実際に触れて、反応を返してもらえるイベントを目指しています。
                     </p>
                     <div class="experience-grid">
                         <section class="experience-card">
-                            <h4>ミニ四駆体験＆大会</h4>
+                            <h4>Scratchゲーム体験</h4>
+                            <p>主催メンバーが制作したゲームを実際にプレイできます。子どもならではの発想や工夫を、遊びながら感じてもらえます。</p>
                         </section>
                         <section class="experience-card">
-                            <h4>乗馬体験</h4>
+                            <h4>つくった人と直接話せる</h4>
+                            <p>ゲームを作った本人たちがブースにいる予定です。どうやって作ったのか、どこを工夫したのかなど、直接聞ける機会になります。</p>
                         </section>
                         <section class="experience-card">
-                            <h4>そらいろファンファンマーケット</h4>
-                        </section>
-                        <section class="experience-card">
-                            <h4>鉄道模型体験</h4>
-                        </section>
-                        <section class="experience-card">
-                            <h4>ポケモンカード体験交流会</h4>
-                        </section>
-                        <section class="experience-card">
-                            <h4>CoderDojo南城 Scratchでゲーム</h4>
+                            <h4>お祭りの流れで立ち寄れる</h4>
+                            <p>南遊祭にはほかにも体験ブースやキッチンカーがあります。予約なしで、会場を楽しみながら自然に参加できます。</p>
                         </section>
                     </div>
 
-                    <h3>StarCraftersとの関わり</h3>
-                    <div class="relationship-note">
-                        StarCraftersは、CoderDojo南城の立ち上げと運営を支援しています。今回の南遊祭では、CoderDojo南城が出展し、StarCraftersのスタッフも一緒にブース運営に関わります。
+                    <div class="entry-note">
+                        <div>
+                            <h3>参加方法</h3>
+                            <p>事前予約は不要です。当日は南遊祭の会場を回る途中に、いつでもお気軽にCoderDojo南城のブースへお立ち寄りください。</p>
+                        </div>
+                        <a class="btn-primary" href="https://qtendou.github.io/Dojo/index.html" target="_blank"
+                            rel="noopener noreferrer">CoderDojo南城を見る</a>
                     </div>
 
-                    <h3>関連リンク</h3>
-                    <div class="link-list">
-                        <a href="https://www.instagram.com/asobi_no_guild/" target="_blank" rel="noopener noreferrer">
-                            <span>遊びのギルド Instagram</span>
-                            <span aria-hidden="true">→</span>
+                    <h3>イベントのイメージ</h3>
+                    <div class="gallery-grid">
+                        <section class="gallery-card">
+                            <img src="../img/news/info-20260621/TOP.jpg"
+                                alt="第2回CoderDojo南城 in 南遊祭のメインビジュアル。開催日時と会場を案内するイベント画像。" />
+                            <div class="gallery-card__body">
+                                <p>南遊祭の会場内で、CoderDojo南城の活動を来場者に向けて紹介します。イベントの雰囲気が伝わるメインビジュアルです。</p>
+                            </div>
+                        </section>
+                        <section class="gallery-card">
+                            <button class="flyer-button" type="button" data-lightbox-target="flyer-main">
+                                <img src="../img/news/info-20260621/flyer-main.jpg"
+                                    alt="第2回CoderDojo南城 in 南遊祭の案内チラシ。画像をタップすると拡大表示できます。" />
+                            </button>
+                            <div class="gallery-card__body">
+                                <p>案内チラシも掲載しています。タップすると大きく表示できます。</p>
+                            </div>
+                        </section>
+                    </div>
+
+                    <h3>最新情報・お問い合わせ</h3>
+                    <p class="section-note">
+                        開催情報の更新は LINE オープンチャットで案内されています。ご質問がある場合は、お問い合わせフォームもご利用ください。
+                    </p>
+                    <div class="link-grid">
+                        <a class="link-card"
+                            href="https://line.me/ti/g2/et2RMUPfWSarXC6NyS1pV4Phf2cipNI4Tadpcg?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
+                            target="_blank" rel="noopener noreferrer">
+                            <span class="link-card__eyebrow">Line OpenChat</span>
+                            <span class="link-card__title">オープンチャット「CoderDojo南城」</span>
+                            <span class="link-card__text">開催情報などのお知らせはLINEで配信されています。</span>
                         </a>
-                        <a href="https://x.com/asobi_no_guild?lang=ja" target="_blank" rel="noopener noreferrer">
-                            <span>遊びのギルド X</span>
-                            <span aria-hidden="true">→</span>
-                        </a>
-                        <a href="https://qtendou.github.io/Dojo/index.html" target="_blank"
+                        <a class="link-card" href="https://forms.gle/9Gci9aAaHjvnj59h7" target="_blank"
                             rel="noopener noreferrer">
-                            <span>CoderDojo南城の紹介ページ</span>
-                            <span aria-hidden="true">→</span>
+                            <span class="link-card__eyebrow">Contact</span>
+                            <span class="link-card__title">お問い合わせフォーム</span>
+                            <span class="link-card__text">参加方法や活動内容について確認したい場合はこちらをご利用ください。</span>
                         </a>
                     </div>
                 </article>
@@ -403,10 +550,10 @@
         </section>
     </main>
 
-    <div class="lightbox" id="flyer-main" aria-label="南遊祭チラシの拡大表示" role="dialog" aria-modal="true">
+    <div class="lightbox" id="flyer-main" aria-label="第2回CoderDojo南城案内チラシの拡大表示" role="dialog" aria-modal="true">
         <button class="lightbox__close" type="button" data-lightbox-close>閉じる</button>
         <img src="../img/news/info-20260621/flyer-main.jpg"
-            alt="2026年6月21日に南城市役所で開催される南遊祭のチラシ。ミニ四駆、乗馬、鉄道模型、ポケモンカード、CoderDojo南城のScratchゲーム体験などを紹介。" />
+            alt="第2回CoderDojo南城 in 南遊祭の案内チラシ。開催日時、場所、参加費などを掲載した画像。" />
     </div>
 
     <footer class="footer">
@@ -417,31 +564,31 @@
 
     <script src="../js/script.js"></script>
     <script>
-        document.querySelectorAll('[data-lightbox-target]').forEach((button) => {
-            button.addEventListener('click', () => {
+        document.querySelectorAll("[data-lightbox-target]").forEach((button) => {
+            button.addEventListener("click", () => {
                 const lightbox = document.getElementById(button.dataset.lightboxTarget);
                 if (lightbox) {
-                    lightbox.classList.add('is-open');
-                    document.body.style.overflow = 'hidden';
+                    lightbox.classList.add("is-open");
+                    document.body.style.overflow = "hidden";
                 }
             });
         });
 
-        document.querySelectorAll('.lightbox').forEach((lightbox) => {
-            lightbox.addEventListener('click', (event) => {
-                if (event.target === lightbox || event.target.hasAttribute('data-lightbox-close')) {
-                    lightbox.classList.remove('is-open');
-                    document.body.style.overflow = '';
+        document.querySelectorAll(".lightbox").forEach((lightbox) => {
+            lightbox.addEventListener("click", (event) => {
+                if (event.target === lightbox || event.target.hasAttribute("data-lightbox-close")) {
+                    lightbox.classList.remove("is-open");
+                    document.body.style.overflow = "";
                 }
             });
         });
 
-        document.addEventListener('keydown', (event) => {
-            if (event.key === 'Escape') {
-                document.querySelectorAll('.lightbox.is-open').forEach((lightbox) => {
-                    lightbox.classList.remove('is-open');
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") {
+                document.querySelectorAll(".lightbox.is-open").forEach((lightbox) => {
+                    lightbox.classList.remove("is-open");
                 });
-                document.body.style.overflow = '';
+                document.body.style.overflow = "";
             }
         });
     </script>
