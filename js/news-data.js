@@ -1,6 +1,15 @@
 // お知らせデータ管理
 const newsData = [
     {
+        id: 17,
+        date: "2026.07.06",
+        category: "イベント",
+        categoryClass: "category-event",
+        title: "Teacher Teacher はるか先生 オンライン講演会（7月18日）参加者募集",
+        link: "news/event-20260718.html",
+        featured: true
+    },
+    {
         id: 16,
         date: "2026.07.02",
         category: "イベント",
