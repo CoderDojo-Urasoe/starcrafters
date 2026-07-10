@@ -11,10 +11,10 @@ const newsData = [
     },
     {
         id: 16,
-        date: "2026.07.02",
+        date: "2026.07.11",
         category: "イベント",
         categoryClass: "category-event",
-        title: "7月11日開催「おきなわこども選挙」ワークショップのご案内（共催：StarCrafters）",
+        title: "【延期】7月11日「おきなわこども選挙」ワークショップのお知らせ",
         link: "news/info-20260711.html",
         featured: true
     },
