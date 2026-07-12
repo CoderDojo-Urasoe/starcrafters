@@ -20,10 +20,10 @@ const newsData = [
     },
     {
         id: 16,
-        date: "2026.07.11",
+        date: "2026.07.12",
         category: "イベント",
         categoryClass: "category-event",
-        title: "【延期】7月11日「おきなわこども選挙」ワークショップのお知らせ",
+        title: "【日程変更】「おきなわこども選挙」ワークショップは7月25日に開催します",
         link: "news/info-20260711.html",
         featured: true
     },
