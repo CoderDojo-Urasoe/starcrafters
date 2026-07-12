@@ -1,6 +1,15 @@
 // お知らせデータ管理
 const newsData = [
     {
+        id: 18,
+        date: "2026.07.12",
+        category: "お知らせ",
+        categoryClass: "category-notice",
+        title: "第2回マインクラフト建築コンテスト2026 in 謝花組のご案内",
+        link: "news/info-20260712-minecraft-contest.html",
+        featured: true
+    },
+    {
         id: 17,
         date: "2026.07.06",
         category: "イベント",
