@@ -1,6 +1,15 @@
 // お知らせデータ管理
 const newsData = [
     {
+        id: 19,
+        date: "2026.07.28",
+        category: "イベント",
+        categoryClass: "category-event",
+        title: "おきなわ親子まつりに、うむさんラボさんとご一緒します",
+        link: "news/event-20260816-oyako-matsuri.html",
+        featured: true
+    },
+    {
         id: 18,
         date: "2026.07.12",
         category: "お知らせ",
