@@ -1,6 +1,15 @@
 // お知らせデータ管理
 const newsData = [
     {
+        id: 20,
+        date: "2026.08.04",
+        category: "イベント",
+        categoryClass: "category-event",
+        title: "夏休みの自由研究にも！「DNAってなに？ かがくワークショップ」参加者募集",
+        link: "news/event-20260816-dna-workshop.html",
+        featured: true
+    },
+    {
         id: 19,
         date: "2026.07.28",
         category: "イベント",
