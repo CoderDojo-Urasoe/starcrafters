@@ -5,13 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="2026年8月16日（日）、アイム・ユニバース てだこホール 市民交流室で開催される親子向けイベントに、うむさんラボさんとご一緒に参加します。" />
+        content="2026年8月16日（日）、アイム・ユニバース てだこホール 市民交流室で開催される親子向けイベントに参加します。StarCrafters側のブースでは、DNAワークショップ、ドローン体験、生成AI開発体験を予定しています。" />
 
     <meta property="og:url" content="https://www.star-crafters.org/news/event-20260816-oyako-matsuri.html" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="第2回 おきなわ親子まつりに参加します | StarCrafters" />
     <meta property="og:description"
-        content="8月16日（日）、てだこホール 市民交流室で開催される親子向けイベントに、うむさんラボさんとご一緒に参加します。" />
+        content="8月16日（日）、てだこホール 市民交流室で開催される親子向けイベントに参加します。StarCrafters側のブースでは、DNAワークショップ、ドローン体験、生成AI開発体験を予定しています。" />
     <meta property="og:site_name" content="NPO法人StarCrafters" />
     <meta property="og:image"
         content="https://www.star-crafters.org/img/news/event-20260816-oyako-matsuri/flyer.png" />
@@ -251,6 +251,138 @@
             margin: 0;
         }
 
+        .booth-section {
+            margin: 0 0 2.4rem;
+        }
+
+        .booth-section__header {
+            align-items: flex-end;
+            display: flex;
+            gap: 1rem;
+            justify-content: space-between;
+            margin: 0 0 1.2rem;
+        }
+
+        .booth-section__header h2 {
+            margin: 0;
+        }
+
+        .booth-section__label {
+            background: rgba(20, 184, 166, 0.1);
+            border: 1px solid rgba(20, 184, 166, 0.22);
+            border-radius: 999px;
+            color: #0f766e;
+            display: inline-flex;
+            flex: 0 0 auto;
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            padding: 0.42rem 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .booth-grid {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .booth-card {
+            background: #ffffff;
+            border: 1px solid rgba(15, 23, 42, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 16px 34px rgba(15, 23, 42, 0.08);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .booth-card__image {
+            aspect-ratio: 16 / 10;
+            background: #f8fafc;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .booth-card__image img {
+            display: block;
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .booth-card--dna .booth-card__image img {
+            object-position: top center;
+        }
+
+        .booth-card__body {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            padding: 1.25rem;
+        }
+
+        .booth-card h3 {
+            color: var(--neutral-800);
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin: 0 0 0.7rem;
+        }
+
+        .booth-card p {
+            color: var(--neutral-600);
+            flex: 1;
+            line-height: 1.8;
+            margin: 0 0 1rem;
+        }
+
+        .booth-facts {
+            display: grid;
+            gap: 0.45rem;
+            margin: 0 0 1rem;
+        }
+
+        .booth-facts span,
+        .booth-note {
+            background: rgba(248, 250, 252, 0.92);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 999px;
+            color: var(--neutral-700);
+            display: inline-flex;
+            font-size: 0.84rem;
+            font-weight: 700;
+            line-height: 1.45;
+            padding: 0.42rem 0.75rem;
+            width: fit-content;
+        }
+
+        .booth-card__link {
+            align-items: center;
+            background: var(--primary-teal);
+            border-radius: 999px;
+            color: #ffffff;
+            display: inline-flex;
+            font-weight: 800;
+            justify-content: center;
+            min-height: 46px;
+            padding: 0.75rem 1rem;
+            text-decoration: none;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        .booth-card__link:hover {
+            background: #0f766e;
+            color: #ffffff;
+            transform: translateY(-1px);
+        }
+
+        .booth-section__footnote {
+            color: var(--neutral-600);
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin: 1rem 0 0;
+        }
+
         .join-note {
             background: linear-gradient(135deg, rgba(15, 23, 42, 0.92), rgba(15, 118, 110, 0.94));
             border-radius: 22px;
@@ -323,6 +455,15 @@
 
             .experience-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .booth-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .booth-section__header {
+                align-items: flex-start;
+                flex-direction: column;
             }
 
             .join-note,
@@ -467,6 +608,64 @@
                             <p>企業とゆんたく、お仕事体験、講座案内、出張行政相談など、暮らしや仕事の次の一歩を考えるきっかけもあります。</p>
                         </section>
                     </div>
+
+                    <section class="booth-section" aria-labelledby="starcrafters-booth-title">
+                        <div class="booth-section__header">
+                            <h2 id="starcrafters-booth-title">StarCrafters側のブース</h2>
+                            <span class="booth-section__label">Booth</span>
+                        </div>
+                        <p class="section-note">
+                            StarCraftersのブースでは、親子で「見て、動かして、つくる」体験を楽しめる内容を予定しています。
+                        </p>
+                        <div class="booth-grid">
+                            <article class="booth-card booth-card--dna">
+                                <figure class="booth-card__image">
+                                    <img src="../img/news/event-20260816-dna-workshop/flyer.png"
+                                        alt="DNAってなに？かがくワークショップのチラシ" />
+                                </figure>
+                                <div class="booth-card__body">
+                                    <h3>DNAってなに？ かがくワークショップ</h3>
+                                    <p>
+                                        イチゴを使ってDNAを取り出す実験、DNA型ストラップ作り、自由研究のまとめシートに取り組む少人数ワークショップです。
+                                    </p>
+                                    <div class="booth-facts" aria-label="DNAワークショップの開催情報">
+                                        <span>13:30〜15:00頃まで</span>
+                                        <span>小学2〜4年生・定員5名</span>
+                                    </div>
+                                    <a class="booth-card__link" href="event-20260816-dna-workshop.html">詳しい案内を見る</a>
+                                </div>
+                            </article>
+
+                            <article class="booth-card">
+                                <figure class="booth-card__image">
+                                    <img src="../img/news/20260214/drone.png" alt="ドローンプログラミング体験の様子" />
+                                </figure>
+                                <div class="booth-card__body">
+                                    <h3>ドローン体験｜プログラミングで動かしてみよう</h3>
+                                    <p>
+                                        プログラミングで、ドローンを思いどおりに動かしてみよう。ミッション形式なので、はじめてでも安心して楽しめます。
+                                    </p>
+                                    <span class="booth-note">当日ブースで案内</span>
+                                </div>
+                            </article>
+
+                            <article class="booth-card">
+                                <figure class="booth-card__image">
+                                    <img src="../img/news/20260214/ai_real.jpg" alt="生成AI開発体験の様子" />
+                                </figure>
+                                <div class="booth-card__body">
+                                    <h3>生成AI開発体験｜つくる体験</h3>
+                                    <p>
+                                        小中学生がつくったイベント用アプリの紹介と、AIを使ったゲームづくりの体験を予定しています。浦添市人材育成道場に通う小中学生たちがやさしくサポートします。
+                                    </p>
+                                    <span class="booth-note">当日ブースで案内</span>
+                                </div>
+                            </article>
+                        </div>
+                        <p class="booth-section__footnote">
+                            ※ 体験内容は当日の状況により変更になる場合があります。各ブースの受付・実施時間は会場でご確認ください。
+                        </p>
+                    </section>
 
                     <div class="join-note">
                         <div>
