@@ -1,6 +1,15 @@
 // お知らせデータ管理
 const newsData = [
     {
+        id: 21,
+        date: "2026.09.05",
+        category: "イベント",
+        categoryClass: "category-event",
+        title: "佐久真良太さん「世界で1ばん優しい 音降るCONCERT」のご案内",
+        link: "news/event-20261114-otofuru-concert.html",
+        featured: true
+    },
+    {
         id: 20,
         date: "2026.08.04",
         category: "イベント",
