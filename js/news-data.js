@@ -1,6 +1,15 @@
 // お知らせデータ管理
 const newsData = [
     {
+        id: 22,
+        date: "2026.09.07",
+        category: "イベント",
+        categoryClass: "category-event",
+        title: "第4回CoderDojo南城 参加者募集のお知らせ",
+        link: "news/info-20260921.html",
+        featured: true
+    },
+    {
         id: 21,
         date: "2026.09.05",
         category: "イベント",
