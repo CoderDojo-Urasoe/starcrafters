@@ -1,6 +1,15 @@
 // お知らせデータ管理
 const newsData = [
     {
+        id: 23,
+        date: "2026.10.07",
+        category: "お知らせ",
+        categoryClass: "category-notice",
+        title: "沖縄県フリースクール等に通う児童生徒の実態調査　ご協力のお願い",
+        link: "news/info-20261007-freeschool-survey.html",
+        featured: true
+    },
+    {
         id: 22,
         date: "2026.09.07",
         category: "イベント",
